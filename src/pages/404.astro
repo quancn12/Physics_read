@@ -1,0 +1,89 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<BaseLayout title="404 — Không tìm thấy trang | Cuna Physics">
+  <div class="error-container">
+    <div class="error-card">
+      <img 
+        src={`${baseUrl}/assets/mascot/sadness_deflated.png`} 
+        alt="Sadness Deflated" 
+        class="error-mascot"
+      />
+      <span class="error-code">Lỗi 404 • Không tìm thấy trang</span>
+      <h1 class="error-heading">Em buồn quá hổng đi nổi nữa... 😴</h1>
+      <p class="error-desc">
+        Đường dẫn bạn truy cập có thể đã bị thay đổi, hoặc công thức này vượt ra ngoài phạm vi 3 chiều không gian của chúng ta!
+      </p>
+
+      <div class="error-actions">
+        <a href={`${baseUrl}/`} class="btn-primary">
+          Về trang chủ →
+        </a>
+        <a href={`${baseUrl}/books/co-so-vat-ly-tap-1/`} class="btn-secondary">
+          Xem danh sách 20 chương
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .error-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 1.5rem;
+  }
+  .error-card {
+    background: var(--bg-surface);
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 3rem 2rem;
+    max-width: 580px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: var(--shadow-card);
+  }
+  .error-mascot {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 1.5rem;
+  }
+  .error-code {
+    font-size: 0.78rem;
+    font-weight: 800;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    background: var(--primary-light);
+    padding: 0.2rem 0.75rem;
+    border-radius: var(--radius-full);
+    margin-bottom: 0.75rem;
+  }
+  .error-heading {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+  }
+  .error-desc {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .error-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+</style>

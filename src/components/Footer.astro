@@ -1,0 +1,103 @@
+---
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-mascot-box">
+      <img 
+        src={`${baseUrl}/assets/mascot/sadness_classic.png`} 
+        alt="Sadness Mascot" 
+        class="footer-mascot-img"
+      />
+      <div class="footer-mascot-text">
+        <span class="mascot-quote">"Vật lý không buồn, chỉ cần một chiếc áo len ấm và một tách trà."</span>
+        <span class="mascot-author">— Cuna & Sadness</span>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="copyright">
+        © 2026 <strong>Cuna Physics</strong>. Giáo trình <em>Fundamentals of Physics</em> (Halliday, Resnick, Walker).
+      </div>
+      <div class="footer-links">
+        <a href={`${baseUrl}/`} class="footer-link">Trang chủ</a>
+        <a href={`${baseUrl}/books/co-so-vat-ly-tap-1/`} class="footer-link">Tập 1</a>
+        <a href={`${baseUrl}/ve-cuna/`} class="footer-link">Về Cuna</a>
+        <a href="https://github.com/quancn12/Physics_read" target="_blank" rel="noopener noreferrer" class="footer-link">
+          GitHub ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    margin-top: auto;
+    border-top: 1px solid var(--border-color);
+    background: var(--bg-surface);
+    padding: 3rem 0 2rem;
+  }
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-mascot-box {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background: var(--primary-light);
+    border: 1px solid var(--primary-border);
+    border-radius: var(--radius-lg);
+    padding: 1.25rem 1.75rem;
+  }
+  .footer-mascot-img {
+    width: 58px;
+    height: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px var(--primary-glow));
+  }
+  .footer-mascot-text {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+  .mascot-quote {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    font-style: italic;
+  }
+  .mascot-author {
+    font-family: var(--font-hand);
+    font-size: 1.15rem;
+    color: var(--primary);
+    font-weight: 700;
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .footer-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.15s ease;
+  }
+  .footer-link:hover {
+    color: var(--primary);
+  }
+</style>

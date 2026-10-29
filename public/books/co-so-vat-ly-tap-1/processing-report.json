@@ -1,0 +1,238 @@
+{
+  "total_files": 23,
+  "total_pages": 1023,
+  "total_orig_size": 225582210,
+  "total_opt_size": 245536249,
+  "rows": [
+    {
+      "stt": 1,
+      "name": "01-do-luong.pdf",
+      "title": "Chương 1: Đo lường",
+      "pages": 18,
+      "orig_size": 1843180,
+      "opt_size": 1998782,
+      "diff_pct": 8.442040386722946,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 2,
+      "name": "02-chuyen-dong-thang.pdf",
+      "title": "Chương 2: Chuyển động thẳng",
+      "pages": 42,
+      "orig_size": 8481801,
+      "opt_size": 9402821,
+      "diff_pct": 10.858778695703895,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 3,
+      "name": "03-vector.pdf",
+      "title": "Chương 3: Vectơ",
+      "pages": 37,
+      "orig_size": 6401737,
+      "opt_size": 7051918,
+      "diff_pct": 10.156321635831025,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 4,
+      "name": "04-chuyen-dong-trong-hai-va-ba-chieu.pdf",
+      "title": "Chương 4: Chuyển động trong 2 & 3 chiều",
+      "pages": 54,
+      "orig_size": 10479915,
+      "opt_size": 11557579,
+      "diff_pct": 10.283136838419015,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 5,
+      "name": "05-luc-va-chuyen-dong-1.pdf",
+      "title": "Chương 5: Lực và chuyển động — I",
+      "pages": 49,
+      "orig_size": 13133121,
+      "opt_size": 14270707,
+      "diff_pct": 8.661962377412042,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 6,
+      "name": "06-luc-va-chuyen-dong-2.pdf",
+      "title": "Chương 6: Lực và chuyển động — II",
+      "pages": 41,
+      "orig_size": 14268464,
+      "opt_size": 15332331,
+      "diff_pct": 7.4560723564919105,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 7,
+      "name": "07-dong-nang-va-cong.pdf",
+      "title": "Chương 7: Động năng và công",
+      "pages": 45,
+      "orig_size": 8877562,
+      "opt_size": 9759583,
+      "diff_pct": 9.93539667760135,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 8,
+      "name": "08-the-nang-va-bao-toan-nang-luong.pdf",
+      "title": "Chương 8: Thế năng & Bảo toàn năng lượng",
+      "pages": 58,
+      "orig_size": 15387048,
+      "opt_size": 16669603,
+      "diff_pct": 8.335289524020462,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 9,
+      "name": "09-khoi-tam-va-dong-luong-tuyen-tinh.pdf",
+      "title": "Chương 9: Khối tâm & Động lượng tuyến tính",
+      "pages": 69,
+      "orig_size": 21808687,
+      "opt_size": 23328136,
+      "diff_pct": 6.967173218635309,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 10,
+      "name": "10-su-quay-cua-vat-ran.pdf",
+      "title": "Chương 10: Sự quay của vật rắn",
+      "pages": 63,
+      "orig_size": 12728971,
+      "opt_size": 13904276,
+      "diff_pct": 9.233307232768462,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 11,
+      "name": "11-lan-momen-luc-va-momen-dong-luong.pdf",
+      "title": "Chương 11: Lăn, mômen lực & Mômen động lượng",
+      "pages": 53,
+      "orig_size": 13165265,
+      "opt_size": 14369936,
+      "diff_pct": 9.150374109446336,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 12,
+      "name": "12-can-bang-tinh-va-tinh-dan-hoi.pdf",
+      "title": "Chương 12: Cân bằng tĩnh & Tính đàn hồi",
+      "pages": 50,
+      "orig_size": 20921157,
+      "opt_size": 22582035,
+      "diff_pct": 7.938748320659321,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 13,
+      "name": "13-luc-hap-dan.pdf",
+      "title": "Chương 13: Lực hấp dẫn",
+      "pages": 49,
+      "orig_size": 9442765,
+      "opt_size": 10359307,
+      "diff_pct": 9.706288359394733,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 14,
+      "name": "14-co-hoc-chat-luu.pdf",
+      "title": "Chương 14: Cơ học chất lưu",
+      "pages": 49,
+      "orig_size": 14922158,
+      "opt_size": 16061368,
+      "diff_pct": 7.634351546203974,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 15,
+      "name": "15-dao-dong.pdf",
+      "title": "Chương 15: Dao động",
+      "pages": 47,
+      "orig_size": 11392695,
+      "opt_size": 12525178,
+      "diff_pct": 9.940431127138925,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 16,
+      "name": "16-song-1.pdf",
+      "title": "Chương 16: Sóng — I",
+      "pages": 51,
+      "orig_size": 7890307,
+      "opt_size": 8751956,
+      "diff_pct": 10.92034821965736,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 17,
+      "name": "17-song-2.pdf",
+      "title": "Chương 17: Sóng — II",
+      "pages": 54,
+      "orig_size": 9537046,
+      "opt_size": 10445584,
+      "diff_pct": 9.526408911103083,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 18,
+      "name": "18-nhiet-do-nhiet-luong-va-dinh-luat-1-ndlh.pdf",
+      "title": "Chương 18: Nhiệt độ, nhiệt lượng & Định luật 1 NĐLH",
+      "pages": 57,
+      "orig_size": 13446511,
+      "opt_size": 14501387,
+      "diff_pct": 7.844979266368799,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 19,
+      "name": "19-thuyet-dong-hoc-chat-khi.pdf",
+      "title": "Chương 19: Thuyết động học chất khí",
+      "pages": 52,
+      "orig_size": 5164011,
+      "opt_size": 5699288,
+      "diff_pct": 10.365527881331005,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": 20,
+      "name": "20-entropy-va-dinh-luat-2-ndlh.pdf",
+      "title": "Chương 20: Entropy & Định luật 2 NĐLH",
+      "pages": 44,
+      "orig_size": 5404405,
+      "opt_size": 5965333,
+      "diff_pct": 10.379088909879997,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": "ML",
+      "name": "00-muc-luc.pdf",
+      "title": "Mục lục chi tiết toàn tập",
+      "pages": 13,
+      "orig_size": 114053,
+      "opt_size": 139230,
+      "diff_pct": 22.074824862125503,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": "PL",
+      "name": "phu-luc.pdf",
+      "title": "Phụ lục tra cứu tổng hợp (A - G)",
+      "pages": 17,
+      "orig_size": 597257,
+      "opt_size": 668733,
+      "diff_pct": 11.967377527596998,
+      "linearized": "✓ QPDF Fast Web"
+    },
+    {
+      "stt": "ĐA",
+      "name": "dap-an.pdf",
+      "title": "Đáp số Checkpoints & Bài tập",
+      "pages": 11,
+      "orig_size": 174094,
+      "opt_size": 191178,
+      "diff_pct": 9.813089480395648,
+      "linearized": "✓ QPDF Fast Web"
+    }
+  ]
+}

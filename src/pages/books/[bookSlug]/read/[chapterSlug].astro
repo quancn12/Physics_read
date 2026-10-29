@@ -1,0 +1,893 @@
+---
+import { getBookMetadata } from '../../../../utils/books';
+import '../../../../styles/global.css';
+
+export function getStaticPaths() {
+  const book = getBookMetadata('co-so-vat-ly-tap-1');
+  return book.chapters.map((ch, idx) => ({
+    params: {
+      bookSlug: book.slug,
+      chapterSlug: ch.slug
+    },
+    props: {
+      book,
+      chapter: ch,
+      prevChapter: idx > 0 ? book.chapters[idx - 1] : null,
+      nextChapter: idx < book.chapters.length - 1 ? book.chapters[idx + 1] : null
+    }
+  }));
+}
+
+const { book, chapter, prevChapter, nextChapter } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+
+const pdfUrl = `${baseUrl}/books/${book.slug}/pdf/${chapter.fileName}`;
+const answersPdfUrl = `${baseUrl}/books/${book.slug}/pdf/${book.answers.fileName}`;
+const answersInitialPage = chapter.answersPage || 1;
+---
+
+<!DOCTYPE html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0" />
+  <title>Chương {chapter.number}: {chapter.title} — {book.title} | Cuna Physics</title>
+  <link rel="icon" type="image/png" href={`${baseUrl}/assets/mascot/sadness_yawn.png`} />
+
+  <script is:inline>
+    try {
+      const raw = localStorage.getItem('cuna_preferences_v1');
+      if (raw && JSON.parse(raw).theme === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
+    } catch (e) {}
+  </script>
+</head>
+<body class="reader-body">
+
+  <!-- TOP COMPACT TOOLBAR -->
+  <header class="reader-toolbar">
+    <div class="toolbar-left">
+      <!-- Back to Book -->
+      <a href={`${baseUrl}/books/${book.slug}/`} class="tool-btn" title="Về trang mục lục sách">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+        <span class="btn-text-hide-sm">Mục lục</span>
+      </a>
+
+      <!-- Toggle Left Sidebar (TOC) -->
+      <button id="toggle-toc-btn" class="tool-btn active-pill" title="Bật/Tắt mục lục (Phím [ )">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <span class="btn-text-hide-sm">Mục lục</span>
+        <kbd class="shortcut-hint">[</kbd>
+      </button>
+
+      <!-- Chapter Title -->
+      <div class="toolbar-chapter-title">
+        <span class="badge-ch-num">Ch. {chapter.number}</span>
+        <span class="ch-name-text">{chapter.title}</span>
+      </div>
+    </div>
+
+    <!-- Page Jump & Zoom Controls -->
+    <div class="toolbar-center">
+      <div class="page-jump-box">
+        <span>Trang</span>
+        <input type="number" id="page-num-input" min="1" max={chapter.pageCount} value="1" />
+        <span>/ {chapter.pageCount}</span>
+      </div>
+
+      <div class="zoom-controls">
+        <button id="zoom-out-btn" class="icon-tool" title="Thu nhỏ (-)">−</button>
+        <button id="zoom-fit-btn" class="zoom-level-btn" title="Vừa chiều rộng">Fit</button>
+        <button id="zoom-in-btn" class="icon-tool" title="Phóng to (+)">+</button>
+      </div>
+    </div>
+
+    <div class="toolbar-right">
+      <!-- Search Trigger -->
+      <button id="reader-search-btn" class="tool-btn" title="Tìm kiếm full-text (Phím /)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <kbd class="shortcut-hint">/</kbd>
+      </button>
+
+      <!-- Toggle Right Sidebar (Answers) -->
+      <button id="toggle-answers-btn" class="tool-btn active-pill" title="Bật/Tắt tra cứu đáp án (Phím ] )">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"></path>
+        </svg>
+        <span class="btn-text-hide-sm">Đáp án</span>
+        <kbd class="shortcut-hint">]</kbd>
+      </button>
+    </div>
+  </header>
+
+  <!-- 3-PANE READER WORKSPACE -->
+  <div class="reader-layout" id="reader-layout">
+
+    <!-- LEFT PANE: TABLE OF CONTENTS (GHIM / KHÔNG GHIM) -->
+    <aside class="toc-sidebar pinned" id="toc-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title-group">
+          <span class="sidebar-tag">Mục lục chương</span>
+          <h4 class="sidebar-heading">Nội dung chi tiết</h4>
+        </div>
+        <div class="sidebar-header-btns">
+          <button id="pin-toc-btn" class="pin-btn active" title="Ghim / Bỏ ghim">📌</button>
+          <button id="close-toc-btn" class="close-panel-btn" title="Đóng">✕</button>
+        </div>
+      </div>
+
+      <!-- Chapter Quick Switcher -->
+      <div class="ch-switcher-box">
+        <label for="ch-select">Chuyển chương:</label>
+        <select id="ch-select" onchange="window.location.href=this.value;">
+          {book.chapters.map((c) => (
+            <option 
+              value={`${baseUrl}/books/${book.slug}/read/${c.slug}/?page=1`}
+              selected={c.slug === chapter.slug}
+            >
+              Chương {c.number}: {c.title}
+            </option>
+          ))}
+        </select>
+      </div>
+
+      <!-- TOC Tree -->
+      <nav class="toc-nav-tree" id="toc-nav-tree">
+        {chapter.sections && chapter.sections.map((sec) => (
+          <div class="toc-sec-group" data-pdf-page={sec.pdf_page}>
+            <a href={`#page-${sec.pdf_page}`} class="toc-sec-anchor" data-page={sec.pdf_page}>
+              <span class="sec-badge">{sec.code}</span>
+              <span class="sec-text">{sec.title}</span>
+              <span class="sec-pg-num">{sec.pdf_page}</span>
+            </a>
+
+            {sec.subsections && sec.subsections.length > 0 && (
+              <div class="toc-subsec-group">
+                {sec.subsections.map((sub) => (
+                  <a href={`#page-${sub.pdf_page}`} class="toc-subsec-anchor" data-page={sub.pdf_page}>
+                    <span class="subsec-dot">•</span>
+                    <span class="subsec-text">{sub.title}</span>
+                    <span class="subsec-pg-num">{sub.pdf_page}</span>
+                  </a>
+                ))}
+              </div>
+            )}
+          </div>
+        ))}
+      </nav>
+    </aside>
+
+    <!-- MIDDLE PANE: VERTICAL PDF VIEWER (VIRTUALIZED & LAZY-LOAD) -->
+    <main class="pdf-viewer-main" id="pdf-viewer-main">
+      <div class="pdf-scroll-container" id="pdf-scroll-container">
+        <!-- Loading State Indicator with Sadness Mascot -->
+        <div id="pdf-initial-loading" class="pdf-loading-overlay">
+          <img src={`${baseUrl}/assets/mascot/sadness_io2.png`} class="loading-mascot-img" alt="Loading" />
+          <p class="loading-title">Đang kết xuất Chương {chapter.number}...</p>
+          <p class="loading-sub">Sử dụng PDF.js Canvas sắc nét theo Device Pixel Ratio</p>
+          <div class="loading-bar"><div class="loading-fill"></div></div>
+        </div>
+
+        <!-- Canvas Pages Container -->
+        <div class="pdf-pages-stack" id="pdf-pages-stack">
+          <!-- JS will dynamically inject page wrapper placeholders -->
+        </div>
+
+        <!-- End of Chapter Footer Card -->
+        <div class="chapter-end-card">
+          <img src={`${baseUrl}/assets/mascot/sadness_standing.png`} class="end-card-mascot" alt="Sadness Finished" />
+          <h3>Bạn đã hoàn thành Chương {chapter.number}!</h3>
+          <p class="end-card-desc">Thành quả tuyệt vời! Hãy nghỉ ngơi một chút hoặc tiếp tục hành trình khám phá.</p>
+          <div class="end-card-nav">
+            {prevChapter && (
+              <a href={`${baseUrl}/books/${book.slug}/read/${prevChapter.slug}/?page=1`} class="btn-secondary">
+                ← Chương {prevChapter.number}: {prevChapter.title}
+              </a>
+            )}
+            {nextChapter ? (
+              <a href={`${baseUrl}/books/${book.slug}/read/${nextChapter.slug}/?page=1`} class="btn-primary">
+                Tiếp tục: Chương {nextChapter.number} →
+              </a>
+            ) : (
+              <a href={`${baseUrl}/books/${book.slug}/`} class="btn-primary">
+                Hoàn thành toàn bộ giáo trình! Xem mục lục →
+              </a>
+            )}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- RESIZE DRAG HANDLE FOR ANSWERS PANE -->
+    <div class="resizer-handle" id="resizer-handle" title="Kéo để thay đổi độ rộng tra cứu đáp án"></div>
+
+    <!-- RIGHT PANE: ANSWERS VIEWER (RENDER FILE DAP-AN.PDF RIÊNG BIỆT) -->
+    <aside class="answers-sidebar pinned" id="answers-sidebar">
+      <div class="sidebar-header">
+        <div class="sidebar-title-group">
+          <span class="sidebar-tag" style="background: var(--accent-gold-light); color: var(--accent-gold);">Tra cứu song song</span>
+          <h4 class="sidebar-heading">Đáp số & Checkpoints</h4>
+        </div>
+        <div class="sidebar-header-btns">
+          <button id="pin-answers-btn" class="pin-btn active" title="Ghim / Bỏ ghim">📌</button>
+          <button id="close-answers-btn" class="close-panel-btn" title="Thu gọn">✕</button>
+        </div>
+      </div>
+
+      <!-- Answers Quick Chapter Jump & Zoom -->
+      <div class="answers-toolbar">
+        <select id="answers-chapter-jump">
+          {book.chapters.map((c) => (
+            <option value={c.answersPage} selected={c.number === chapter.number}>
+              Đáp án Chương {c.number}: {c.title}
+            </option>
+          ))}
+        </select>
+        <div class="answers-zoom-box">
+          <button id="ans-zoom-out" class="icon-tool-mini">−</button>
+          <button id="ans-zoom-in" class="icon-tool-mini">+</button>
+        </div>
+      </div>
+
+      <!-- Answers PDF Container -->
+      <div class="answers-pdf-container" id="answers-pdf-container">
+        <!-- Answers pages rendered here -->
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- FLOATING MOBILE BOTTOM ACTION BAR -->
+  <div class="mobile-action-bar">
+    <button id="mobile-toc-btn" class="mobile-float-btn">
+      <span>📑</span> Mục lục
+    </button>
+    <div class="mobile-page-indicator">
+      <span id="mobile-page-text">1 / {chapter.pageCount}</span>
+    </div>
+    <button id="mobile-answers-btn" class="mobile-float-btn highlight">
+      <span>🔑</span> Đáp án
+    </button>
+  </div>
+
+  <!-- PASS CONFIG TO CLIENT SCRIPT -->
+  <script is:inline define:vars={{ 
+    pdfUrl, 
+    answersPdfUrl, 
+    answersInitialPage, 
+    chapterSlug: chapter.slug, 
+    bookSlug: book.slug, 
+    pageCount: chapter.pageCount,
+    baseUrl 
+  }}>
+    window.CUNA_READER_CONFIG = {
+      pdfUrl,
+      answersPdfUrl,
+      answersInitialPage,
+      chapterSlug,
+      bookSlug,
+      pageCount,
+      baseUrl
+    };
+  </script>
+
+  <!-- PDF.JS SCRIPT -->
+  <script type="module" src={`${baseUrl}/scripts/reader-engine.js`}></script>
+</body>
+</html>
+
+<style>
+  html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  .reader-body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background: var(--bg-primary);
+  }
+
+  /* TOP TOOLBAR */
+  .reader-toolbar {
+    height: 52px;
+    background: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    z-index: 30;
+    gap: 0.5rem;
+    user-select: none;
+    flex-shrink: 0;
+  }
+  .toolbar-left, .toolbar-center, .toolbar-right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .tool-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 0.35rem 0.65rem;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  .tool-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  .tool-btn.active-pill {
+    background: var(--primary-light);
+    border-color: var(--primary-border);
+    color: var(--primary);
+  }
+  .shortcut-hint {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 0.05rem 0.3rem;
+    font-size: 0.7rem;
+    font-family: monospace;
+    font-weight: 700;
+  }
+  @media (max-width: 640px) {
+    .btn-text-hide-sm, .shortcut-hint { display: none; }
+  }
+
+  .toolbar-chapter-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  .badge-ch-num {
+    background: var(--primary);
+    color: #FFFFFF;
+    font-size: 0.72rem;
+    font-weight: 800;
+    padding: 0.15rem 0.45rem;
+    border-radius: 4px;
+  }
+  .ch-name-text {
+    font-size: 0.88rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 260px;
+  }
+  @media (max-width: 900px) {
+    .ch-name-text { max-width: 140px; }
+  }
+
+  /* Page Jump */
+  .page-jump-box {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    padding: 0.2rem 0.5rem;
+    border-radius: var(--radius-sm);
+  }
+  #page-num-input {
+    width: 44px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--text-primary);
+    background: var(--bg-surface);
+    padding: 0.15rem 0.2rem;
+    font-size: 0.85rem;
+    outline: none;
+  }
+  #page-num-input:focus {
+    border-color: var(--primary);
+  }
+
+  /* Zoom controls */
+  .zoom-controls {
+    display: flex;
+    align-items: center;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+  .icon-tool {
+    border: none;
+    background: transparent;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+  }
+  .icon-tool:hover { background: var(--border-color); }
+  .zoom-level-btn {
+    border: none;
+    background: transparent;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    padding: 0 0.5rem;
+    cursor: pointer;
+  }
+
+  /* READER LAYOUT */
+  .reader-layout {
+    display: flex;
+    flex: 1;
+    height: calc(100vh - 52px);
+    overflow: hidden;
+    position: relative;
+  }
+
+  /* SIDEBARS */
+  .toc-sidebar {
+    width: 290px;
+    flex-shrink: 0;
+    background: var(--bg-surface);
+    border-right: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), margin-left 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 20;
+  }
+  .toc-sidebar.collapsed {
+    margin-left: -290px;
+  }
+  .toc-sidebar.unpinned-floating {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  .answers-sidebar {
+    width: 480px;
+    flex-shrink: 0;
+    background: var(--bg-surface);
+    border-left: 1px solid var(--border-color);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), margin-right 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 20;
+  }
+  .answers-sidebar.collapsed {
+    margin-right: -480px;
+  }
+  .answers-sidebar.unpinned-floating {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  }
+
+  /* RESIZE HANDLE */
+  .resizer-handle {
+    width: 6px;
+    background: transparent;
+    cursor: col-resize;
+    position: relative;
+    z-index: 25;
+    transition: background 0.15s;
+  }
+  .resizer-handle:hover, .resizer-handle.dragging {
+    background: var(--primary);
+  }
+
+  /* SIDEBAR HEADERS */
+  .sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.85rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+  }
+  .sidebar-tag {
+    font-size: 0.68rem;
+    font-weight: 700;
+    color: var(--primary);
+    text-transform: uppercase;
+    background: var(--primary-light);
+    padding: 0.1rem 0.4rem;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+  }
+  .sidebar-heading {
+    font-size: 0.95rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-top: 0.15rem;
+  }
+  .sidebar-header-btns {
+    display: flex;
+    gap: 0.3rem;
+  }
+  .pin-btn, .close-panel-btn {
+    border: 1px solid var(--border-color);
+    background: var(--bg-subtle);
+    border-radius: 4px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .pin-btn.active {
+    background: var(--primary-light);
+    border-color: var(--primary-border);
+  }
+
+  .ch-switcher-box {
+    padding: 0.65rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    background: var(--bg-subtle);
+    font-size: 0.78rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .ch-switcher-box label { font-weight: 700; color: var(--text-muted); }
+  #ch-select {
+    padding: 0.35rem 0.5rem;
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--border-color);
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    font-family: inherit;
+    font-size: 0.82rem;
+    font-weight: 600;
+    outline: none;
+  }
+
+  /* TOC TREE */
+  .toc-nav-tree {
+    flex: 1;
+    overflow-y: auto;
+    padding: 0.75rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+  .toc-sec-anchor {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.45rem 0.65rem;
+    border-radius: var(--radius-sm);
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 0.82rem;
+    font-weight: 700;
+    transition: all 0.15s ease;
+  }
+  .toc-sec-anchor:hover {
+    background: var(--primary-light);
+    color: var(--primary);
+  }
+  .toc-sec-anchor.active {
+    background: var(--primary);
+    color: #FFFFFF;
+  }
+  .sec-badge { font-weight: 800; min-width: 26px; }
+  .sec-text { flex: 1; }
+  .sec-pg-num { font-size: 0.7rem; opacity: 0.7; }
+
+  .toc-subsec-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    padding-left: 1.25rem;
+  }
+  .toc-subsec-anchor {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.15s;
+  }
+  .toc-subsec-anchor:hover {
+    color: var(--primary);
+    background: var(--primary-light);
+  }
+  .toc-subsec-anchor.active {
+    color: var(--primary);
+    font-weight: 700;
+    background: var(--primary-light);
+  }
+  .subsec-dot { color: var(--primary); }
+  .subsec-text { flex: 1; }
+  .subsec-pg-num { font-size: 0.68rem; opacity: 0.6; }
+
+  /* ANSWERS TOOLBAR & PDF */
+  .answers-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    background: var(--bg-subtle);
+    border-bottom: 1px solid var(--border-color);
+    gap: 0.5rem;
+  }
+  #answers-chapter-jump {
+    flex: 1;
+    padding: 0.3rem 0.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    font-size: 0.8rem;
+    font-weight: 600;
+    outline: none;
+  }
+  .answers-zoom-box {
+    display: flex;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+  .icon-tool-mini {
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: var(--bg-surface);
+    color: var(--text-primary);
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .answers-pdf-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    background: var(--bg-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  /* MIDDLE PDF VIEWER */
+  .pdf-viewer-main {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background: #525659; /* Standard neutral PDF canvas background */
+  }
+  .pdf-scroll-container {
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: auto;
+    padding: 1.5rem 0 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pdf-pages-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+    width: 100%;
+  }
+
+  :global(.pdf-page-wrapper) {
+    background: #FFFFFF;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.28);
+    position: relative;
+    margin: 0 auto;
+    transition: width 0.15s ease;
+  }
+  :global(.pdf-page-canvas) {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  :global(.pdf-text-layer) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    opacity: 0.2;
+    line-height: 1;
+  }
+
+  /* LOADING OVERLAY */
+  .pdf-loading-overlay {
+    background: var(--bg-surface);
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 2.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+    margin: 5rem auto;
+    max-width: 380px;
+  }
+  .loading-mascot-img {
+    width: 110px;
+    height: auto;
+    margin-bottom: 1.25rem;
+  }
+  .loading-title {
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.25rem;
+  }
+  .loading-sub {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+  }
+  .loading-bar {
+    width: 100%;
+    height: 6px;
+    background: var(--bg-subtle);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+  }
+  .loading-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary) 0%, #0284C7 100%);
+    border-radius: var(--radius-full);
+    width: 40%;
+    animation: indeterminate 1.5s infinite ease-in-out;
+  }
+  @keyframes indeterminate {
+    0% { transform: translateX(-100%); width: 30%; }
+    50% { width: 60%; }
+    100% { transform: translateX(250%); width: 30%; }
+  }
+
+  /* END OF CHAPTER CARD */
+  .chapter-end-card {
+    background: var(--bg-surface);
+    border: 1.5px solid var(--border-color);
+    border-radius: var(--radius-xl);
+    padding: 2.5rem;
+    margin: 3rem auto 2rem;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.15);
+  }
+  .end-card-mascot {
+    width: 100px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  .chapter-end-card h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--text-primary);
+    margin-bottom: 0.4rem;
+  }
+  .end-card-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 1.5rem;
+  }
+  .end-card-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  /* MOBILE BAR */
+  .mobile-action-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 56px;
+    background: var(--bg-surface);
+    border-top: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 1rem;
+    z-index: 40;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.05);
+  }
+  @media (max-width: 768px) {
+    .mobile-action-bar { display: flex; }
+    .pdf-scroll-container { padding-bottom: 5rem; }
+    .answers-sidebar {
+      position: fixed;
+      bottom: 56px;
+      left: 0;
+      right: 0;
+      top: auto;
+      height: 60vh;
+      width: 100% !important;
+      border-left: none;
+      border-top: 2px solid var(--primary-border);
+      box-shadow: 0 -10px 25px rgba(0,0,0,0.2);
+      border-radius: 20px 20px 0 0;
+    }
+    .answers-sidebar.collapsed {
+      transform: translateY(100%);
+      margin-right: 0;
+    }
+    .resizer-handle { display: none; }
+    .toc-sidebar {
+      position: fixed;
+      top: 52px;
+      bottom: 56px;
+      left: 0;
+      width: 82% !important;
+      box-shadow: 10px 0 25px rgba(0,0,0,0.2);
+    }
+    .toc-sidebar.collapsed {
+      transform: translateX(-100%);
+      margin-left: 0;
+    }
+  }
+
+  .mobile-float-btn {
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+    background: var(--bg-subtle);
+    border: 1px solid var(--border-color);
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-full);
+    font-size: 0.82rem;
+    font-weight: 700;
+    color: var(--text-primary);
+  }
+  .mobile-float-btn.highlight {
+    background: var(--primary-light);
+    border-color: var(--primary-border);
+    color: var(--primary);
+  }
+  .mobile-page-indicator {
+    font-size: 0.85rem;
+    font-weight: 800;
+    color: var(--primary);
+  }
+</style>

@@ -1,0 +1,2845 @@
+{
+  "slug": "co-so-vat-ly-tap-1",
+  "title": "Cơ sở Vật lý Tập 1: Cơ học, Sóng và Nhiệt động lực học",
+  "subtitle": "Fundamentals of Physics — David Halliday, Robert Resnick, Jearl Walker",
+  "description": "Giáo trình kinh điển phục vụ ôn thi Olympic Vật lý Quốc gia (VPhO) và Quốc tế (SPhO/IPhO). Bao gồm Cơ học, Dao động & Sóng, Nhiệt động lực học.",
+  "totalPages": 1023,
+  "totalChapters": 20,
+  "chapters": [
+    {
+      "number": 1,
+      "slug": "01-do-luong",
+      "title": "Đo lường",
+      "titleEn": "Measurement",
+      "fileName": "01-do-luong.pdf",
+      "pageCount": 18,
+      "sizeBytes": 1998782,
+      "answersPage": 1,
+      "sections": [
+        {
+          "code": "1.1",
+          "title": "ĐO LƯỜNG CÁC ĐẠI LƯỢNG, BAO GỒM ĐỘ DÀI",
+          "orig_page": 1,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 1,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Đo lường các đại lượng",
+              "orig_page": 1,
+              "pdf_page": 1
+            },
+            {
+              "title": "Hệ đơn vị Quốc tế",
+              "orig_page": 2,
+              "pdf_page": 1
+            },
+            {
+              "title": "Đổi đơn vị",
+              "orig_page": 3,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Độ dài",
+              "orig_page": 3,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Chữ số có nghĩa và chữ số thập phân",
+              "orig_page": 4,
+              "pdf_page": 5
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "1.2",
+          "title": "THỜI GIAN",
+          "orig_page": 5,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Thời gian",
+              "orig_page": 5,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "1.3",
+          "title": "KHỐI LƯỢNG",
+          "orig_page": 6,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Khối lượng",
+              "orig_page": 7,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 8,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 10
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 8,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 11
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "slug": "02-chuyen-dong-thang",
+      "title": "Chuyển động thẳng",
+      "titleEn": "Straight-Line Motion",
+      "fileName": "02-chuyen-dong-thang.pdf",
+      "pageCount": 42,
+      "sizeBytes": 9402821,
+      "answersPage": 1,
+      "sections": [
+        {
+          "code": "2.1",
+          "title": "VỊ TRÍ, ĐỘ DỊCH CHUYỂN VÀ VẬN TỐC TRUNG BÌNH",
+          "orig_page": 13,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 13,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Chuyển động",
+              "orig_page": 14,
+              "pdf_page": 1
+            },
+            {
+              "title": "Vị trí và độ dịch chuyển",
+              "orig_page": 14,
+              "pdf_page": 1
+            },
+            {
+              "title": "Vận tốc trung bình và tốc độ trung bình",
+              "orig_page": 15,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "2.2",
+          "title": "VẬN TỐC TỨC THỜI VÀ TỐC ĐỘ",
+          "orig_page": 18,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vận tốc tức thời và tốc độ",
+              "orig_page": 18,
+              "pdf_page": 7
+            }
+          ],
+          "pdf_page": 7
+        },
+        {
+          "code": "2.3",
+          "title": "GIA TỐC",
+          "orig_page": 20,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Gia tốc",
+              "orig_page": 20,
+              "pdf_page": 7,
+              "uncertain": true
+            }
+          ],
+          "pdf_page": 7
+        },
+        {
+          "code": "2.4",
+          "title": "GIA TỐC KHÔNG ĐỔI",
+          "orig_page": 23,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Gia tốc không đổi: Một trường hợp đặc biệt",
+              "orig_page": 23,
+              "pdf_page": 14
+            },
+            {
+              "title": "Một góc nhìn khác về gia tốc không đổi",
+              "orig_page": 27,
+              "pdf_page": 18
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "2.5",
+          "title": "GIA TỐC RƠI TỰ DO",
+          "orig_page": 28,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Gia tốc rơi tự do",
+              "orig_page": 28,
+              "pdf_page": 18,
+              "uncertain": true
+            }
+          ],
+          "pdf_page": 18
+        },
+        {
+          "code": "2.6",
+          "title": "TÍCH PHÂN ĐỒ THỊ TRONG PHÂN TÍCH CHUYỂN ĐỘNG",
+          "orig_page": 30,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Tích phân đồ thị trong phân tích chuyển động",
+              "orig_page": 30,
+              "pdf_page": 22
+            }
+          ],
+          "pdf_page": 22
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 32,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 24
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 32,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 25
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 33,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 27
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "slug": "03-vector",
+      "title": "Vectơ",
+      "titleEn": "Vectors",
+      "fileName": "03-vector.pdf",
+      "pageCount": 37,
+      "sizeBytes": 7051918,
+      "answersPage": 1,
+      "sections": [
+        {
+          "code": "3.1",
+          "title": "VECTƠ VÀ CÁC THÀNH PHẦN CỦA VECTƠ",
+          "orig_page": 44,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 44,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Vectơ và đại lượng vô hướng",
+              "orig_page": 44,
+              "pdf_page": 1
+            },
+            {
+              "title": "Cộng vectơ bằng phương pháp hình học",
+              "orig_page": 45,
+              "pdf_page": 1
+            },
+            {
+              "title": "Các thành phần của vectơ",
+              "orig_page": 46,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "3.2",
+          "title": "VECTƠ ĐƠN VỊ, CỘNG CÁC VECTƠ THEO CÁC THÀNH PHẦN",
+          "orig_page": 50,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vectơ đơn vị",
+              "orig_page": 50,
+              "pdf_page": 10
+            },
+            {
+              "title": "Cộng các vectơ theo các thành phần",
+              "orig_page": 50,
+              "pdf_page": 10
+            },
+            {
+              "title": "Vectơ và các định luật vật lý",
+              "orig_page": 51,
+              "pdf_page": 12
+            }
+          ],
+          "pdf_page": 10
+        },
+        {
+          "code": "3.3",
+          "title": "NHÂN CÁC VECTƠ",
+          "orig_page": 52,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Nhân các vectơ",
+              "orig_page": 53,
+              "pdf_page": 15
+            }
+          ],
+          "pdf_page": 15
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 58,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 21
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 59,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 22
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 60,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 25
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "slug": "04-chuyen-dong-trong-hai-va-ba-chieu",
+      "title": "Chuyển động trong 2 & 3 chiều",
+      "titleEn": "Motion in 2D & 3D",
+      "fileName": "04-chuyen-dong-trong-hai-va-ba-chieu.pdf",
+      "pageCount": 54,
+      "sizeBytes": 11557579,
+      "answersPage": 2,
+      "sections": [
+        {
+          "code": "4.1",
+          "title": "VỊ TRÍ VÀ ĐỘ DỊCH CHUYỂN",
+          "orig_page": 67,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 67,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Vị trí và độ dịch chuyển",
+              "orig_page": 68,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "4.2",
+          "title": "VẬN TỐC TRUNG BÌNH VÀ VẬN TỐC TỨC THỜI",
+          "orig_page": 70,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vận tốc trung bình và vận tốc tức thời",
+              "orig_page": 70,
+              "pdf_page": 4
+            }
+          ],
+          "pdf_page": 4
+        },
+        {
+          "code": "4.3",
+          "title": "GIA TỐC TRUNG BÌNH VÀ GIA TỐC TỨC THỜI",
+          "orig_page": 73,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Gia tốc trung bình và gia tốc tức thời",
+              "orig_page": 73,
+              "pdf_page": 8
+            }
+          ],
+          "pdf_page": 8
+        },
+        {
+          "code": "4.4",
+          "title": "CHUYỂN ĐỘNG NÉM",
+          "orig_page": 75,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Chuyển động ném",
+              "orig_page": 76,
+              "pdf_page": 11
+            }
+          ],
+          "pdf_page": 11
+        },
+        {
+          "code": "4.5",
+          "title": "CHUYỂN ĐỘNG TRÒN ĐỀU",
+          "orig_page": 82,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Chuyển động tròn đều",
+              "orig_page": 82,
+              "pdf_page": 22
+            }
+          ],
+          "pdf_page": 15
+        },
+        {
+          "code": "4.6",
+          "title": "CHUYỂN ĐỘNG TƯƠNG ĐỐI TRONG MỘT CHIỀU",
+          "orig_page": 84,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Chuyển động tương đối trong một chiều",
+              "orig_page": 78,
+              "pdf_page": 15
+            }
+          ],
+          "pdf_page": 15
+        },
+        {
+          "code": "4.7",
+          "title": "CHUYỂN ĐỘNG TƯƠNG ĐỐI TRONG HAI CHIỀU",
+          "orig_page": 86,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Chuyển động tương đối trong hai chiều",
+              "orig_page": 86,
+              "pdf_page": 18
+            }
+          ],
+          "pdf_page": 18
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 88,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 30
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 89,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 32
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 90,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 35
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "slug": "05-luc-va-chuyen-dong-1",
+      "title": "Lực và chuyển động — I",
+      "titleEn": "Force and Motion — I",
+      "fileName": "05-luc-va-chuyen-dong-1.pdf",
+      "pageCount": 49,
+      "sizeBytes": 14270707,
+      "answersPage": 2,
+      "sections": [
+        {
+          "code": "5.1",
+          "title": "CÁC ĐỊNH LUẬT THỨ NHẤT VÀ THỨ HAI CỦA NEWTON",
+          "orig_page": 101,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 101,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Cơ học Newton",
+              "orig_page": 102,
+              "pdf_page": 1
+            },
+            {
+              "title": "Định luật thứ nhất của Newton",
+              "orig_page": 102,
+              "pdf_page": 1
+            },
+            {
+              "title": "Lực",
+              "orig_page": 103,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Khối lượng",
+              "orig_page": 104,
+              "pdf_page": 1
+            },
+            {
+              "title": "Định luật thứ hai của Newton",
+              "orig_page": 105,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "5.2",
+          "title": "MỘT SỐ LỰC CỤ THỂ",
+          "orig_page": 109,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Một số lực cụ thể",
+              "orig_page": 109,
+              "pdf_page": 11,
+              "uncertain": true
+            }
+          ],
+          "pdf_page": 11
+        },
+        {
+          "code": "5.3",
+          "title": "VẬN DỤNG CÁC ĐỊNH LUẬT NEWTON",
+          "orig_page": 113,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Định luật thứ ba của Newton",
+              "orig_page": 113,
+              "pdf_page": 16
+            },
+            {
+              "title": "Vận dụng các định luật Newton",
+              "orig_page": 115,
+              "pdf_page": 16
+            }
+          ],
+          "pdf_page": 16
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 121,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 28
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 122,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 30
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 124,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 33
+        }
+      ]
+    },
+    {
+      "number": 6,
+      "slug": "06-luc-va-chuyen-dong-2",
+      "title": "Lực và chuyển động — II",
+      "titleEn": "Force and Motion — II",
+      "fileName": "06-luc-va-chuyen-dong-2.pdf",
+      "pageCount": 41,
+      "sizeBytes": 15332331,
+      "answersPage": 3,
+      "sections": [
+        {
+          "code": "6.1",
+          "title": "MA SÁT",
+          "orig_page": 132,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 132,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Ma sát",
+              "orig_page": 132,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Các tính chất của ma sát",
+              "orig_page": 135,
+              "pdf_page": 14
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "6.2",
+          "title": "LỰC CẢN VÀ TỐC ĐỘ GIỚI HẠN",
+          "orig_page": 138,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Lực cản và tốc độ giới hạn",
+              "orig_page": 138,
+              "pdf_page": 9
+            }
+          ],
+          "pdf_page": 9
+        },
+        {
+          "code": "6.3",
+          "title": "CHUYỂN ĐỘNG TRÒN ĐỀU",
+          "orig_page": 140,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Chuyển động tròn đều",
+              "orig_page": 141,
+              "pdf_page": 14
+            }
+          ],
+          "pdf_page": 14
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 145,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 19
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 145,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 20
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 146,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 22
+        }
+      ]
+    },
+    {
+      "number": 7,
+      "slug": "07-dong-nang-va-cong",
+      "title": "Động năng và công",
+      "titleEn": "Kinetic Energy and Work",
+      "fileName": "07-dong-nang-va-cong.pdf",
+      "pageCount": 45,
+      "sizeBytes": 9759583,
+      "answersPage": 3,
+      "sections": [
+        {
+          "code": "7.1",
+          "title": "ĐỘNG NĂNG",
+          "orig_page": 156,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 156,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Năng lượng là gì?",
+              "orig_page": 156,
+              "pdf_page": 1
+            },
+            {
+              "title": "Động năng",
+              "orig_page": 157,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "7.2",
+          "title": "CÔNG VÀ ĐỘNG NĂNG",
+          "orig_page": 158,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Công",
+              "orig_page": 158,
+              "pdf_page": 3
+            },
+            {
+              "title": "Công và động năng",
+              "orig_page": 159,
+              "pdf_page": 3
+            }
+          ],
+          "pdf_page": 3
+        },
+        {
+          "code": "7.3",
+          "title": "CÔNG SINH BỞI LỰC HẤP DẪN",
+          "orig_page": 163,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Công sinh bởi lực hấp dẫn",
+              "orig_page": 163,
+              "pdf_page": 6
+            }
+          ],
+          "pdf_page": 3,
+          "uncertain": true
+        },
+        {
+          "code": "7.4",
+          "title": "CÔNG SINH BỞI LỰC ĐÀN HỒI CỦA LÒ XO",
+          "orig_page": 167,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Công sinh bởi lực đàn hồi của lò xo",
+              "orig_page": 167,
+              "pdf_page": 6
+            }
+          ],
+          "pdf_page": 3,
+          "uncertain": true
+        },
+        {
+          "code": "7.5",
+          "title": "CÔNG SINH BỞI MỘT LỰC BIẾN ĐỔI TỔNG QUÁT",
+          "orig_page": 170,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Công sinh bởi một lực biến đổi tổng quát",
+              "orig_page": 171,
+              "pdf_page": 23
+            }
+          ],
+          "pdf_page": 19
+        },
+        {
+          "code": "7.6",
+          "title": "CÔNG SUẤT",
+          "orig_page": 174,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Công suất",
+              "orig_page": 174,
+              "pdf_page": 25
+            }
+          ],
+          "pdf_page": 25
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 176,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 25,
+          "uncertain": true
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 177,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 29
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 179,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 31
+        }
+      ]
+    },
+    {
+      "number": 8,
+      "slug": "08-the-nang-va-bao-toan-nang-luong",
+      "title": "Thế năng & Bảo toàn năng lượng",
+      "titleEn": "Potential Energy & Conservation",
+      "fileName": "08-the-nang-va-bao-toan-nang-luong.pdf",
+      "pageCount": 58,
+      "sizeBytes": 16669603,
+      "answersPage": 4,
+      "sections": [
+        {
+          "code": "8.1",
+          "title": "THẾ NĂNG",
+          "orig_page": 186,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 187,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Công và thế năng",
+              "orig_page": 187,
+              "pdf_page": 1
+            },
+            {
+              "title": "Sự độc lập đối với đường đi của các lực thế",
+              "orig_page": 188,
+              "pdf_page": 3
+            },
+            {
+              "title": "Xác định các giá trị thế năng",
+              "orig_page": 190,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "8.2",
+          "title": "BẢO TOÀN CƠ NĂNG",
+          "orig_page": 193,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Bảo toàn cơ năng",
+              "orig_page": 193,
+              "pdf_page": 9
+            }
+          ],
+          "pdf_page": 9
+        },
+        {
+          "code": "8.3",
+          "title": "ĐỌC ĐỒ THỊ THẾ NĂNG",
+          "orig_page": 196,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Đọc đồ thị thế năng",
+              "orig_page": 197,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "8.4",
+          "title": "CÔNG THỰC HIỆN LÊN MỘT HỆ BỞI NGOẠI LỰC",
+          "orig_page": 201,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Công thực hiện lên một hệ bởi ngoại lực",
+              "orig_page": 201,
+              "pdf_page": 18
+            }
+          ],
+          "pdf_page": 18
+        },
+        {
+          "code": "8.5",
+          "title": "BẢO TOÀN NĂNG LƯỢNG",
+          "orig_page": 205,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Bảo toàn năng lượng",
+              "orig_page": 205,
+              "pdf_page": 24
+            }
+          ],
+          "pdf_page": 24
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 209,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 29
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 210,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 31
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 212,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 34
+        }
+      ]
+    },
+    {
+      "number": 9,
+      "slug": "09-khoi-tam-va-dong-luong-tuyen-tinh",
+      "title": "Khối tâm & Động lượng tuyến tính",
+      "titleEn": "Center of Mass & Linear Momentum",
+      "fileName": "09-khoi-tam-va-dong-luong-tuyen-tinh.pdf",
+      "pageCount": 69,
+      "sizeBytes": 23328136,
+      "answersPage": 4,
+      "sections": [
+        {
+          "code": "9.1",
+          "title": "KHỐI TÂM",
+          "orig_page": 225,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 225,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Khối tâm",
+              "orig_page": 226,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "9.2",
+          "title": "ĐỊNH LUẬT THỨ HAI CỦA NEWTON CHO HỆ CHẤT ĐIỂM",
+          "orig_page": 229,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Định luật thứ hai của Newton cho hệ chất điểm",
+              "orig_page": 230,
+              "pdf_page": 6
+            }
+          ],
+          "pdf_page": 6
+        },
+        {
+          "code": "9.3",
+          "title": "ĐỘNG LƯỢNG TUYẾN TÍNH",
+          "orig_page": 234,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Động lượng tuyến tính",
+              "orig_page": 234,
+              "pdf_page": 11
+            },
+            {
+              "title": "Động lượng tuyến tính của hệ chất điểm",
+              "orig_page": 235,
+              "pdf_page": 11
+            }
+          ],
+          "pdf_page": 11
+        },
+        {
+          "code": "9.4",
+          "title": "VA CHẠM VÀ XUNG LƯỢNG",
+          "orig_page": 236,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Va chạm và xung lượng",
+              "orig_page": 236,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "9.5",
+          "title": "BẢO TOÀN ĐỘNG LƯỢNG TUYẾN TÍNH",
+          "orig_page": 240,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Bảo toàn động lượng tuyến tính",
+              "orig_page": 240,
+              "pdf_page": 18
+            }
+          ],
+          "pdf_page": 18
+        },
+        {
+          "code": "9.6",
+          "title": "ĐỘNG LƯỢNG VÀ ĐỘNG NĂNG TRONG VA CHẠM",
+          "orig_page": 243,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Động lượng và động năng trong va chạm",
+              "orig_page": 243,
+              "pdf_page": 21
+            },
+            {
+              "title": "Va chạm không đàn hồi trong một chiều",
+              "orig_page": 244,
+              "pdf_page": 22
+            }
+          ],
+          "pdf_page": 21
+        },
+        {
+          "code": "9.7",
+          "title": "VA CHẠM ĐÀN HỒI TRONG MỘT CHIỀU",
+          "orig_page": 247,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Va chạm đàn hồi trong một chiều",
+              "orig_page": 247,
+              "pdf_page": 28
+            }
+          ],
+          "pdf_page": 28
+        },
+        {
+          "code": "9.8",
+          "title": "VA CHẠM TRONG HAI CHIỀU",
+          "orig_page": 251,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Va chạm trong hai chiều",
+              "orig_page": 251,
+              "pdf_page": 32
+            }
+          ],
+          "pdf_page": 32
+        },
+        {
+          "code": "9.9",
+          "title": "CÁC HỆ CÓ KHỐI LƯỢNG THAY ĐỔI: TÊN LỬA",
+          "orig_page": 252,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Các hệ có khối lượng thay đổi: Tên lửa",
+              "orig_page": 252,
+              "pdf_page": 34
+            }
+          ],
+          "pdf_page": 34
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 254,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 37
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 256,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 39
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 257,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 43
+        }
+      ]
+    },
+    {
+      "number": 10,
+      "slug": "10-su-quay-cua-vat-ran",
+      "title": "Sự quay của vật rắn",
+      "titleEn": "Rotation",
+      "fileName": "10-su-quay-cua-vat-ran.pdf",
+      "pageCount": 63,
+      "sizeBytes": 13904276,
+      "answersPage": 5,
+      "sections": [
+        {
+          "code": "10.1",
+          "title": "CÁC BIẾN QUAY",
+          "orig_page": 270,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 271,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Các biến quay",
+              "orig_page": 272,
+              "pdf_page": 1
+            },
+            {
+              "title": "Các đại lượng góc có phải là vectơ không?",
+              "orig_page": 277,
+              "pdf_page": 10
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "10.2",
+          "title": "QUAY VỚI GIA TỐC GÓC KHÔNG ĐỔI",
+          "orig_page": 279,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Quay với gia tốc góc không đổi",
+              "orig_page": 279,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "10.3",
+          "title": "LIÊN HỆ GIỮA CÁC BIẾN SỐ DÀI VÀ BIẾN SỐ GÓC",
+          "orig_page": 281,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Liên hệ giữa các biến số dài và biến số góc",
+              "orig_page": 281,
+              "pdf_page": 16
+            }
+          ],
+          "pdf_page": 16
+        },
+        {
+          "code": "10.4",
+          "title": "ĐỘNG NĂNG QUAY",
+          "orig_page": 285,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Động năng quay",
+              "orig_page": 285,
+              "pdf_page": 21
+            }
+          ],
+          "pdf_page": 21
+        },
+        {
+          "code": "10.5",
+          "title": "TÍNH TOÁN MÔMEN QUÁN TÍNH",
+          "orig_page": 286,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Tính toán mômen quán tính",
+              "orig_page": 287,
+              "pdf_page": 23
+            }
+          ],
+          "pdf_page": 23
+        },
+        {
+          "code": "10.6",
+          "title": "MÔMEN LỰC",
+          "orig_page": 291,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Mômen lực",
+              "orig_page": 291,
+              "pdf_page": 31
+            }
+          ],
+          "pdf_page": 31
+        },
+        {
+          "code": "10.7",
+          "title": "ĐỊNH LUẬT THỨ HAI CỦA NEWTON CHO CHUYỂN ĐỘNG QUAY",
+          "orig_page": 292,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Định luật thứ hai của Newton cho chuyển động quay",
+              "orig_page": 293,
+              "pdf_page": 34
+            }
+          ],
+          "pdf_page": 34
+        },
+        {
+          "code": "10.8",
+          "title": "CÔNG VÀ ĐỘNG NĂNG QUAY",
+          "orig_page": 296,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Công và động năng quay",
+              "orig_page": 297,
+              "pdf_page": 39
+            }
+          ],
+          "pdf_page": 39
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 299,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 42
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 300,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 44
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 301,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 47
+        }
+      ]
+    },
+    {
+      "number": 11,
+      "slug": "11-lan-momen-luc-va-momen-dong-luong",
+      "title": "Lăn, mômen lực & Mômen động lượng",
+      "titleEn": "Rolling, Torque, Angular Momentum",
+      "fileName": "11-lan-momen-luc-va-momen-dong-luong.pdf",
+      "pageCount": 53,
+      "sizeBytes": 14369936,
+      "answersPage": 5,
+      "sections": [
+        {
+          "code": "11.1",
+          "title": "LĂN LÀ SỰ KẾT HỢP CỦA TỊNH TIẾN VÀ QUAY",
+          "orig_page": 310,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 310,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Lăn là sự kết hợp của tịnh tiến và quay",
+              "orig_page": 310,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "11.2",
+          "title": "CÁC LỰC VÀ ĐỘNG NĂNG CỦA CHUYỂN ĐỘNG LĂN",
+          "orig_page": 313,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Động năng của chuyển động lăn",
+              "orig_page": 313,
+              "pdf_page": 4
+            },
+            {
+              "title": "Các lực của chuyển động lăn",
+              "orig_page": 314,
+              "pdf_page": 4
+            }
+          ],
+          "pdf_page": 4
+        },
+        {
+          "code": "11.3",
+          "title": "CON QUAY YO-YO",
+          "orig_page": 316,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Con quay yo-yo",
+              "orig_page": 317,
+              "pdf_page": 9
+            }
+          ],
+          "pdf_page": 9
+        },
+        {
+          "code": "11.4",
+          "title": "XEM LẠI MÔMEN LỰC",
+          "orig_page": 317,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Xem lại mômen lực",
+              "orig_page": 318,
+              "pdf_page": 10
+            }
+          ],
+          "pdf_page": 10
+        },
+        {
+          "code": "11.5",
+          "title": "MÔMEN ĐỘNG LƯỢNG",
+          "orig_page": 320,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Mômen động lượng",
+              "orig_page": 320,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "11.6",
+          "title": "ĐỊNH LUẬT THỨ HAI CỦA NEWTON DƯỚI DẠNG GÓC",
+          "orig_page": 322,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Định luật thứ hai của Newton dưới dạng góc",
+              "orig_page": 322,
+              "pdf_page": 17
+            }
+          ],
+          "pdf_page": 17
+        },
+        {
+          "code": "11.7",
+          "title": "MÔMEN ĐỘNG LƯỢNG CỦA VẬT RẮN",
+          "orig_page": 325,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Mômen động lượng của một hệ chất điểm",
+              "orig_page": 325,
+              "pdf_page": 20
+            },
+            {
+              "title": "Mômen động lượng của vật rắn quay quanh một trục cố định",
+              "orig_page": 326,
+              "pdf_page": 20
+            }
+          ],
+          "pdf_page": 20
+        },
+        {
+          "code": "11.8",
+          "title": "BẢO TOÀN MÔMEN ĐỘNG LƯỢNG",
+          "orig_page": 328,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Bảo toàn mômen động lượng",
+              "orig_page": 328,
+              "pdf_page": 25
+            }
+          ],
+          "pdf_page": 25
+        },
+        {
+          "code": "11.9",
+          "title": "HIỆN TƯỢNG TUẾ SAI CỦA CON QUAY HỒI CHUYỂN",
+          "orig_page": 333,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Hiện tượng tuế sai của con quay hồi chuyển",
+              "orig_page": 333,
+              "pdf_page": 34
+            }
+          ],
+          "pdf_page": 34
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 334,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 34
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 335,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 36
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 336,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 38
+        }
+      ]
+    },
+    {
+      "number": 12,
+      "slug": "12-can-bang-tinh-va-tinh-dan-hoi",
+      "title": "Cân bằng tĩnh & Tính đàn hồi",
+      "titleEn": "Equilibrium and Elasticity",
+      "fileName": "12-can-bang-tinh-va-tinh-dan-hoi.pdf",
+      "pageCount": 50,
+      "sizeBytes": 22582035,
+      "answersPage": 6,
+      "sections": [
+        {
+          "code": "12.1",
+          "title": "CÂN BẰNG",
+          "orig_page": 344,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 344,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Cân bằng",
+              "orig_page": 344,
+              "pdf_page": 1
+            },
+            {
+              "title": "Các điều kiện cân bằng",
+              "orig_page": 346,
+              "pdf_page": 1
+            },
+            {
+              "title": "Trọng tâm",
+              "orig_page": 347,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "12.2",
+          "title": "MỘT SỐ VÍ DỤ VỀ CÂN BẰNG TĨNH",
+          "orig_page": 349,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Một số ví dụ về cân bằng tĩnh",
+              "orig_page": 349,
+              "pdf_page": 7
+            }
+          ],
+          "pdf_page": 7
+        },
+        {
+          "code": "12.3",
+          "title": "TÍNH ĐÀN HỒI",
+          "orig_page": 355,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Các kết cấu siêu tĩnh",
+              "orig_page": 355,
+              "pdf_page": 16
+            },
+            {
+              "title": "Tính đàn hồi",
+              "orig_page": 356,
+              "pdf_page": 16
+            }
+          ],
+          "pdf_page": 16
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 360,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 23
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 360,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 24
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 362,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 27
+        }
+      ]
+    },
+    {
+      "number": 13,
+      "slug": "13-luc-hap-dan",
+      "title": "Lực hấp dẫn",
+      "titleEn": "Gravitation",
+      "fileName": "13-luc-hap-dan.pdf",
+      "pageCount": 49,
+      "sizeBytes": 10359307,
+      "answersPage": 7,
+      "sections": [
+        {
+          "code": "13.1",
+          "title": "ĐỊNH LUẬT VẠN VẬT HẤP DẪN CỦA NEWTON",
+          "orig_page": 372,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 372,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Định luật vạn vật hấp dẫn của Newton",
+              "orig_page": 373,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "13.2",
+          "title": "LỰC HẤP DẪN VÀ NGUYÊN LÝ CHỒNG CHẤT",
+          "orig_page": 375,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Lực hấp dẫn và nguyên lý chồng chất",
+              "orig_page": 375,
+              "pdf_page": 5
+            }
+          ],
+          "pdf_page": 5
+        },
+        {
+          "code": "13.3",
+          "title": "LỰC HẤP DẪN GẦN BỀ MẶT TRÁI ĐẤT",
+          "orig_page": 377,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Lực hấp dẫn gần bề mặt Trái Đất",
+              "orig_page": 378,
+              "pdf_page": 8
+            }
+          ],
+          "pdf_page": 8
+        },
+        {
+          "code": "13.4",
+          "title": "LỰC HẤP DẪN BÊN TRONG TRÁI ĐẤT",
+          "orig_page": 381,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Lực hấp dẫn bên trong Trái Đất",
+              "orig_page": 381,
+              "pdf_page": 12
+            }
+          ],
+          "pdf_page": 12
+        },
+        {
+          "code": "13.5",
+          "title": "THẾ NĂNG HẤP DẪN",
+          "orig_page": 383,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Thế năng hấp dẫn",
+              "orig_page": 383,
+              "pdf_page": 14
+            }
+          ],
+          "pdf_page": 14
+        },
+        {
+          "code": "13.6",
+          "title": "CÁC HÀNH TINH VÀ VỆ TINH: CÁC ĐỊNH LUẬT KEPLER",
+          "orig_page": 387,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Các hành tinh và vệ tinh: Các định luật Kepler",
+              "orig_page": 388,
+              "pdf_page": 20
+            }
+          ],
+          "pdf_page": 20
+        },
+        {
+          "code": "13.7",
+          "title": "VỆ TINH: QUỸ ĐẠO VÀ NĂNG LƯỢNG",
+          "orig_page": 390,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vệ tinh: Quỹ đạo và năng lượng",
+              "orig_page": 391,
+              "pdf_page": 24
+            }
+          ],
+          "pdf_page": 24
+        },
+        {
+          "code": "13.8",
+          "title": "EINSTEIN VÀ THUYẾT HẤP DẪN",
+          "orig_page": 393,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Einstein và thuyết hấp dẫn",
+              "orig_page": 393,
+              "pdf_page": 29
+            }
+          ],
+          "pdf_page": 29
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 396,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 29,
+          "uncertain": true
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 397,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 34
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 399,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 37
+        }
+      ]
+    },
+    {
+      "number": 14,
+      "slug": "14-co-hoc-chat-luu",
+      "title": "Cơ học chất lưu",
+      "titleEn": "Fluids",
+      "fileName": "14-co-hoc-chat-luu.pdf",
+      "pageCount": 49,
+      "sizeBytes": 16061368,
+      "answersPage": 7,
+      "sections": [
+        {
+          "code": "14.1",
+          "title": "CHẤT LƯU, KHỐI LƯỢNG RIÊNG VÀ ÁP SUẤT",
+          "orig_page": 406,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 406,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Chất lưu là gì?",
+              "orig_page": 406,
+              "pdf_page": 1
+            },
+            {
+              "title": "Khối lượng riêng và áp suất",
+              "orig_page": 407,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "14.2",
+          "title": "CHẤT LƯU Ở TRẠNG THÁI NGHỈ",
+          "orig_page": 409,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Chất lưu ở trạng thái nghỉ",
+              "orig_page": 409,
+              "pdf_page": 6
+            }
+          ],
+          "pdf_page": 6
+        },
+        {
+          "code": "14.3",
+          "title": "ĐO ÁP SUẤT",
+          "orig_page": 412,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Đo áp suất",
+              "orig_page": 412,
+              "pdf_page": 9
+            }
+          ],
+          "pdf_page": 9
+        },
+        {
+          "code": "14.4",
+          "title": "NGUYÊN LÝ PASCAL",
+          "orig_page": 413,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Nguyên lý Pascal",
+              "orig_page": 413,
+              "pdf_page": 11
+            }
+          ],
+          "pdf_page": 11
+        },
+        {
+          "code": "14.5",
+          "title": "NGUYÊN LÝ ARCHIMEDES",
+          "orig_page": 415,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Nguyên lý Archimedes",
+              "orig_page": 415,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "14.6",
+          "title": "PHƯƠNG TRÌNH LIÊN TỤC",
+          "orig_page": 419,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Chất lưu lý tưởng trong chuyển động",
+              "orig_page": 420,
+              "pdf_page": 18
+            },
+            {
+              "title": "Phương trình liên tục",
+              "orig_page": 421,
+              "pdf_page": 19
+            }
+          ],
+          "pdf_page": 18
+        },
+        {
+          "code": "14.7",
+          "title": "PHƯƠNG TRÌNH BERNOULLI",
+          "orig_page": 423,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Phương trình Bernoulli",
+              "orig_page": 424,
+              "pdf_page": 23
+            }
+          ],
+          "pdf_page": 23
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 426,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 28
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 427,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 29
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 428,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 32
+        }
+      ]
+    },
+    {
+      "number": 15,
+      "slug": "15-dao-dong",
+      "title": "Dao động",
+      "titleEn": "Oscillations",
+      "fileName": "15-dao-dong.pdf",
+      "pageCount": 47,
+      "sizeBytes": 12525178,
+      "answersPage": 8,
+      "sections": [
+        {
+          "code": "15.1",
+          "title": "DAO ĐỘNG ĐIỀU HÒA",
+          "orig_page": 436,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 437,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Dao động điều hòa",
+              "orig_page": 437,
+              "pdf_page": 1
+            },
+            {
+              "title": "Quy luật lực trong dao động điều hòa",
+              "orig_page": 442,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "15.2",
+          "title": "NĂNG LƯỢNG TRONG DAO ĐỘNG ĐIỀU HÒA",
+          "orig_page": 444,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Năng lượng trong dao động điều hòa",
+              "orig_page": 444,
+              "pdf_page": 10
+            }
+          ],
+          "pdf_page": 10
+        },
+        {
+          "code": "15.3",
+          "title": "DAO ĐỘNG TỬ ĐIỀU HÒA GÓC",
+          "orig_page": 446,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Dao động tử điều hòa góc",
+              "orig_page": 446,
+              "pdf_page": 12
+            }
+          ],
+          "pdf_page": 12
+        },
+        {
+          "code": "15.4",
+          "title": "CÁC CON LẮC, CHUYỂN ĐỘNG TRÒN",
+          "orig_page": 448,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Các con lắc",
+              "orig_page": 448,
+              "pdf_page": 14,
+              "uncertain": true
+            },
+            {
+              "title": "Dao động điều hòa và chuyển động tròn đều",
+              "orig_page": 451,
+              "pdf_page": 15
+            }
+          ],
+          "pdf_page": 14
+        },
+        {
+          "code": "15.5",
+          "title": "DAO ĐỘNG ĐIỀU HÒA TẮT DẦN",
+          "orig_page": 453,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Dao động điều hòa tắt dần",
+              "orig_page": 453,
+              "pdf_page": 21
+            }
+          ],
+          "pdf_page": 21
+        },
+        {
+          "code": "15.6",
+          "title": "DAO ĐỘNG CƯỠNG BỨC VÀ HIỆN TƯỢNG CỘNG HƯỞNG",
+          "orig_page": 456,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Dao động cưỡng bức và hiện tượng cộng hưởng",
+              "orig_page": 456,
+              "pdf_page": 24
+            }
+          ],
+          "pdf_page": 24
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 457,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 26
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 458,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 26
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 459,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 30
+        }
+      ]
+    },
+    {
+      "number": 16,
+      "slug": "16-song-1",
+      "title": "Sóng — I",
+      "titleEn": "Waves — I",
+      "fileName": "16-song-1.pdf",
+      "pageCount": 51,
+      "sizeBytes": 8751956,
+      "answersPage": 8,
+      "sections": [
+        {
+          "code": "16.1",
+          "title": "SÓNG NGANG",
+          "orig_page": 468,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 469,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Các loại sóng",
+              "orig_page": 469,
+              "pdf_page": 1
+            },
+            {
+              "title": "Sóng ngang và sóng dọc",
+              "orig_page": 469,
+              "pdf_page": 1
+            },
+            {
+              "title": "Bước sóng và tần số",
+              "orig_page": 470,
+              "pdf_page": 3
+            },
+            {
+              "title": "Tốc độ của sóng truyền",
+              "orig_page": 473,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "16.2",
+          "title": "TỐC ĐỘ SÓNG TRÊN DÂY CĂNG",
+          "orig_page": 476,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Tốc độ sóng trên dây căng",
+              "orig_page": 476,
+              "pdf_page": 11
+            }
+          ],
+          "pdf_page": 11
+        },
+        {
+          "code": "16.3",
+          "title": "NĂNG LƯỢNG VÀ CÔNG SUẤT CỦA SÓNG TRUYỀN DỌC THEO DÂY",
+          "orig_page": 478,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Năng lượng và công suất của sóng truyền dọc theo dây",
+              "orig_page": 478,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "16.4",
+          "title": "PHƯƠNG TRÌNH SÓNG",
+          "orig_page": 480,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Phương trình sóng",
+              "orig_page": 480,
+              "pdf_page": 15
+            }
+          ],
+          "pdf_page": 15
+        },
+        {
+          "code": "16.5",
+          "title": "SỰ GIAO THOA SÓNG",
+          "orig_page": 482,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Nguyên lý chồng chất sóng",
+              "orig_page": 483,
+              "pdf_page": 18
+            },
+            {
+              "title": "Sự giao thoa sóng",
+              "orig_page": 483,
+              "pdf_page": 18
+            }
+          ],
+          "pdf_page": 18
+        },
+        {
+          "code": "16.6",
+          "title": "GIẢN ĐỒ VECTƠ QUAY",
+          "orig_page": 487,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Giản đồ vectơ quay",
+              "orig_page": 487,
+              "pdf_page": 23
+            }
+          ],
+          "pdf_page": 23
+        },
+        {
+          "code": "16.7",
+          "title": "SÓNG DỪNG VÀ HIỆN TƯỢNG CỘNG HƯỞNG",
+          "orig_page": 490,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Sóng dừng",
+              "orig_page": 491,
+              "pdf_page": 26
+            },
+            {
+              "title": "Sóng dừng và hiện tượng cộng hưởng",
+              "orig_page": 493,
+              "pdf_page": 27
+            }
+          ],
+          "pdf_page": 26
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 495,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 33
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 496,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 35
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 497,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 37
+        }
+      ]
+    },
+    {
+      "number": 17,
+      "slug": "17-song-2",
+      "title": "Sóng — II",
+      "titleEn": "Waves — II (Sound)",
+      "fileName": "17-song-2.pdf",
+      "pageCount": 54,
+      "sizeBytes": 10445584,
+      "answersPage": 9,
+      "sections": [
+        {
+          "code": "17.1",
+          "title": "TỐC ĐỘ ÂM THANH",
+          "orig_page": 505,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 505,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Sóng âm",
+              "orig_page": 505,
+              "pdf_page": 1
+            },
+            {
+              "title": "Tốc độ âm thanh",
+              "orig_page": 506,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "17.2",
+          "title": "SÓNG ÂM TRUYỀN",
+          "orig_page": 508,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Sóng âm truyền",
+              "orig_page": 509,
+              "pdf_page": 5
+            }
+          ],
+          "pdf_page": 5
+        },
+        {
+          "code": "17.3",
+          "title": "SỰ GIAO THOA",
+          "orig_page": 511,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Sự giao thoa",
+              "orig_page": 511,
+              "pdf_page": 9
+            }
+          ],
+          "pdf_page": 9
+        },
+        {
+          "code": "17.4",
+          "title": "CƯỜNG ĐỘ ÂM VÀ MỨC CƯỜNG ĐỘ ÂM",
+          "orig_page": 515,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Cường độ âm và mức cường độ âm",
+              "orig_page": 515,
+              "pdf_page": 14
+            }
+          ],
+          "pdf_page": 14
+        },
+        {
+          "code": "17.5",
+          "title": "CÁC NGUỒN ÂM NHẠC",
+          "orig_page": 518,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Các nguồn âm nhạc",
+              "orig_page": 518,
+              "pdf_page": 18
+            }
+          ],
+          "pdf_page": 18
+        },
+        {
+          "code": "17.6",
+          "title": "HIỆN TƯỢNG PHÁCH",
+          "orig_page": 522,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Hiện tượng phách",
+              "orig_page": 522,
+              "pdf_page": 24
+            }
+          ],
+          "pdf_page": 24
+        },
+        {
+          "code": "17.7",
+          "title": "HIỆU ỨNG DOPPLER",
+          "orig_page": 524,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Hiệu ứng Doppler",
+              "orig_page": 525,
+              "pdf_page": 26
+            }
+          ],
+          "pdf_page": 26
+        },
+        {
+          "code": "17.8",
+          "title": "TỐC ĐỘ SIÊU THANH, SÓNG XUNG KÍCH",
+          "orig_page": 529,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Tốc độ siêu thanh, sóng xung kích",
+              "orig_page": 529,
+              "pdf_page": 32
+            }
+          ],
+          "pdf_page": 32
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 530,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 34
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 531,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 36
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 532,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 37
+        }
+      ]
+    },
+    {
+      "number": 18,
+      "slug": "18-nhiet-do-nhiet-luong-va-dinh-luat-1-ndlh",
+      "title": "Nhiệt độ, nhiệt lượng & Định luật 1 NĐLH",
+      "titleEn": "Temperature, Heat, First Law",
+      "fileName": "18-nhiet-do-nhiet-luong-va-dinh-luat-1-ndlh.pdf",
+      "pageCount": 57,
+      "sizeBytes": 14501387,
+      "answersPage": 9,
+      "sections": [
+        {
+          "code": "18.1",
+          "title": "NHIỆT ĐỘ",
+          "orig_page": 541,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 541,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Nhiệt độ",
+              "orig_page": 542,
+              "pdf_page": 1
+            },
+            {
+              "title": "Định luật số không của nhiệt động lực học",
+              "orig_page": 542,
+              "pdf_page": 1
+            },
+            {
+              "title": "Đo nhiệt độ",
+              "orig_page": 543,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "18.2",
+          "title": "CÁC THANG NHIỆT ĐỘ CELSIUS VÀ FAHRENHEIT",
+          "orig_page": 545,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Các thang nhiệt độ Celsius và Fahrenheit",
+              "orig_page": 546,
+              "pdf_page": 6
+            }
+          ],
+          "pdf_page": 6
+        },
+        {
+          "code": "18.3",
+          "title": "SỰ NỞ VÌ NHIỆT",
+          "orig_page": 547,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Sự nở vì nhiệt",
+              "orig_page": 548,
+              "pdf_page": 9
+            }
+          ],
+          "pdf_page": 9
+        },
+        {
+          "code": "18.4",
+          "title": "SỰ HẤP THỤ NHIỆT",
+          "orig_page": 550,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Nhiệt độ và nhiệt lượng",
+              "orig_page": 551,
+              "pdf_page": 13
+            },
+            {
+              "title": "Sự hấp thụ nhiệt của chất rắn và chất lỏng",
+              "orig_page": 552,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "18.5",
+          "title": "ĐỊNH LUẬT THỨ NHẤT CỦA NHIỆT ĐỘNG LỰC HỌC",
+          "orig_page": 556,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Xem xét kỹ hơn về nhiệt lượng và công",
+              "orig_page": 557,
+              "pdf_page": 20
+            },
+            {
+              "title": "Định luật thứ nhất của nhiệt động lực học",
+              "orig_page": 559,
+              "pdf_page": 20
+            },
+            {
+              "title": "Một số trường hợp đặc biệt của định luật thứ nhất của nhiệt động lực học",
+              "orig_page": 560,
+              "pdf_page": 21
+            }
+          ],
+          "pdf_page": 20
+        },
+        {
+          "code": "18.6",
+          "title": "CÁC CƠ CHẾ TRUYỀN NHIỆT",
+          "orig_page": 562,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Các cơ chế truyền nhiệt",
+              "orig_page": 563,
+              "pdf_page": 29
+            }
+          ],
+          "pdf_page": 29
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 567,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 36
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 569,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 38
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 570,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 41
+        }
+      ]
+    },
+    {
+      "number": 19,
+      "slug": "19-thuyet-dong-hoc-chat-khi",
+      "title": "Thuyết động học chất khí",
+      "titleEn": "Kinetic Theory of Gases",
+      "fileName": "19-thuyet-dong-hoc-chat-khi.pdf",
+      "pageCount": 52,
+      "sizeBytes": 5699288,
+      "answersPage": 10,
+      "sections": [
+        {
+          "code": "19.1",
+          "title": "SỐ AVOGADRO",
+          "orig_page": 578,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 578,
+              "pdf_page": 1,
+              "uncertain": true
+            },
+            {
+              "title": "Số Avogadro",
+              "orig_page": 579,
+              "pdf_page": 1
+            }
+          ],
+          "pdf_page": 1
+        },
+        {
+          "code": "19.2",
+          "title": "KHÍ LÝ TƯỞNG",
+          "orig_page": 579,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Khí lý tưởng",
+              "orig_page": 580,
+              "pdf_page": 3
+            }
+          ],
+          "pdf_page": 3
+        },
+        {
+          "code": "19.3",
+          "title": "ÁP SUẤT, NHIỆT ĐỘ VÀ TỐC ĐỘ CĂN QUÂN PHƯƠNG",
+          "orig_page": 583,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Áp suất, nhiệt độ và tốc độ căn quân phương",
+              "orig_page": 583,
+              "pdf_page": 8
+            }
+          ],
+          "pdf_page": 8
+        },
+        {
+          "code": "19.4",
+          "title": "ĐỘNG NĂNG TỊNH TIẾN",
+          "orig_page": 586,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Động năng tịnh tiến",
+              "orig_page": 586,
+              "pdf_page": 12
+            }
+          ],
+          "pdf_page": 12
+        },
+        {
+          "code": "19.5",
+          "title": "QUÃNG ĐƯỜNG TỰ DO TRUNG BÌNH",
+          "orig_page": 587,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Quãng đường tự do trung bình",
+              "orig_page": 587,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "19.6",
+          "title": "SỰ PHÂN BỐ TỐC ĐỘ PHÂN TỬ",
+          "orig_page": 589,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Sự phân bố tốc độ phân tử",
+              "orig_page": 590,
+              "pdf_page": 16
+            }
+          ],
+          "pdf_page": 16
+        },
+        {
+          "code": "19.7",
+          "title": "NHIỆT DUNG RIÊNG MOL CỦA KHÍ LÝ TƯỞNG",
+          "orig_page": 593,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Nhiệt dung riêng mol của khí lý tưởng",
+              "orig_page": 593,
+              "pdf_page": 21
+            }
+          ],
+          "pdf_page": 21
+        },
+        {
+          "code": "19.8",
+          "title": "BẬC TỰ DO VÀ NHIỆT DUNG RIÊNG MOL",
+          "orig_page": 597,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Bậc tự do và nhiệt dung riêng mol",
+              "orig_page": 597,
+              "pdf_page": 29
+            },
+            {
+              "title": "Gợi ý về thuyết lượng tử",
+              "orig_page": 600,
+              "pdf_page": 30
+            }
+          ],
+          "pdf_page": 29
+        },
+        {
+          "code": "19.9",
+          "title": "SỰ GIÃN NỞ ĐOẠN NHIỆT CỦA KHÍ LÝ TƯỞNG",
+          "orig_page": 600,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Sự giãn nở đoạn nhiệt của khí lý tưởng",
+              "orig_page": 601,
+              "pdf_page": 33
+            }
+          ],
+          "pdf_page": 33
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 605,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 38
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 606,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 41
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 606,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 42
+        }
+      ]
+    },
+    {
+      "number": 20,
+      "slug": "20-entropy-va-dinh-luat-2-ndlh",
+      "title": "Entropy & Định luật 2 NĐLH",
+      "titleEn": "Entropy & Second Law",
+      "fileName": "20-entropy-va-dinh-luat-2-ndlh.pdf",
+      "pageCount": 44,
+      "sizeBytes": 5965333,
+      "answersPage": 10,
+      "sections": [
+        {
+          "code": "20.1",
+          "title": "ENTROPY",
+          "orig_page": 613,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Vật lý học là gì?",
+              "orig_page": 614,
+              "pdf_page": 2,
+              "uncertain": true
+            },
+            {
+              "title": "Các quá trình không thuận nghịch và entropy",
+              "orig_page": 614,
+              "pdf_page": 2
+            },
+            {
+              "title": "Độ biến thiên entropy",
+              "orig_page": 615,
+              "pdf_page": 2
+            },
+            {
+              "title": "Định luật thứ hai của nhiệt động lực học",
+              "orig_page": 619,
+              "pdf_page": 2
+            }
+          ],
+          "pdf_page": 2
+        },
+        {
+          "code": "20.2",
+          "title": "ENTROPY TRONG THẾ GIỚI THỰC: ĐỘNG CƠ NHIỆT",
+          "orig_page": 620,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Entropy trong thế giới thực: Động cơ nhiệt",
+              "orig_page": 621,
+              "pdf_page": 13
+            }
+          ],
+          "pdf_page": 13
+        },
+        {
+          "code": "20.3",
+          "title": "MÁY LÀM LẠNH VÀ ĐỘNG CƠ THỰC",
+          "orig_page": 626,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Entropy trong thế giới thực: Máy làm lạnh",
+              "orig_page": 627,
+              "pdf_page": 18
+            },
+            {
+              "title": "Hiệu suất của các động cơ thực",
+              "orig_page": 628,
+              "pdf_page": 17
+            }
+          ],
+          "pdf_page": 17
+        },
+        {
+          "code": "20.4",
+          "title": "QUAN ĐIỂM THỐNG KÊ VỀ ENTROPY",
+          "orig_page": 629,
+          "type": "section",
+          "subsections": [
+            {
+              "title": "Quan điểm thống kê về entropy",
+              "orig_page": 629,
+              "pdf_page": 25
+            }
+          ],
+          "pdf_page": 25
+        },
+        {
+          "code": "ÔN TẬP & TÓM TẮT",
+          "title": "ÔN TẬP & TÓM TẮT",
+          "orig_page": 633,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 30
+        },
+        {
+          "code": "CÂU HỎI",
+          "title": "CÂU HỎI",
+          "orig_page": 634,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 32
+        },
+        {
+          "code": "BÀI TẬP",
+          "title": "BÀI TẬP",
+          "orig_page": 635,
+          "type": "special",
+          "subsections": [],
+          "pdf_page": 34
+        }
+      ]
+    }
+  ],
+  "answers": {
+    "fileName": "dap-an.pdf",
+    "totalPages": 11,
+    "mapping": {
+      "1": 1,
+      "2": 1,
+      "3": 1,
+      "4": 2,
+      "5": 2,
+      "6": 3,
+      "7": 3,
+      "8": 4,
+      "9": 4,
+      "10": 5,
+      "11": 5,
+      "12": 6,
+      "13": 7,
+      "14": 7,
+      "15": 8,
+      "16": 8,
+      "17": 9,
+      "18": 9,
+      "19": 10,
+      "20": 10
+    }
+  },
+  "appendix": {
+    "fileName": "phu-luc.pdf",
+    "totalPages": 17,
+    "items": [
+      {
+        "code": "A",
+        "title": "Hệ đơn vị Quốc tế (SI)",
+        "page": 1
+      },
+      {
+        "code": "B",
+        "title": "Một số hằng số vật lý cơ bản",
+        "page": 3
+      },
+      {
+        "code": "C",
+        "title": "Một số dữ liệu thiên văn",
+        "page": 4
+      },
+      {
+        "code": "D",
+        "title": "Hệ số chuyển đổi đơn vị",
+        "page": 5
+      },
+      {
+        "code": "E",
+        "title": "Công thức toán học",
+        "page": 9
+      },
+      {
+        "code": "F",
+        "title": "Tính chất của các nguyên tố",
+        "page": 12
+      },
+      {
+        "code": "G",
+        "title": "Bảng tuần hoàn các nguyên tố hóa học",
+        "page": 16
+      }
+    ]
+  },
+  "tableOfContents": {
+    "fileName": "00-muc-luc.pdf",
+    "totalPages": 13
+  }
+}

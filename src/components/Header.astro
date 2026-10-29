@@ -1,0 +1,262 @@
+---
+interface Props {
+  currentPath?: string;
+}
+
+const { currentPath = '/' } = Astro.props;
+const baseUrl = import.meta.env.BASE_URL.replace(/\/$/, '');
+---
+
+<header class="site-header">
+  <div class="container header-inner">
+    <!-- Brand Logo -->
+    <a href={`${baseUrl}/`} class="brand-link">
+      <div class="avatar-ring">
+        <img 
+          src={`${baseUrl}/assets/mascot/sadness_yawn.png`} 
+          alt="Cuna Sadness Mascot" 
+          class="brand-avatar" 
+        />
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">Cuna Physics</span>
+        <span class="brand-tag">Tủ sách cá nhân</span>
+      </div>
+    </a>
+
+    <!-- Nav Links -->
+    <nav class="nav-links">
+      <a href={`${baseUrl}/`} class={`nav-item ${currentPath === '/' ? 'active' : ''}`}>
+        Trang chủ
+      </a>
+      <a href={`${baseUrl}/books/co-so-vat-ly-tap-1/`} class={`nav-item ${currentPath.includes('/books/') ? 'active' : ''}`}>
+        Giáo trình
+      </a>
+      <a href={`${baseUrl}/ve-cuna/`} class={`nav-item ${currentPath.includes('/ve-cuna') ? 'active' : ''}`}>
+        Về Cuna
+      </a>
+    </nav>
+
+    <!-- Header Actions -->
+    <div class="header-actions">
+      <!-- Search trigger -->
+      <button id="header-search-btn" class="search-pill" title="Tìm kiếm full-text (Phím /)">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <span class="search-label">Tìm kiếm...</span>
+        <kbd class="search-kbd">/</kbd>
+      </button>
+
+      <!-- Theme Switcher -->
+      <button id="theme-toggle-btn" class="icon-btn" title="Chuyển chế độ Sáng / Tối">
+        <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="5"></circle>
+          <line x1="12" y1="1" x2="12" y2="3"></line>
+          <line x1="12" y1="21" x2="12" y2="23"></line>
+          <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+          <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+          <line x1="1" y1="12" x2="3" y2="12"></line>
+          <line x1="21" y1="12" x2="23" y2="12"></line>
+          <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+          <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+        <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display:none;">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+      </button>
+
+      <!-- Settings button -->
+      <button id="settings-open-btn" class="icon-btn" title="Cài đặt & Dữ liệu">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="12" cy="12" r="3"></circle>
+          <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 40;
+    background: rgba(255, 255, 255, 0.88);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border-color);
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+  :global([data-theme="dark"]) .site-header {
+    background: rgba(15, 23, 42, 0.88);
+  }
+
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  .brand-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .avatar-ring {
+    width: 38px;
+    height: 38px;
+    border-radius: var(--radius-full);
+    background: var(--primary-light);
+    border: 2px solid var(--primary-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 2px 6px var(--primary-glow);
+  }
+  .brand-avatar {
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
+    object-position: top;
+  }
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+  }
+  .brand-name {
+    font-size: 1.05rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text-primary);
+  }
+  .brand-tag {
+    font-size: 0.7rem;
+    font-weight: 600;
+    color: var(--primary);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  @media (max-width: 640px) {
+    .nav-links { display: none; }
+  }
+
+  .nav-item {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 0.4rem 0.85rem;
+    border-radius: var(--radius-md);
+    transition: all 0.15s ease;
+  }
+  .nav-item:hover {
+    color: var(--primary);
+    background: var(--primary-light);
+  }
+  .nav-item.active {
+    color: var(--primary);
+    font-weight: 700;
+    background: var(--primary-light);
+  }
+
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .search-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    padding: 0.45rem 0.85rem;
+    border-radius: var(--radius-full);
+    color: var(--text-secondary);
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.85rem;
+    transition: all 0.15s ease;
+  }
+  .search-pill:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+  }
+  .search-label {
+    font-size: 0.85rem;
+  }
+  @media (max-width: 500px) {
+    .search-label { display: none; }
+  }
+  .search-kbd {
+    background: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    padding: 0.1rem 0.4rem;
+    font-size: 0.75rem;
+    font-family: monospace;
+    font-weight: 700;
+  }
+
+  .icon-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: var(--radius-full);
+    border: 1px solid var(--border-color);
+    background: var(--bg-surface);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.15s ease;
+  }
+  .icon-btn:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--primary-light);
+  }
+</style>
+
+<script>
+  import { getPreferences, setPreferences } from '../utils/storage';
+
+  // Theme toggle
+  const themeBtn = document.getElementById('theme-toggle-btn');
+  const sunIcon = themeBtn?.querySelector('.sun-icon') as HTMLElement;
+  const moonIcon = themeBtn?.querySelector('.moon-icon') as HTMLElement;
+
+  function updateThemeUI(theme: 'light' | 'dark') {
+    document.documentElement.setAttribute('data-theme', theme);
+    if (theme === 'dark') {
+      if (sunIcon) sunIcon.style.display = 'none';
+      if (moonIcon) moonIcon.style.display = 'block';
+    } else {
+      if (sunIcon) sunIcon.style.display = 'block';
+      if (moonIcon) moonIcon.style.display = 'none';
+    }
+  }
+
+  const prefs = getPreferences();
+  updateThemeUI(prefs.theme);
+
+  themeBtn?.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
+    const next = current === 'dark' ? 'light' : 'dark';
+    setPreferences({ theme: next });
+    updateThemeUI(next);
+  });
+</script>
