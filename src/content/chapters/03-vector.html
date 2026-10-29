@@ -1,0 +1,2713 @@
+<h5 id="trang-66">[Trang 66]</h5>
+<h1 class="unnumbered" id="chương-3-vectơ">CHƯƠNG 3 — Vectơ</h1>
+<h2 class="unnumbered" id="vectơ-và-các-thành-phần-của-vectơ">3.1 VECTƠ
+VÀ CÁC THÀNH PHẦN CỦA VECTƠ</h2>
+<h4 class="unnumbered" id="mục-tiêu-học-tập">Mục tiêu học tập</h4>
+<p><em>Sau khi đọc mô-đun này, bạn có thể…</em></p>
+<ul>
+<li><p>Cộng các vectơ bằng cách vẽ chúng theo cách sắp xếp ngọn-nối-gốc,
+áp dụng quy tắc giao hoán và quy tắc kết hợp.</p></li>
+<li><p>Trừ một vectơ khỏi một vectơ thứ hai.</p></li>
+<li><p>Tính các thành phần của một vectơ trên một hệ tọa độ đã cho, biểu
+diễn chúng trên hình vẽ.</p></li>
+<li><p>Cho trước các thành phần của một vectơ, vẽ vectơ đó và xác định
+độ lớn cũng như hướng của nó.</p></li>
+<li><p>Chuyển đổi số đo góc giữa độ và radian.</p></li>
+</ul>
+<h4 class="unnumbered" id="ý-tưởng-cốt-lõi">Ý tưởng cốt lõi</h4>
+<ul>
+<li><p>Các đại lượng vô hướng, chẳng hạn như nhiệt độ, chỉ có độ lớn.
+Chúng được xác định bởi một con số kèm đơn vị (<span
+class="math inline">10^\circ\text{C}</span>) và tuân theo các quy tắc số
+học và đại số thông thường. Các vectơ, chẳng hạn như độ dịch chuyển, có
+cả độ lớn và hướng (<span class="math inline">5\text{ m}</span>, hướng
+bắc) và tuân theo các quy tắc của đại số vectơ.</p></li>
+<li><p>Hai vectơ <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> có thể được cộng về mặt hình học bằng
+cách vẽ chúng theo cùng một tỉ lệ và đặt chúng theo cách ngọn-nối-gốc.
+Vectơ nối gốc của vectơ thứ nhất với ngọn của vectơ thứ hai là vectơ
+tổng <span class="math inline">\vec{s}</span>. Để trừ <span
+class="math inline">\vec{b}</span> khỏi <span
+class="math inline">\vec{a}</span>, hãy đảo ngược hướng của <span
+class="math inline">\vec{b}</span> để được <span
+class="math inline">-\vec{b}</span>; sau đó cộng <span
+class="math inline">-\vec{b}</span> vào <span
+class="math inline">\vec{a}</span>. Phép cộng vectơ có tính chất giao
+hoán và tuân theo quy tắc kết hợp.</p></li>
+<li><p>Các thành phần (vô hướng) <span class="math inline">a_x</span> và
+<span class="math inline">a_y</span> của bất kỳ vectơ hai chiều <span
+class="math inline">\vec{a}</span> nào dọc theo các trục tọa độ được tìm
+bằng cách hạ các đường vuông góc từ các đầu mút của <span
+class="math inline">\vec{a}</span> xuống các trục tọa độ. Các thành phần
+này được cho bởi <span class="math display">a_x = a
+\cos\theta   \text{và}   a_y = a \sin\theta,</span> trong đó <span
+class="math inline">\theta</span> là góc giữa chiều dương của trục <span
+class="math inline">x</span> và hướng của <span
+class="math inline">\vec{a}</span>. Dấu đại số của một thành phần cho
+biết chiều của nó dọc theo trục tương ứng. Khi biết các thành phần của
+nó, chúng ta có thể tìm độ lớn và hướng của vectơ <span
+class="math inline">\vec{a}</span> bằng <span class="math display">a =
+\sqrt{a_x^2 + a_y^2}   \text{và}   \tan\theta =
+\frac{a_y}{a_x}.</span></p></li>
+</ul>
+<h4 class="unnumbered" id="vật-lý-là-gì">Vật lý là gì?</h4>
+<p>Vật lý học nghiên cứu rất nhiều đại lượng có cả độ lớn và hướng, và
+nó cần một ngôn ngữ toán học đặc biệt—ngôn ngữ của vectơ—để mô tả các
+đại lượng đó. Ngôn ngữ này cũng được sử dụng trong kỹ thuật, các ngành
+khoa học khác, và thậm chí trong đời sống hàng ngày. Nếu bạn từng chỉ
+đường như “Hãy đi năm dãy nhà xuôi theo con đường này rồi rẽ trái”, bạn
+đã sử dụng ngôn ngữ vectơ. Trên thực tế, bất kỳ loại hình điều hướng nào
+cũng đều dựa trên vectơ, nhưng vật lý và kỹ thuật cũng cần vectơ theo
+những cách đặc biệt để giải thích các hiện tượng liên quan đến chuyển
+động quay và lực từ, những nội dung mà chúng ta sẽ tìm hiểu ở các chương
+sau. Trong chương này, chúng ta tập trung vào ngôn ngữ cơ bản của
+vectơ.</p>
+<h4 class="unnumbered" id="vectơ-và-đại-lượng-vô-hướng">Vectơ và đại
+lượng vô hướng</h4>
+<p>Một chất điểm chuyển động dọc theo một đường thẳng chỉ có thể chuyển
+động theo hai hướng. Chúng ta có thể coi chuyển động của nó mang giá trị
+dương theo một trong hai hướng này và âm theo hướng ngược lại. Tuy
+nhiên, đối với một chất điểm chuyển động trong không gian ba chiều, dấu
+cộng hay dấu trừ không còn đủ để chỉ hướng nữa. Thay vào đó, chúng ta
+phải sử dụng một vectơ.</p>
+<h5 id="trang-67">[Trang 67]</h5>
+<p>Một <strong>vectơ</strong> có độ lớn cũng như hướng, và các vectơ
+tuân theo những quy tắc kết hợp (vectơ) nhất định mà chúng ta sẽ khảo
+sát trong chương này. Một <strong>đại lượng vectơ</strong> là một đại
+lượng có cả độ lớn và hướng, do đó có thể được biểu diễn bằng một vectơ.
+Một số đại lượng vật lý là đại lượng vectơ bao gồm độ dịch chuyển, vận
+tốc và gia tốc. Bạn sẽ thấy nhiều đại lượng vectơ hơn nữa trong suốt
+cuốn sách này, vì vậy việc học các quy tắc kết hợp vectơ ngay bây giờ sẽ
+giúp ích cho bạn rất nhiều trong các chương sau.</p>
+<p>Không phải tất cả các đại lượng vật lý đều liên quan đến một hướng.
+Ví dụ, nhiệt độ, áp suất, năng lượng, khối lượng và thời gian không “chỉ
+hướng” theo nghĩa không gian. Chúng ta gọi những đại lượng như vậy là
+các <strong>đại lượng vô hướng</strong>, và chúng ta xử lý chúng bằng
+các quy tắc của đại số thông thường. Một giá trị đơn lẻ, kèm theo dấu
+(như nhiệt độ <span class="math inline">-40^\circ\text{F}</span>), xác
+định một đại lượng vô hướng.</p>
+<p>Đại lượng vectơ đơn giản nhất là độ dịch chuyển, hay sự thay đổi vị
+trí. Một vectơ biểu diễn cho một độ dịch chuyển được gọi một cách hợp lý
+là <strong>vectơ độ dịch chuyển</strong>. (Tương tự, chúng ta có các
+vectơ vận tốc và vectơ gia tốc.) Nếu một chất điểm thay đổi vị trí của
+nó bằng cách di chuyển từ <span class="math inline">A</span> đến <span
+class="math inline">B</span> trong Hình 3.1.1a, ta nói rằng nó chịu một
+độ dịch chuyển từ <span class="math inline">A</span> đến <span
+class="math inline">B</span>, mà chúng ta biểu diễn bằng một mũi tên chỉ
+từ <span class="math inline">A</span> đến <span
+class="math inline">B</span>. Mũi tên xác định vectơ này trên đồ họa. Để
+phân biệt các ký hiệu vectơ với các loại mũi tên khác trong cuốn sách
+này, chúng ta sử dụng đường viền của một hình tam giác làm đầu mũi
+tên.</p>
+<p>Trong Hình 3.1.1a, các mũi tên từ <span class="math inline">A</span>
+đến <span class="math inline">B</span>, từ <span
+class="math inline">A&#39;</span> đến <span
+class="math inline">B&#39;</span>, và từ <span
+class="math inline">A&#39;&#39;</span> đến <span
+class="math inline">B&#39;&#39;</span> có cùng độ lớn và hướng. Vì vậy,
+chúng xác định các vectơ độ dịch chuyển giống hệt nhau và biểu diễn cùng
+một sự thay đổi vị trí của chất điểm. Một vectơ có thể được tịnh tiến mà
+không làm thay đổi giá trị của nó nếu chiều dài và hướng của nó không
+đổi.</p>
+<p>Vectơ độ dịch chuyển không cho chúng ta biết gì về quãng đường thực
+tế mà chất điểm đã đi. Ví dụ trong Hình 3.1.1b, cả ba đường đi nối các
+điểm <span class="math inline">A</span> và <span
+class="math inline">B</span> đều tương ứng với cùng một vectơ độ dịch
+chuyển như trong Hình 3.1.1a. Các vectơ độ dịch chuyển chỉ đại diện cho
+kết quả tổng thể của chuyển động, chứ không phải bản thân chuyển động
+đó.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.1.png" loading="lazy" />
+<figcaption>Hình 3.1.1: (a) Cả ba mũi tên đều có cùng độ lớn và hướng,
+do đó biểu diễn cùng một độ dịch chuyển. (b) Cả ba đường đi nối hai điểm
+đều tương ứng với cùng một vectơ độ dịch chuyển.</figcaption>
+</figure>
+<h4 class="unnumbered" id="cộng-vectơ-bằng-phương-pháp-hình-học">Cộng
+vectơ bằng phương pháp hình học</h4>
+<p>Giả sử rằng, như trong giản đồ vectơ của Hình 3.1.2a, một chất điểm
+di chuyển từ <span class="math inline">A</span> đến <span
+class="math inline">B</span> và sau đó từ <span
+class="math inline">B</span> đến <span class="math inline">C</span>.
+Chúng ta có thể biểu diễn độ dịch chuyển tổng thể của nó (bất kể đường
+đi thực tế của nó là gì) bằng hai vectơ độ dịch chuyển liên tiếp, <span
+class="math inline">AB</span> và <span class="math inline">BC</span>. Độ
+dịch chuyển tổng hợp của hai độ dịch chuyển này là một độ dịch chuyển
+đơn lẻ từ <span class="math inline">A</span> đến <span
+class="math inline">C</span>. Chúng ta gọi <span
+class="math inline">AC</span> là <strong>tổng vectơ</strong> (hoặc
+<strong>vectơ hợp</strong>) của các vectơ <span
+class="math inline">AB</span> và <span class="math inline">BC</span>.
+Phép cộng này không phải là phép cộng đại số thông thường.</p>
+<p>Trong Hình 3.1.2b, chúng ta vẽ lại các vectơ của Hình 3.1.2a và dán
+nhãn lại theo cách mà chúng ta sẽ sử dụng từ nay về sau, cụ thể là bằng
+một mũi tên đặt trên ký hiệu in nghiêng, như <span
+class="math inline">\vec{a}</span>. Nếu chỉ muốn chỉ độ lớn của vectơ
+(một đại lượng không mang dấu hay hướng), chúng ta sẽ sử dụng ký hiệu in
+nghiêng, như <span class="math inline">a</span>, <span
+class="math inline">b</span>, và <span class="math inline">s</span>.
+(Bạn có thể chỉ cần viết ký hiệu chữ cái thông thường.) Một ký hiệu có
+mũi tên phía trên luôn ngụ ý cả hai đặc tính của một vectơ: độ lớn và
+hướng.</p>
+<p>Chúng ta có thể biểu diễn mối quan hệ giữa ba vectơ trong Hình 3.1.2b
+bằng phương trình vectơ <span class="math display">\begin{equation}
+\tag{3.1.1}
+\vec{s} = \vec{a} + \vec{b},
+\end{equation}</span> nói lên rằng vectơ <span
+class="math inline">\vec{s}</span> là vectơ tổng của các vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>. Ký hiệu <span
+class="math inline">+</span> trong Phương trình 3.1.1 và các từ “tổng”
+và “cộng” có ý nghĩa đối với vectơ khác với ý nghĩa trong đại số thông
+thường vì chúng liên quan đến cả độ lớn và hướng.</p>
+<p>Hình 3.1.2 gợi ý một quy trình để cộng hai vectơ hai chiều <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> bằng phương pháp hình học: (1) Trên
+giấy, vẽ phác vectơ <span class="math inline">\vec{a}</span> theo một tỉ
+lệ thuận tiện và ở góc thích hợp. (2) Vẽ phác vectơ <span
+class="math inline">\vec{b}</span> theo cùng tỉ lệ đó, với gốc của nó
+đặt tại ngọn của vectơ <span class="math inline">\vec{a}</span>, một lần
+nữa ở góc thích hợp. (3) Vectơ tổng <span
+class="math inline">\vec{s}</span> là vectơ kéo dài từ gốc của <span
+class="math inline">\vec{a}</span> đến ngọn của <span
+class="math inline">\vec{b}</span>.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.2.png" loading="lazy" />
+<figcaption>Hình 3.1.2: (a) <span class="math inline">AC</span> là vectơ
+tổng của các vectơ <span class="math inline">AB</span> và <span
+class="math inline">BC</span>. (b) Cùng các vectơ đó nhưng được đặt lại
+tên.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Đường đi thực tế; Độ dịch chuyển tổng hợp là
+tổng vectơ; Đây là vectơ kết quả, từ gốc của <span
+class="math inline">\vec{a}</span> đến ngọn của <span
+class="math inline">\vec{b}</span>; Để cộng <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>, hãy vẽ chúng theo cách
+ngọn-nối-gốc.</p>
+<p><strong>Tính chất.</strong> Phép cộng vectơ, được định nghĩa theo
+cách này, có hai tính chất quan trọng. Thứ nhất, thứ tự cộng không thành
+vấn đề. Cộng <span class="math inline">\vec{a}</span> với <span
+class="math inline">\vec{b}</span> cho cùng kết quả như cộng <span
+class="math inline">\vec{b}</span> với <span
+class="math inline">\vec{a}</span> (Hình 3.1.3); nghĩa là,</p>
+<h5 id="trang-68">[Trang 68]</h5>
+<p><span class="math display">\begin{equation}
+\tag{3.1.2}
+\vec{a} + \vec{b} = \vec{b} + \vec{a}   \text{(quy tắc giao hoán)}.
+\end{equation}</span></p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.3.png" loading="lazy" />
+<figcaption>Hình 3.1.3: Hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> có thể được cộng theo thứ tự nào cũng
+được; xem Phương trình 3.1.2.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Điểm kết thúc; Điểm bắt đầu; Tổng vectơ; Bạn
+nhận được cùng một vectơ kết quả cho bất kỳ thứ tự cộng vectơ nào.</p>
+<p>Thứ hai, khi có nhiều hơn hai vectơ, chúng ta có thể nhóm chúng theo
+bất kỳ thứ tự nào khi cộng. Do đó, nếu muốn cộng các vectơ <span
+class="math inline">\vec{a}</span>, <span
+class="math inline">\vec{b}</span>, và <span
+class="math inline">\vec{c}</span>, trước hết ta có thể cộng <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>, sau đó cộng vectơ tổng của chúng với
+<span class="math inline">\vec{c}</span>. Ta cũng có thể cộng <span
+class="math inline">\vec{b}</span> và <span
+class="math inline">\vec{c}</span> trước rồi cộng tổng đó với <span
+class="math inline">\vec{a}</span>. Cả hai cách đều cho cùng một kết
+quả, như thể hiện trong Hình 3.1.4. Nghĩa là, <span
+class="math display">\begin{equation}
+\tag{3.1.3}
+(\vec{a} + \vec{b}) + \vec{c} = \vec{a} + (\vec{b} +
+\vec{c})   \text{(quy tắc kết hợp)}.
+\end{equation}</span></p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.4.png" loading="lazy" />
+<figcaption>Hình 3.1.4: Ba vectơ <span
+class="math inline">\vec{a}</span>, <span
+class="math inline">\vec{b}</span>, và <span
+class="math inline">\vec{c}</span> có thể được nhóm theo bất kỳ cách nào
+khi cộng chúng lại; xem Phương trình 3.1.3.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Bạn nhận được cùng một vectơ kết quả cho bất
+kỳ thứ tự cộng các vectơ nào.</p>
+<p>Vectơ <span class="math inline">-\vec{b}</span> là một vectơ có cùng
+độ lớn với <span class="math inline">\vec{b}</span> nhưng có hướng ngược
+lại (xem Hình 3.1.5). Phép cộng hai vectơ trong Hình 3.1.5 sẽ cho <span
+class="math display">\vec{b} + (-\vec{b}) = 0.</span></p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.5.png" loading="lazy" />
+<figcaption>Hình 3.1.5: Các vectơ <span
+class="math inline">\vec{b}</span> và <span
+class="math inline">-\vec{b}</span> có cùng độ lớn và hướng ngược
+nhau.</figcaption>
+</figure>
+<p>Do đó, việc cộng <span class="math inline">-\vec{b}</span> có tác
+dụng tương đương với phép trừ <span class="math inline">\vec{b}</span>.
+Chúng ta sử dụng tính chất này để định nghĩa hiệu giữa hai vectơ: gọi
+<span class="math inline">\vec{d} = \vec{a} - \vec{b}</span>. Khi đó
+<span class="math display">\begin{equation}
+\tag{3.1.4}
+\vec{d} = \vec{a} - \vec{b} = \vec{a} + (-\vec{b})   \text{(phép trừ
+vectơ)};
+\end{equation}</span> nghĩa là, ta tìm vectơ hiệu <span
+class="math inline">\vec{d}</span> bằng cách cộng vectơ <span
+class="math inline">-\vec{b}</span> vào vectơ <span
+class="math inline">\vec{a}</span>. Hình 3.1.6 minh họa cách thực hiện
+điều này bằng hình học.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.6.png" loading="lazy" />
+<figcaption>Hình 3.1.6: (a) Các vectơ <span
+class="math inline">\vec{a}</span>, <span
+class="math inline">\vec{b}</span>, và <span
+class="math inline">-\vec{b}</span>. (b) Để trừ vectơ <span
+class="math inline">\vec{b}</span> khỏi vectơ <span
+class="math inline">\vec{a}</span>, hãy cộng vectơ <span
+class="math inline">-\vec{b}</span> vào vectơ <span
+class="math inline">\vec{a}</span>.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Lưu ý cách sắp xếp ngọn-nối-gốc cho phép
+cộng.</p>
+<p>Giống như trong đại số thông thường, ta có thể chuyển một số hạng
+chứa ký hiệu vectơ từ vế này sang vế kia của phương trình vectơ, nhưng
+ta phải đổi dấu của nó. Ví dụ, nếu ta có Phương trình 3.1.4 và cần tìm
+<span class="math inline">\vec{a}</span>, ta có thể sắp xếp lại phương
+trình thành <span class="math display">\vec{d} + \vec{b} =
+\vec{a}   \text{hay}   \vec{a} = \vec{d} + \vec{b}.</span> Hãy nhớ rằng,
+mặc dù ở đây chúng ta đã sử dụng các vectơ độ dịch chuyển, các quy tắc
+cộng và trừ đều đúng cho mọi loại vectơ, dù chúng biểu diễn vận tốc, gia
+tốc, hay bất kỳ đại lượng vectơ nào khác. Tuy nhiên, chúng ta chỉ có thể
+cộng các vectơ cùng loại. Ví dụ, ta có thể cộng hai độ dịch chuyển, hoặc
+hai vận tốc, nhưng cộng một độ dịch chuyển và một vận tốc là điều hoàn
+toàn vô nghĩa. Trong số học của các đại lượng vô hướng, điều đó giống
+như cố gắng cộng <span class="math inline">21\text{ s}</span> và <span
+class="math inline">12\text{ m}</span>.</p>
+<h4 class="unnumbered" id="điểm-kiểm-tra-3.1.1">Điểm kiểm tra 3.1.1</h4>
+<p>Độ lớn của các độ dịch chuyển <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> lần lượt là <span
+class="math inline">3\text{ m}</span> và <span
+class="math inline">4\text{ m}</span>, và <span
+class="math inline">\vec{c} = \vec{a} + \vec{b}</span>. Xét các định
+hướng khác nhau của <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>, hỏi: (a) độ lớn cực đại có thể có
+của <span class="math inline">\vec{c}</span> là bao nhiêu, và (b) độ lớn
+cực tiểu có thể có là bao nhiêu?</p>
+<h4 class="unnumbered" id="các-thành-phần-của-vectơ">Các thành phần của
+vectơ</h4>
+<p>Cộng vectơ bằng phương pháp hình học có thể rất tẻ nhạt. Một kỹ thuật
+gọn gàng và dễ dàng hơn liên quan đến đại số nhưng đòi hỏi các vectơ
+phải được đặt trên một hệ tọa độ vuông góc. Các trục <span
+class="math inline">x</span> và <span class="math inline">y</span>
+thường được vẽ trong mặt phẳng của trang giấy, như thể hiện</p>
+<h5 id="trang-69">[Trang 69]</h5>
+<p>trong Hình 3.1.7a. Trục <span class="math inline">z</span> đi thẳng
+từ gốc tọa độ vuông góc ra khỏi mặt phẳng trang giấy; hiện tại chúng ta
+tạm bỏ qua trục này và chỉ làm việc với các vectơ hai chiều.</p>
+<p>Một <strong>thành phần</strong> của một vectơ là hình chiếu của vectơ
+đó lên một trục. Ví dụ, trong Hình 3.1.7a, <span
+class="math inline">a_x</span> là thành phần của vectơ <span
+class="math inline">\vec{a}</span> trên (hoặc dọc theo) trục <span
+class="math inline">x</span> và <span class="math inline">a_y</span> là
+thành phần dọc theo trục <span class="math inline">y</span>. Để tìm hình
+chiếu của một vectơ dọc theo một trục, ta hạ các đường vuông góc từ hai
+đầu mút của vectơ xuống trục đó, như đã thể hiện. Hình chiếu của một
+vectơ lên trục <span class="math inline">x</span> là thành phần <span
+class="math inline">x</span> của nó, và tương tự hình chiếu lên trục
+<span class="math inline">y</span> là thành phần <span
+class="math inline">y</span>. Quá trình tìm các thành phần của một vectơ
+được gọi là sự <strong>phân tích vectơ</strong>.</p>
+<p>Một thành phần của một vectơ có cùng hướng (dọc theo một trục) với
+vectơ đó. Trong Hình 3.1.7, <span class="math inline">a_x</span> và
+<span class="math inline">a_y</span> đều mang giá trị dương vì <span
+class="math inline">\vec{a}</span> hướng theo chiều dương của cả hai
+trục. (Hãy chú ý các đầu mũi tên nhỏ trên các thành phần để chỉ chiều
+của chúng.) Nếu ta đảo ngược vectơ <span
+class="math inline">\vec{a}</span>, thì cả hai thành phần đều mang giá
+trị âm và các đầu mũi tên của chúng sẽ chỉ về chiều âm của <span
+class="math inline">x</span> và <span class="math inline">y</span>. Việc
+phân tích vectơ <span class="math inline">\vec{b}</span> trong Hình
+3.1.8 cho một thành phần dương <span class="math inline">b_x</span> và
+một thành phần âm <span class="math inline">b_y</span>.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.8.png" loading="lazy" />
+<figcaption>Hình 3.1.8: Thành phần của <span
+class="math inline">\vec{b}</span> trên trục <span
+class="math inline">x</span> mang giá trị dương, và thành phần trên trục
+<span class="math inline">y</span> mang giá trị âm.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Đây là thành phần <span
+class="math inline">x</span> của vectơ; Đây là thành phần <span
+class="math inline">y</span> của vectơ.</p>
+<p>Nói chung, một vectơ có ba thành phần, mặc dù đối với trường hợp ở
+Hình 3.1.7a thì thành phần dọc theo trục <span
+class="math inline">z</span> bằng 0. Như các Hình 3.1.7a và b cho thấy,
+nếu bạn tịnh tiến một vectơ mà không làm thay đổi hướng của nó, các
+thành phần của nó không thay đổi.</p>
+<p><strong>Tìm các thành phần.</strong> Chúng ta có thể tìm các thành
+phần của <span class="math inline">\vec{a}</span> trong Hình 3.1.7a bằng
+hình học từ tam giác vuông ở đó: <span
+class="math display">\begin{equation}
+\tag{3.1.5}
+a_x = a \cos\theta   \text{và}   a_y = a \sin\theta,
+\end{equation}</span> trong đó <span class="math inline">\theta</span>
+là góc mà vectơ <span class="math inline">\vec{a}</span> tạo với chiều
+dương của trục <span class="math inline">x</span>, và <span
+class="math inline">a</span> là độ lớn của <span
+class="math inline">\vec{a}</span>. Hình 3.1.7c cho thấy <span
+class="math inline">\vec{a}</span> cùng với các thành phần <span
+class="math inline">x</span> và <span class="math inline">y</span> của
+nó tạo thành một tam giác vuông. Nó cũng chỉ ra cách ta có thể dựng lại
+một vectơ từ các thành phần của nó: Chúng ta sắp xếp các thành phần đó
+theo quy tắc ngọn-nối-gốc. Sau đó ta hoàn thành một tam giác vuông với
+vectơ đóng vai trò là cạnh huyền, từ gốc của một thành phần đến ngọn của
+thành phần kia.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.7.png" loading="lazy" />
+<figcaption>Hình 3.1.7: (a) Các thành phần <span
+class="math inline">a_x</span> và <span class="math inline">a_y</span>
+của vectơ <span class="math inline">\vec{a}</span>. (b) Các thành phần
+không đổi nếu vectơ bị tịnh tiến, miễn là độ lớn và hướng của nó được
+giữ nguyên. (c) Các thành phần tạo thành các cạnh góc vuông của một tam
+giác vuông có cạnh huyền là độ lớn của vectơ.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Đây là thành phần <span
+class="math inline">y</span> của vectơ; Đây là thành phần <span
+class="math inline">x</span> của vectơ; Các thành phần và vectơ tạo
+thành một tam giác vuông.</p>
+<p>Một khi một vectơ đã được phân tích thành các thành phần của nó dọc
+theo một hệ trục, chính các thành phần đó có thể được sử dụng để thay
+thế cho vectơ. Ví dụ, <span class="math inline">\vec{a}</span> trong
+Hình 3.1.7a được cho (hoàn toàn xác định) bởi <span
+class="math inline">a</span> và <span class="math inline">\theta</span>.
+Nó cũng có thể được cho bởi các thành phần <span
+class="math inline">a_x</span> và <span class="math inline">a_y</span>
+của nó. Cả hai cặp giá trị đều chứa cùng một thông tin như nhau. Nếu ta
+biết một vectơ dưới dạng ký hiệu thành phần (<span
+class="math inline">a_x</span> và <span class="math inline">a_y</span>)
+và muốn chuyển sang dạng ký hiệu độ lớn-góc (<span
+class="math inline">a</span> và <span
+class="math inline">\theta</span>), ta có thể sử dụng các phương trình
+<span class="math display">\begin{equation}
+\tag{3.1.6}
+a = \sqrt{a_x^2 + a_y^2}   \text{và}   \tan\theta = \frac{a_y}{a_x}
+\end{equation}</span> để biến đổi.</p>
+<p>Trong trường hợp ba chiều tổng quát hơn, chúng ta cần một độ lớn và
+hai góc (chẳng hạn <span class="math inline">a</span>, <span
+class="math inline">\theta</span>, và <span
+class="math inline">\phi</span>) hoặc ba thành phần (<span
+class="math inline">a_x</span>, <span class="math inline">a_y</span>, và
+<span class="math inline">a_z</span>) để xác định một vectơ.</p>
+<h4 class="unnumbered" id="điểm-kiểm-tra-3.1.2">Điểm kiểm tra 3.1.2</h4>
+<p>Trong hình, phương pháp nào trong các phương pháp được chỉ ra để kết
+hợp các thành phần <span class="math inline">x</span> và <span
+class="math inline">y</span> của vectơ <span
+class="math inline">\vec{a}</span> là đúng đắn để xác định vectơ đó?</p>
+<h5 id="trang-70">[Trang 70]</h5>
+<h3 class="unnumbered" id="ví-dụ-mẫu-3.1.1-thám-hiểm-hang-động">Ví dụ
+mẫu 3.1.1: Thám hiểm hang động</h3>
+<p>Trong hai thập kỷ, các đội thám hiểm hang động đã bò, trèo và luồn
+lách qua <span class="math inline">200\text{ km}</span> của Hang Mammoth
+và hệ thống hang Flint Ridge nhằm tìm kiếm một lối thông nhau. Đội cuối
+cùng tìm thấy lối thông đã thám hiểm hang suốt <span
+class="math inline">12\text{ giờ}</span> để đi từ Lối vào Austin (Austin
+Entrance) trong hệ thống Flint Ridge đến Sông Echo (Echo River) trong
+Hang Mammoth (Hình 3.1.9a), di chuyển tổng cộng <span
+class="math inline">2.6\text{ km}</span> về phía tây, <span
+class="math inline">3.9\text{ km}</span> về phía nam và <span
+class="math inline">25\text{ m}</span> lên trên. Điều đó đã xác lập hệ
+thống hang này là hệ thống hang dài nhất thế giới. Độ lớn và góc của độ
+dịch chuyển của đội từ điểm bắt đầu đến điểm kết thúc là bao nhiêu?</p>
+<h4 class="unnumbered" id="ý-tưởng-cốt-lõi-1">Ý tưởng cốt lõi</h4>
+<p>Chúng ta có các thành phần của một vectơ ba chiều, và chúng ta cần
+tìm độ lớn của vectơ cùng hai góc để xác định hướng của vectơ đó.</p>
+<p><em>Tính toán:</em> Trước tiên, chúng ta vẽ các thành phần như trong
+Hình 3.1.9b. Các thành phần theo phương ngang (<span
+class="math inline">2.6\text{ km}</span> về phía tây và <span
+class="math inline">3.9\text{ km}</span> về phía nam) tạo thành các cạnh
+góc vuông của một tam giác vuông nằm ngang. Độ dịch chuyển theo phương
+ngang của đội tạo thành cạnh huyền của tam giác đó, và độ lớn <span
+class="math inline">d_h</span> của nó được cho bởi định lý Pythagoras:
+<span class="math display">d_h = \sqrt{(2.6\text{ km})^2 + (3.9\text{
+km})^2} = 4.69\text{ km}.</span> Cũng từ tam giác nằm ngang này, chúng
+ta thấy rằng độ dịch chuyển theo phương ngang này lệch về phía nam so
+với hướng chính tây (hướng thẳng về phía tây) một góc <span
+class="math inline">\theta_h</span> được cho bởi <span
+class="math display">\tan\theta_h = \frac{3.9\text{ km}}{2.6\text{
+km}},</span> do đó <span class="math display">\theta_h =
+\tan^{-1}\left(\frac{3.9\text{ km}}{2.6\text{ km}}\right) =
+56^\circ,</span> đây là một trong hai góc chúng ta cần để xác định hướng
+của độ dịch chuyển tổng thể.</p>
+<p>Để đưa vào thành phần thẳng đứng (<span class="math inline">25\text{
+m} = 0.025\text{ km}</span>), bây giờ chúng ta xét hình chiếu nhìn
+nghiêng của Hình 3.1.9b theo hướng nhìn tây bắc. Chúng ta thu được Hình
+3.1.9c, ở đó thành phần thẳng đứng và độ dịch chuyển theo phương ngang
+<span class="math inline">d_h</span> tạo thành các cạnh góc vuông của
+một tam giác vuông khác. Lúc này, độ dịch chuyển tổng thể của đội tạo
+thành cạnh huyền của tam giác đó, với độ lớn <span
+class="math inline">d</span>: <span class="math display">d =
+\sqrt{(4.69\text{ km})^2 + (0.025\text{ km})^2} = 4.69\text{ km} \approx
+4.7\text{ km}.   \text{(Đáp số)}</span> Độ dịch chuyển này hướng lên
+trên so với độ dịch chuyển theo phương ngang một góc <span
+class="math display">\theta_v = \tan^{-1}\left(\frac{0.025\text{
+km}}{4.69\text{ km}}\right) = 0.3^\circ.   \text{(Đáp số)}</span> Như
+vậy, vectơ độ dịch chuyển của đội có độ lớn <span
+class="math inline">4.7\text{ km}</span>, lệch một góc <span
+class="math inline">56^\circ</span> về phía nam so với hướng tây và
+hướng lên trên một góc <span class="math inline">0.3^\circ</span>.
+Chuyển động thẳng đứng tổng hợp dĩ nhiên là không đáng kể so với chuyển
+động theo phương ngang. Tuy nhiên, thực tế đó chẳng đem lại sự dễ chịu
+nào cho đội thám hiểm, những người đã phải leo lên và tụt xuống vô số
+lần để xuyên qua hang. Quãng đường họ thực sự đã vượt qua hoàn toàn khác
+biệt so với vectơ độ dịch chuyển, vốn chỉ đơn thuần trỏ theo một đường
+thẳng từ điểm bắt đầu đến điểm kết thúc.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.9.png" loading="lazy" />
+<figcaption>Hình 3.1.9: (a) Một phần của hệ thống hang Mammoth–Flint,
+với lộ trình của đội thám hiểm từ Lối vào Austin đến Sông Echo được chỉ
+bằng màu đỏ. (b) Các thành phần của độ dịch chuyển tổng thể của đội và
+độ dịch chuyển theo phương ngang <span class="math inline">d_h</span>
+của họ. (c) Hình chiếu nhìn từ cạnh bên cho thấy <span
+class="math inline">d_h</span> và vectơ độ dịch chuyển tổng thể <span
+class="math inline">\vec{d}</span> của đội. (d) Thành viên Richard Zopf
+đang đẩy ba lô của mình qua khe hẹp Tight Tube, gần phía dưới của bản
+đồ. (Bản đồ phỏng theo bản đồ của Quỹ Nghiên cứu Hang động. Ảnh do David
+des Marais cung cấp, © Quỹ Nghiên cứu Hang động)</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Sông Echo (Echo River); Khe hẹp Tight Tube;
+Vùng sụt lở Brucker Breakdown; Lối vào Austin (Austin Entrance); Thang
+đo mét; Hang Mammoth (Mammoth Cave); Lối vào Historic Entrance.</p>
+<p><em>Các ví dụ bổ sung, video và bài luyện tập có tại
+WileyPLUS.</em></p>
+<h5 id="trang-71">[Trang 71]</h5>
+<h4 class="unnumbered"
+id="chiến-thuật-giải-bài-toán-góc-hàm-lượng-giác-và-hàm-lượng-giác-ngược">Chiến
+thuật giải bài toán: Góc, hàm lượng giác và hàm lượng giác ngược</h4>
+<h5 id="chiến-thuật-1-gócđộ-và-radian.">Chiến thuật 1: Góc—Độ và
+Radian.</h5>
+<p>Các góc được đo tương đối so với chiều dương của trục <span
+class="math inline">x</span> sẽ mang giá trị dương nếu chúng được đo
+theo chiều ngược chiều kim đồng hồ và mang giá trị âm nếu đo theo chiều
+kim đồng hồ. Ví dụ, <span class="math inline">210^\circ</span> và <span
+class="math inline">-150^\circ</span> là cùng một góc.</p>
+<p>Góc có thể được đo bằng độ hoặc radian (<span
+class="math inline">\text{rad}</span>). Để liên hệ hai số đo này, hãy
+nhớ rằng một vòng tròn đầy đủ là <span
+class="math inline">360^\circ</span> và <span
+class="math inline">2\pi\text{ rad}</span>. Để chuyển đổi, chẳng hạn
+<span class="math inline">40^\circ</span> sang radian, ta viết <span
+class="math display">40^\circ \left( \frac{2\pi\text{ rad}}{360^\circ}
+\right) = 0.70\text{ rad}.</span></p>
+<h5 id="chiến-thuật-2-hàm-lượng-giác.">Chiến thuật 2: Hàm lượng
+giác.</h5>
+<p>Bạn cần biết định nghĩa của các hàm lượng giác phổ biến—sin, cosin,
+và tang—vì chúng là một phần trong ngôn ngữ của khoa học và kỹ thuật.
+Chúng được đưa ra trong Hình 3.1.10 dưới dạng không phụ thuộc vào cách
+đặt tên các đỉnh của tam giác.</p>
+<p>Bạn cũng nên có khả năng vẽ phác đồ thị biến thiên của các hàm lượng
+giác theo góc, như trong Hình 3.1.11, để có thể phán đoán xem kết quả
+tính toán trên máy tính cầm tay có hợp lý hay không. Thậm chí chỉ cần
+biết dấu của các hàm trong các góc phần tư khác nhau cũng có thể rất hữu
+ích.</p>
+<h5 id="chiến-thuật-3-hàm-lượng-giác-ngược.">Chiến thuật 3: Hàm lượng
+giác ngược.</h5>
+<p>Khi lấy các hàm lượng giác ngược <span
+class="math inline">\sin^{-1}</span>, <span
+class="math inline">\cos^{-1}</span>, và <span
+class="math inline">\tan^{-1}</span> trên máy tính cầm tay, bạn phải xem
+xét tính hợp lý của kết quả nhận được, bởi vì thường có một câu trả lời
+khả dĩ khác mà máy tính không hiển thị. Phạm vi hoạt động của máy tính
+khi thực hiện từng hàm lượng giác ngược được chỉ ra trong Hình 3.1.11.
+Lấy ví dụ, <span class="math inline">\sin^{-1} 0.5</span> có các góc
+tương ứng là <span class="math inline">30^\circ</span> (giá trị được
+hiển thị trên máy tính, vì <span class="math inline">30^\circ</span> nằm
+trong phạm vi hoạt động của nó) và <span
+class="math inline">150^\circ</span>. Để thấy cả hai giá trị, hãy kẻ một
+đường nằm ngang qua giá trị <span class="math inline">0.5</span> trong
+Hình 3.1.11a và lưu ý vị trí nó cắt đường cong sin. Làm thế nào để bạn
+phân biệt được câu trả lời đúng? Đó chính là câu trả lời có vẻ hợp lý
+hơn đối với tình huống đã cho.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.11.png" loading="lazy" />
+<figcaption>Hình 3.1.11: Ba đường cong hữu ích cần nhớ. Phạm vi hoạt
+động của máy tính cầm tay khi lấy các hàm lượng giác ngược được chỉ ra
+bởi các phần sẫm màu hơn của các đường cong có màu.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> <span class="math inline">\cos</span>; <span
+class="math inline">\tan</span>.</p>
+<h5 id="chiến-thuật-4-đo-góc-của-vectơ.">Chiến thuật 4: Đo góc của
+vectơ.</h5>
+<p>Các phương trình cho <span class="math inline">\cos\theta</span> và
+<span class="math inline">\sin\theta</span> trong Phương trình 3.1.5 và
+cho <span class="math inline">\tan\theta</span> trong Phương trình 3.1.6
+chỉ có hiệu lực nếu góc được đo từ chiều dương của trục <span
+class="math inline">x</span>. Nếu nó được đo tương đối so với một hướng
+nào khác, thì các hàm lượng giác trong Phương trình 3.1.5 có thể phải
+hoán đổi cho nhau và tỉ số trong Phương trình 3.1.6 có thể phải đảo
+ngược. Một phương pháp an toàn hơn là quy đổi góc về dạng được đo từ
+chiều dương của trục <span class="math inline">x</span>. Trong
+WileyPLUS, hệ thống yêu cầu bạn báo cáo góc định hướng theo cách này (và
+dương nếu ngược chiều kim đồng hồ và âm nếu theo chiều kim đồng hồ).</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.10.png" loading="lazy" />
+<figcaption>Hình 3.1.10: Một tam giác được dùng để định nghĩa các hàm
+lượng giác. Xem thêm Phụ lục E.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Cạnh huyền; Cạnh kề với <span
+class="math inline">\theta</span>; Cạnh đối diện <span
+class="math inline">\theta</span>; <span class="math inline">\sin\theta
+= \frac{\text{cạnh đối diện}}{\text{cạnh huyền}}</span>; <span
+class="math inline">\cos\theta = \frac{\text{cạnh kề}}{\text{cạnh
+huyền}}</span>; <span class="math inline">\tan\theta = \frac{\text{cạnh
+đối diện}}{\text{cạnh kề}}</span>.</p>
+<p><em>Các ví dụ bổ sung, video và bài luyện tập có tại
+WileyPLUS.</em></p>
+<h5 id="trang-72">[Trang 72]</h5>
+<h3 class="unnumbered"
+id="vectơ-đơn-vị-cộng-các-vectơ-theo-các-thành-phần">3.2 VECTƠ ĐƠN VỊ,
+CỘNG CÁC VECTƠ THEO CÁC THÀNH PHẦN</h3>
+<h4 class="unnumbered" id="mục-tiêu-học-tập-1">Mục tiêu học tập</h4>
+<p><em>Sau khi đọc mô-đun này, bạn có thể…</em></p>
+<ul>
+<li><p>Chuyển đổi một vectơ giữa dạng độ lớn–góc và dạng vectơ đơn
+vị.</p></li>
+<li><p>Cộng và trừ các vectơ ở dạng độ lớn–góc và ở dạng vectơ đơn
+vị.</p></li>
+<li><p>Nhận biết rằng, đối với một vectơ cho trước, việc quay hệ tọa độ
+quanh gốc tọa độ có thể làm thay đổi các thành phần của vectơ nhưng
+không làm thay đổi chính vectơ đó.</p></li>
+</ul>
+<h4 class="unnumbered" id="ý-tưởng-cốt-lõi-2">Ý tưởng cốt lõi</h4>
+<ul>
+<li><p>Các vectơ đơn vị <span class="math inline">\hat{i}</span>, <span
+class="math inline">\hat{j}</span>, và <span
+class="math inline">\hat{k}</span> có độ lớn bằng đơn vị (<span
+class="math inline">1</span>) và lần lượt hướng theo các chiều dương của
+các trục <span class="math inline">x</span>, <span
+class="math inline">y</span>, và <span class="math inline">z</span>
+trong một hệ tọa độ bàn tay phải. Chúng ta có thể viết một vectơ <span
+class="math inline">\vec{a}</span> theo các vectơ đơn vị dưới dạng <span
+class="math display">\vec{a} = a_x\hat{i} + a_y\hat{j} +
+a_z\hat{k},</span> trong đó <span class="math inline">a_x\hat{i}</span>,
+<span class="math inline">a_y\hat{j}</span>, và <span
+class="math inline">a_z\hat{k}</span> là các thành phần vectơ của <span
+class="math inline">\vec{a}</span>, còn <span
+class="math inline">a_x</span>, <span class="math inline">a_y</span>, và
+<span class="math inline">a_z</span> là các thành phần vô hướng của
+nó.</p></li>
+<li><p>Để cộng các vectơ dưới dạng thành phần, chúng ta sử dụng các quy
+tắc <span class="math display">r_x = a_x + b_x   r_y = a_y + b_y   r_z =
+a_z + b_z.</span> Ở đây <span class="math inline">\vec{a}</span> và
+<span class="math inline">\vec{b}</span> là các vectơ cần cộng, và <span
+class="math inline">\vec{r}</span> là vectơ tổng. Lưu ý rằng chúng ta
+cộng các thành phần theo từng trục riêng biệt.</p></li>
+</ul>
+<h4 class="unnumbered" id="vectơ-đơn-vị">Vectơ đơn vị</h4>
+<p>Một <strong>vectơ đơn vị</strong> là một vectơ có độ lớn chính xác
+bằng 1 và hướng theo một hướng xác định. Nó không có cả thứ nguyên lẫn
+đơn vị. Mục đích duy nhất của nó là để chỉ hướng—nghĩa là xác định một
+hướng. Các vectơ đơn vị theo các chiều dương của các trục <span
+class="math inline">x</span>, <span class="math inline">y</span>, và
+<span class="math inline">z</span> được ký hiệu là <span
+class="math inline">\hat{i}</span>, <span
+class="math inline">\hat{j}</span>, và <span
+class="math inline">\hat{k}</span>, trong đó dấu mũ <span
+class="math inline">\hat{}</span> được dùng thay cho mũi tên phía trên
+như đối với các vectơ khác (Hình 3.2.1). Cách sắp xếp các trục trong
+Hình 3.2.1 được gọi là một <strong>hệ tọa độ bàn tay phải</strong>. Hệ
+vẫn giữ tính chất bàn tay phải nếu nó được quay như một vật rắn. Chúng
+ta sử dụng duy nhất các hệ tọa độ như vậy trong cuốn sách này.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.2.1.png" loading="lazy" />
+<figcaption>Hình 3.2.1: Các vectơ đơn vị <span
+class="math inline">\hat{i}</span>, <span
+class="math inline">\hat{j}</span>, và <span
+class="math inline">\hat{k}</span> xác định các hướng của một hệ tọa độ
+bàn tay phải.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Các vectơ đơn vị hướng dọc theo các trục.</p>
+<p>Các vectơ đơn vị rất hữu ích để biểu diễn các vectơ khác; ví dụ,
+chúng ta có thể biểu diễn <span class="math inline">\vec{a}</span> và
+<span class="math inline">\vec{b}</span> ở các Hình 3.1.7 và 3.1.8 dưới
+dạng <span class="math display">\begin{equation}
+\tag{3.2.1}
+\vec{a} = a_x\hat{i} + a_y\hat{j}
+\end{equation}</span> và <span class="math display">\begin{equation}
+\tag{3.2.2}
+\vec{b} = b_x\hat{i} + b_y\hat{j}.
+\end{equation}</span> Hai phương trình này được minh họa trong Hình
+3.2.2. Các đại lượng <span class="math inline">a_x\hat{i}</span> và
+<span class="math inline">a_y\hat{j}</span> là các vectơ, được gọi là
+<strong>các thành phần vectơ</strong> của <span
+class="math inline">\vec{a}</span>. Các đại lượng <span
+class="math inline">a_x</span> và <span class="math inline">a_y</span>
+là các đại lượng vô hướng, được gọi là <strong>các thành phần vô
+hướng</strong> của <span class="math inline">\vec{a}</span> (hoặc, như
+trước đây, gọi đơn giản là <strong>các thành phần</strong> của nó).</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.2.2.png" loading="lazy" />
+<figcaption>Hình 3.2.2: (a) Các thành phần vectơ của vectơ <span
+class="math inline">\vec{a}</span>. (b) Các thành phần vectơ của vectơ
+<span class="math inline">\vec{b}</span>.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Đây là thành phần vectơ theo trục <span
+class="math inline">x</span>; Đây là thành phần vectơ theo trục <span
+class="math inline">y</span>.</p>
+<h4 class="unnumbered" id="cộng-các-vectơ-theo-các-thành-phần">Cộng các
+vectơ theo các thành phần</h4>
+<p>Chúng ta có thể cộng các vectơ theo cách hình học trên hình vẽ phác
+hoặc trực tiếp trên máy tính cầm tay có tính năng tính toán vectơ. Một
+cách thứ ba là kết hợp các thành phần của chúng theo từng trục.</p>
+<h5 id="trang-73">[Trang 73]</h5>
+<p>Để bắt đầu, hãy xét biểu thức <span
+class="math display">\begin{equation}
+\tag{3.2.3}
+\vec{r} = \vec{a} + \vec{b},
+\end{equation}</span> trong đó nói rằng vectơ <span
+class="math inline">\vec{r}</span> đồng nhất với vectơ <span
+class="math inline">(\vec{a} + \vec{b})</span>. Vì vậy, mỗi thành phần
+của <span class="math inline">\vec{r}</span> phải bằng thành phần tương
+ứng của <span class="math inline">(\vec{a} + \vec{b})</span>: <span
+class="math display">\begin{equation}
+\tag{3.2.4}
+r_x = a_x + b_x
+\end{equation}</span> <span class="math display">\begin{equation}
+\tag{3.2.5}
+r_y = a_y + b_y
+\end{equation}</span> <span class="math display">\begin{equation}
+\tag{3.2.6}
+r_z = a_z + b_z.
+\end{equation}</span> Nói cách khác, hai vectơ phải bằng nhau nếu các
+thành phần tương ứng của chúng bằng nhau. Các Phương trình 3.2.3 đến
+3.2.6 cho chúng ta biết rằng để cộng các vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>, chúng ta phải (1) phân tích các
+vectơ thành các thành phần vô hướng của chúng; (2) kết hợp các thành
+phần vô hướng này, theo từng trục một, để nhận được các thành phần của
+tổng <span class="math inline">\vec{r}</span>; và (3) kết hợp các thành
+phần của <span class="math inline">\vec{r}</span> để thu được chính
+vectơ <span class="math inline">\vec{r}</span>. Chúng ta có quyền lựa
+chọn ở bước 3. Chúng ta có thể biểu diễn <span
+class="math inline">\vec{r}</span> theo ký hiệu vectơ đơn vị hoặc theo
+ký hiệu độ lớn–góc.</p>
+<p>Quy trình cộng các vectơ theo thành phần này cũng áp dụng cho phép
+trừ vectơ. Hãy nhớ lại rằng một phép trừ như <span
+class="math inline">\vec{d} = \vec{a} - \vec{b}</span> có thể được viết
+lại dưới dạng một phép cộng <span class="math inline">\vec{d} = \vec{a}
++ (-\vec{b})</span>. Để trừ, ta cộng <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">-\vec{b}</span> theo các thành phần, để thu được
+<span class="math display">d_x = a_x - b_x,   d_y = a_y -
+b_y,   \text{và}   d_z = a_z - b_z,</span> trong đó <span
+class="math display">\begin{equation}
+\tag{3.2.7}
+\vec{d} = d_x\hat{i} + d_y\hat{j} + d_z\hat{k}.
+\end{equation}</span></p>
+<h4 class="unnumbered" id="điểm-kiểm-tra-3.2.1">Điểm kiểm tra 3.2.1</h4>
+<p>(a) Trong hình ở đây, dấu của các thành phần <span
+class="math inline">x</span> của <span
+class="math inline">\vec{d}_1</span> và <span
+class="math inline">\vec{d}_2</span> là gì? (b) Dấu của các thành phần
+<span class="math inline">y</span> của <span
+class="math inline">\vec{d}_1</span> và <span
+class="math inline">\vec{d}_2</span> là gì? (c) Dấu của các thành phần
+<span class="math inline">x</span> và <span class="math inline">y</span>
+của <span class="math inline">\vec{d}_1 + \vec{d}_2</span> là gì?</p>
+<h4 class="unnumbered" id="vectơ-và-các-định-luật-vật-lý">Vectơ và các
+định luật vật lý</h4>
+<p>Cho đến nay, trong mọi hình vẽ có hệ tọa độ, các trục <span
+class="math inline">x</span> và <span class="math inline">y</span> đều
+song song với các mép của trang sách. Do đó, khi đưa một vectơ <span
+class="math inline">\vec{a}</span> vào, các thành phần <span
+class="math inline">a_x</span> và <span class="math inline">a_y</span>
+của nó cũng song song với các mép trang (như trong Hình 3.2.3a). Lý do
+duy nhất cho sự định hướng các trục như vậy là vì trông nó “thuận mắt”;
+không hề có lý do sâu xa nào khác. Thay vào đó, chúng ta có thể quay các
+trục (nhưng không quay vectơ <span class="math inline">\vec{a}</span>)
+đi một góc <span class="math inline">\phi</span> như trong Hình 3.2.3b,
+trong trường hợp này các thành phần sẽ có các giá trị mới, gọi là <span
+class="math inline">a&#39;_x</span> và <span
+class="math inline">a&#39;_y</span>. Vì có vô số cách chọn góc <span
+class="math inline">\phi</span>, nên có vô số cặp thành phần khác nhau
+cho <span class="math inline">\vec{a}</span>.</p>
+<p>Vậy thì cặp thành phần nào là “đúng”? Câu trả lời là tất cả chúng đều
+có giá trị tương đương như nhau vì mỗi cặp (cùng các trục của nó) chỉ
+đem lại cho chúng ta một cách khác nhau để mô tả cùng một vectơ <span
+class="math inline">\vec{a}</span>; tất cả đều tạo ra cùng một độ lớn và
+hướng cho vectơ. Trong Hình 3.2.3, ta có <span
+class="math display">\begin{equation}
+\tag{3.2.8}
+a = \sqrt{a_x^2 + a_y^2} = \sqrt{{a&#39;_x}^2 + {a&#39;_y}^2}
+\end{equation}</span> và <span class="math display">\begin{equation}
+\tag{3.2.9}
+\theta = \theta&#39; + \phi.
+\end{equation}</span> Điểm mấu chốt là chúng ta có sự tự do rất lớn
+trong việc lựa chọn một hệ tọa độ, bởi vì các mối liên hệ giữa các vectơ
+không phụ thuộc vào vị trí của gốc tọa độ hay sự định hướng của các
+trục. Điều này cũng đúng đối với các mối liên hệ trong vật lý; tất cả
+chúng đều độc lập với việc lựa chọn hệ tọa độ. Thêm vào đó sự giản dị và
+phong phú của ngôn ngữ vectơ, bạn có thể hiểu vì sao các định luật vật
+lý hầu như luôn được trình bày bằng ngôn ngữ đó: Một phương trình, như
+Phương trình 3.2.3, có thể biểu diễn cho ba (hoặc thậm chí nhiều hơn)
+mối liên hệ, như các Phương trình 3.2.4, 3.2.5, và 3.2.6.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.2.3.png" loading="lazy" />
+<figcaption>Hình 3.2.3: (a) Vectơ <span
+class="math inline">\vec{a}</span> và các thành phần của nó. (b) Cùng
+vectơ đó, với các trục của hệ tọa độ được quay đi một góc <span
+class="math inline">\phi</span>.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Quay các trục làm thay đổi các thành phần
+nhưng không làm thay đổi vectơ.</p>
+<h5 id="trang-74">[Trang 74]</h5>
+<h3 class="unnumbered"
+id="ví-dụ-mẫu-3.2.1-cộng-các-vectơ-các-thành-phần-theo-vectơ-đơn-vị">Ví
+dụ mẫu 3.2.1: Cộng các vectơ, các thành phần theo vectơ đơn vị</h3>
+<p>Hình 3.2.4a thể hiện ba vectơ sau: <span class="math display">\vec{a}
+= (4.2\text{ m})\hat{i} - (1.5\text{ m})\hat{j},</span> <span
+class="math display">\vec{b} = (-1.6\text{ m})\hat{i} + (2.9\text{
+m})\hat{j},</span> và <span class="math display">\vec{c} = (-3.7\text{
+m})\hat{j}.</span> Vectơ tổng <span class="math inline">\vec{r}</span>
+của chúng, cũng được biểu diễn trên hình, bằng bao nhiêu?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.2.4.png" loading="lazy" />
+<figcaption>Hình 3.2.4: Vectơ <span class="math inline">\vec{r}</span>
+là vectơ tổng của ba vectơ còn lại.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Đây là kết quả của phép cộng; Để cộng các
+vectơ này, hãy tìm thành phần <span class="math inline">x</span> tổng
+hợp và thành phần <span class="math inline">y</span> tổng hợp của chúng;
+Sau đó sắp xếp các thành phần tổng hợp theo quy tắc nối tiếp
+ngọn–gốc.</p>
+<h5 id="ý-tưởng-cốt-lõi-3">Ý TƯỞNG CỐT LÕI</h5>
+<p>Chúng ta có thể cộng ba vectơ theo các thành phần, từng trục một, rồi
+sau đó kết hợp các thành phần lại để viết vectơ tổng <span
+class="math inline">\vec{r}</span>.</p>
+<p><em>Tính toán:</em> Đối với trục <span class="math inline">x</span>,
+chúng ta cộng các thành phần <span class="math inline">x</span> của
+<span class="math inline">\vec{a}</span>, <span
+class="math inline">\vec{b}</span>, và <span
+class="math inline">\vec{c}</span>, để thu được thành phần <span
+class="math inline">x</span> của vectơ tổng <span
+class="math inline">\vec{r}</span>: <span
+class="math display">\begin{align*}
+r_x &amp;= a_x + b_x + c_x \\
+&amp;= 4.2\text{ m} - 1.6\text{ m} + 0 = 2.6\text{ m}.
+\end{align*}</span> Tương tự, đối với trục <span
+class="math inline">y</span>, <span class="math display">\begin{align*}
+r_y &amp;= a_y + b_y + c_y \\
+&amp;= -1.5\text{ m} + 2.9\text{ m} - 3.7\text{ m} = -2.3\text{ m}.
+\end{align*}</span> Sau đó chúng ta kết hợp các thành phần này của <span
+class="math inline">\vec{r}</span> để viết vectơ ở dạng ký hiệu vectơ
+đơn vị: <span class="math display">\vec{r} = (2.6\text{ m})\hat{i} -
+(2.3\text{ m})\hat{j},   \text{(Đáp số)}</span> trong đó <span
+class="math inline">(2.6\text{ m})\hat{i}</span> là thành phần vectơ của
+<span class="math inline">\vec{r}</span> dọc theo trục <span
+class="math inline">x</span> và <span class="math inline">-(2.3\text{
+m})\hat{j}</span> là thành phần vectơ dọc theo trục <span
+class="math inline">y</span>. Hình 3.2.4b thể hiện một cách sắp xếp các
+thành phần vectơ này để tạo thành <span
+class="math inline">\vec{r}</span>. (Bạn có thể vẽ phác cách sắp xếp còn
+lại không?)</p>
+<p>Chúng ta cũng có thể trả lời câu hỏi bằng cách đưa ra độ lớn và góc
+cho <span class="math inline">\vec{r}</span>. Từ Phương trình 3.1.6, độ
+lớn là <span class="math display">r = \sqrt{(2.6\text{ m})^2 +
+(-2.3\text{ m})^2} \approx 3.5\text{ m}   \text{(Đáp số)}</span> và góc
+(được đo từ chiều <span class="math inline">+x</span>) là <span
+class="math display">\theta = \tan^{-1}\left( \frac{-2.3\text{
+m}}{2.6\text{ m}} \right) = -41^\circ,   \text{(Đáp số)}</span> trong đó
+dấu trừ có nghĩa là theo chiều kim đồng hồ.</p>
+<p><em>Các ví dụ bổ sung, video và bài luyện tập có tại
+WileyPLUS.</em></p>
+<h3 class="unnumbered" id="nhân-các-vectơ">3.3 NHÂN CÁC VECTƠ</h3>
+<h4 class="unnumbered" id="mục-tiêu-học-tập-2">Mục tiêu học tập</h4>
+<p><em>Sau khi đọc mô-đun này, bạn có thể…</em></p>
+<ul>
+<li><p>Nhân vectơ với đại lượng vô hướng.</p></li>
+<li><p>Nhận biết rằng phép nhân một vectơ với một đại lượng vô hướng cho
+ra một vectơ, việc lấy tích vô hướng (hoặc tích chấm) của hai vectơ cho
+ra một đại lượng vô hướng, và việc lấy tích có hướng (hoặc tích vectơ)
+cho ra một vectơ mới vuông góc với hai vectơ ban đầu.</p></li>
+<li><p>Tìm tích vô hướng của hai vectơ ở dạng độ lớn–góc và ở dạng vectơ
+đơn vị.</p></li>
+<li><p>Tìm góc giữa hai vectơ bằng cách lấy tích vô hướng của chúng ở cả
+dạng độ lớn–góc và dạng vectơ đơn vị.</p></li>
+<li><p>Cho trước hai vectơ, sử dụng tích vô hướng để tìm thành phần của
+một vectơ nằm dọc theo vectơ kia.</p></li>
+<li><p>Tìm tích có hướng của hai vectơ ở dạng độ lớn–góc và ở dạng vectơ
+đơn vị.</p></li>
+<li><p>Sử dụng quy tắc bàn tay phải để xác định hướng của vectơ tạo
+thành từ một tích có hướng.</p></li>
+<li><p>Trong các biểu thức tích lồng nhau, nơi một phép nhân nằm bên
+trong một phép nhân khác, hãy tuân theo quy trình đại số thông thường
+bằng cách bắt đầu với phép nhân trong cùng nhất rồi làm dần ra
+ngoài.</p></li>
+</ul>
+<h5 id="trang-75">[Trang 75]</h5>
+<h4 class="unnumbered" id="ý-tưởng-cốt-lõi-4">Ý tưởng cốt lõi</h4>
+<ul>
+<li><p>Tích của một đại lượng vô hướng <span
+class="math inline">s</span> và một vectơ <span
+class="math inline">\vec{v}</span> là một vectơ mới có độ lớn là <span
+class="math inline">sv</span> và có hướng cùng hướng với <span
+class="math inline">\vec{v}</span> nếu <span
+class="math inline">s</span> dương, và ngược hướng với <span
+class="math inline">\vec{v}</span> nếu <span
+class="math inline">s</span> âm. Để chia <span
+class="math inline">\vec{v}</span> cho <span
+class="math inline">s</span>, hãy nhân <span
+class="math inline">\vec{v}</span> với <span
+class="math inline">1/s</span>.</p></li>
+<li><p>Tích vô hướng (hoặc tích chấm) của hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> được viết là <span
+class="math inline">\vec{a} \cdot \vec{b}</span> và là đại lượng vô
+hướng được cho bởi <span class="math display">\vec{a} \cdot \vec{b} =
+ab\cos\phi,</span> trong đó <span class="math inline">\phi</span> là góc
+giữa các hướng của <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>. Một tích vô hướng là tích của độ lớn
+một vectơ và thành phần vô hướng của vectơ thứ hai dọc theo hướng của
+vectơ thứ nhất. Ở dạng vectơ đơn vị, <span class="math display">\vec{a}
+\cdot \vec{b} = (a_x\hat{i} + a_y\hat{j} + a_z\hat{k}) \cdot (b_x\hat{i}
++ b_y\hat{j} + b_z\hat{k}),</span> biểu thức có thể được khai triển theo
+định luật phân phối. Lưu ý rằng <span class="math inline">\vec{a} \cdot
+\vec{b} = \vec{b} \cdot \vec{a}</span>.</p></li>
+<li><p>Tích có hướng (hoặc tích vectơ) của hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> được viết là <span
+class="math inline">\vec{a} \times \vec{b}</span> và là một vectơ <span
+class="math inline">\vec{c}</span> có độ lớn <span
+class="math inline">c</span> được cho bởi <span class="math display">c =
+ab\sin\phi,</span> trong đó <span class="math inline">\phi</span> là góc
+nhỏ hơn trong các góc giữa các hướng của <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>. Hướng của <span
+class="math inline">\vec{c}</span> vuông góc với mặt phẳng xác định bởi
+<span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> và được xác định bởi quy tắc bàn tay
+phải, như minh họa trong Hình 3.3.2. Lưu ý rằng <span
+class="math inline">\vec{a} \times \vec{b} = -(\vec{b} \times
+\vec{a})</span>. Ở dạng vectơ đơn vị, <span class="math display">\vec{a}
+\times \vec{b} = (a_x\hat{i} + a_y\hat{j} + a_z\hat{k}) \times
+(b_x\hat{i} + b_y\hat{j} + b_z\hat{k}),</span> chúng ta có thể khai
+triển bằng định luật phân phối.</p></li>
+<li><p>Trong các biểu thức tích lồng nhau, khi một phép nhân nằm bên
+trong một phép nhân khác, hãy tuân theo quy trình đại số thông thường
+bằng cách bắt đầu với phép nhân trong cùng nhất rồi làm dần ra
+ngoài.</p></li>
+</ul>
+<h4 class="unnumbered" id="nhân-các-vectơ-1">Nhân các vectơ<a
+href="#fn1" class="footnote-ref" id="fnref1"
+role="doc-noteref"><sup>1</sup></a></h4>
+<p>Có ba cách có thể nhân các vectơ, nhưng không có cách nào hoàn toàn
+giống như phép nhân đại số thông thường. Khi đọc nội dung này, hãy nhớ
+rằng máy tính cầm tay có tính năng tính toán vectơ sẽ chỉ giúp bạn nhân
+các vectơ nếu bạn hiểu các quy tắc cơ bản của phép nhân đó.</p>
+<h5 id="nhân-một-vectơ-với-một-đại-lượng-vô-hướng.">Nhân một vectơ với
+một đại lượng vô hướng.</h5>
+<p>Nếu chúng ta nhân một vectơ <span class="math inline">\vec{a}</span>
+với một đại lượng vô hướng <span class="math inline">s</span>, ta nhận
+được một vectơ mới. Độ lớn của nó là tích của độ lớn của <span
+class="math inline">\vec{a}</span> và giá trị tuyệt đối của <span
+class="math inline">s</span>. Hướng của nó là hướng của <span
+class="math inline">\vec{a}</span> nếu <span
+class="math inline">s</span> dương nhưng là hướng ngược lại nếu <span
+class="math inline">s</span> âm. Để chia <span
+class="math inline">\vec{a}</span> cho <span
+class="math inline">s</span>, chúng ta nhân <span
+class="math inline">\vec{a}</span> với <span
+class="math inline">1/s</span>.</p>
+<h5 id="nhân-một-vectơ-với-một-vectơ.">Nhân một vectơ với một
+vectơ.</h5>
+<p>Có hai cách để nhân một vectơ với một vectơ: Một cách tạo ra một đại
+lượng vô hướng (gọi là tích vô hướng), và cách kia tạo ra một vectơ mới
+(gọi là tích có hướng). (Sinh viên thường nhầm lẫn giữa hai cách
+này.)</p>
+<h5 id="tích-vô-hướng.">Tích vô hướng.</h5>
+<p>Tích vô hướng của các vectơ <span class="math inline">\vec{a}</span>
+và <span class="math inline">\vec{b}</span> trong Hình 3.3.1a được viết
+là <span class="math inline">\vec{a} \cdot \vec{b}</span> và được định
+nghĩa là <span class="math display">\begin{equation}
+\tag{3.3.1}
+\vec{a} \cdot \vec{b} = ab\cos\phi,
+\end{equation}</span> trong đó <span class="math inline">a</span> là độ
+lớn của <span class="math inline">\vec{a}</span>, <span
+class="math inline">b</span> là độ lớn của <span
+class="math inline">\vec{b}</span>, và <span
+class="math inline">\phi</span> là góc giữa <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> (hay chính xác hơn là giữa các hướng
+của <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>). Thực sự có hai góc như vậy: <span
+class="math inline">\phi</span> và <span class="math inline">360^\circ -
+\phi</span>. Góc nào cũng có thể được dùng trong Phương trình 3.3.1, bởi
+vì cosin của chúng là như nhau.</p>
+<h5 id="trang-76">[Trang 76]</h5>
+<p>Lưu ý rằng chỉ có các đại lượng vô hướng ở vế phải của Phương trình
+3.3.1 (bao gồm cả giá trị của <span
+class="math inline">\cos\phi</span>). Do đó <span
+class="math inline">\vec{a} \cdot \vec{b}</span> ở vế trái biểu diễn một
+đại lượng vô hướng. Vì ký hiệu này, <span class="math inline">\vec{a}
+\cdot \vec{b}</span> còn được gọi là <strong>tích vô hướng</strong>
+(hoặc <strong>tích chấm</strong>) và được đọc là “a chấm b”.</p>
+<p>Một tích vô hướng có thể được coi là tích của hai đại lượng: (1) độ
+lớn của một trong hai vectơ và (2) thành phần vô hướng của vectơ thứ hai
+dọc theo hướng của vectơ thứ nhất. Ví dụ, trong Hình 3.3.1b, <span
+class="math inline">\vec{a}</span> có một thành phần vô hướng <span
+class="math inline">a\cos\phi</span> dọc theo hướng của <span
+class="math inline">\vec{b}</span>; lưu ý rằng một đường vuông góc hạ từ
+ngọn của <span class="math inline">\vec{a}</span> xuống <span
+class="math inline">\vec{b}</span> sẽ xác định thành phần đó. Tương tự,
+<span class="math inline">\vec{b}</span> có một thành phần vô hướng
+<span class="math inline">b\cos\phi</span> dọc theo hướng của <span
+class="math inline">\vec{a}</span>.</p>
+<p>Phương trình 3.3.1 có thể được viết lại như sau để nhấn mạnh các
+thành phần: <span class="math display">\begin{equation}
+\tag{3.3.2}
+\vec{a} \cdot \vec{b} = (a\cos\phi)(b) = (a)(b\cos\phi).
+\end{equation}</span> Quy tắc giao hoán áp dụng cho tích vô hướng, vì
+vậy chúng ta có thể viết <span class="math display">\vec{a} \cdot
+\vec{b} = \vec{b} \cdot \vec{a}.</span> Khi hai vectơ ở dạng biểu diễn
+vectơ đơn vị, chúng ta viết tích vô hướng của chúng dưới dạng <span
+class="math display">\begin{equation}
+\tag{3.3.3}
+\vec{a} \cdot \vec{b} = (a_x\hat{i} + a_y\hat{j} + a_z\hat{k}) \cdot
+(b_x\hat{i} + b_y\hat{j} + b_z\hat{k}),
+\end{equation}</span> biểu thức này có thể khai triển theo quy tắc phân
+phối: Từng thành phần vectơ của vectơ thứ nhất được nhân vô hướng với
+từng thành phần vectơ của vectơ thứ hai. Khi làm như vậy, chúng ta có
+thể chỉ ra rằng <span class="math display">\begin{equation}
+\tag{3.3.4}
+\vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z b_z.
+\end{equation}</span></p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.3.1.png" loading="lazy" />
+<figcaption>Hình 3.3.1: (a) Hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>, với góc <span
+class="math inline">\phi</span> ở giữa chúng. (b) Mỗi vectơ có một thành
+phần dọc theo hướng của vectơ kia.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Thành phần của <span
+class="math inline">b</span> dọc theo hướng của <span
+class="math inline">a</span> là <span
+class="math inline">b\cos\phi</span>; Thành phần của <span
+class="math inline">a</span> dọc theo hướng của <span
+class="math inline">b</span> là <span
+class="math inline">a\cos\phi</span>; Nhân các giá trị này cho ta tích
+vô hướng; Hoặc nhân các giá trị này cho ta tích vô hướng.</p>
+<p>Nếu góc <span class="math inline">\phi</span> giữa hai vectơ bằng
+<span class="math inline">0^\circ</span>, thành phần của một vectơ dọc
+theo vectơ kia là cực đại, và do đó tích vô hướng của các vectơ cũng
+vậy. Ngược lại, nếu <span class="math inline">\phi</span> bằng <span
+class="math inline">90^\circ</span>, thành phần của một vectơ dọc theo
+vectơ kia bằng 0, và tích vô hướng cũng bằng 0.</p>
+<h5 id="trang-77">[Trang 77]</h5>
+<h4 class="unnumbered" id="điểm-kiểm-tra-3.3.1">Điểm kiểm tra 3.3.1</h4>
+<p>Các vectơ <span class="math inline">\vec{C}</span> và <span
+class="math inline">\vec{D}</span> lần lượt có độ lớn là 3 đơn vị và 4
+đơn vị. Góc giữa các hướng của <span class="math inline">\vec{C}</span>
+và <span class="math inline">\vec{D}</span> là bao nhiêu nếu <span
+class="math inline">\vec{C} \cdot \vec{D}</span> bằng (a) 0, (b) 12 đơn
+vị, và (c) <span class="math inline">-12</span> đơn vị?</p>
+<h3 class="unnumbered" id="tích-vectơ">Tích vectơ</h3>
+<p><strong>Tích vectơ</strong> của <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>, viết là <span
+class="math inline">\vec{a} \times \vec{b}</span>, tạo ra một vectơ thứ
+ba <span class="math inline">\vec{c}</span> có độ lớn là <span
+class="math display">\begin{equation}
+\tag{3.3.5}
+c = ab\sin\phi,
+\end{equation}</span> trong đó <span class="math inline">\phi</span> là
+góc nhỏ hơn trong hai góc giữa <span class="math inline">\vec{a}</span>
+và <span class="math inline">\vec{b}</span>. (Bạn phải sử dụng góc nhỏ
+hơn giữa hai vectơ vì <span class="math inline">\sin\phi</span> và <span
+class="math inline">\sin(360^\circ - \phi)</span> khác dấu đại số.) Vì
+ký hiệu này, <span class="math inline">\vec{a} \times \vec{b}</span> còn
+được gọi là <strong>tích có hướng</strong> (hoặc <strong>tích
+chéo</strong>), và khi nói nó được đọc là “a nhân có hướng với b” (hay
+“a cross b”).</p>
+<p>Nếu <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> song song hoặc ngược chiều (đối
+song), <span class="math inline">\vec{a} \times \vec{b} = 0</span>. Độ
+lớn của <span class="math inline">\vec{a} \times \vec{b}</span>, có thể
+được viết là <span class="math inline">|\vec{a} \times \vec{b}|</span>,
+đạt cực đại khi <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> vuông góc với nhau.</p>
+<p>Hướng của <span class="math inline">\vec{c}</span> vuông góc với mặt
+phẳng chứa <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>. Hình 3.3.2a chỉ ra cách xác định
+hướng của <span class="math inline">\vec{c} = \vec{a} \times
+\vec{b}</span> bằng quy tắc được gọi là <strong>quy tắc bàn tay
+phải</strong>. Đặt các vectơ <span class="math inline">\vec{a}</span> và
+<span class="math inline">\vec{b}</span> chung gốc mà không làm thay đổi
+định hướng của chúng, và tưởng tượng một đường thẳng vuông góc với mặt
+phẳng của chúng tại điểm chung đó. Hãy tưởng tượng đặt bàn tay phải của
+bạn vòng quanh đường thẳng đó sao cho các ngón tay của bạn quét từ <span
+class="math inline">\vec{a}</span> sang <span
+class="math inline">\vec{b}</span> qua góc nhỏ hơn giữa chúng. Ngón tay
+cái choãi ra của bạn sẽ chỉ theo hướng của <span
+class="math inline">\vec{c}</span>.</p>
+<p>Thứ tự của phép nhân vectơ là rất quan trọng. Trong Hình 3.3.2b,
+chúng ta đang xác định hướng của <span class="math inline">\vec{c}&#39;
+= \vec{b} \times \vec{a}</span>, vì vậy các ngón tay được đặt để quét từ
+<span class="math inline">\vec{b}</span> sang <span
+class="math inline">\vec{a}</span> qua góc nhỏ hơn. Ngón tay cái rốt
+cuộc chỉ theo hướng ngược lại so với trước đó, và do đó chắc chắn phải
+là <span class="math inline">\vec{c}&#39; = -\vec{c}</span>; nghĩa là,
+<span class="math display">\begin{equation}
+\tag{3.3.6}
+\vec{b} \times \vec{a} = -(\vec{a} \times \vec{b}).
+\end{equation}</span> Nói cách khác, quy tắc giao hoán không áp dụng cho
+tích vectơ.</p>
+<p>Dưới dạng biểu diễn vectơ đơn vị, chúng ta viết <span
+class="math display">\begin{equation}
+\tag{3.3.7}
+\vec{a} \times \vec{b} = (a_x\hat{i} + a_y\hat{j} + a_z\hat{k}) \times
+(b_x\hat{i} + b_y\hat{j} + b_z\hat{k}),
+\end{equation}</span> biểu thức này có thể được khai triển theo quy tắc
+phân phối; nghĩa là mỗi thành phần của vectơ thứ nhất được nhân có hướng
+với từng thành phần của vectơ thứ hai. Tích có hướng của các vectơ đơn
+vị được cho trong Phụ lục E (xem “Tích của các vectơ”). Ví dụ, trong
+khai triển của Phương trình 3.3.7, chúng ta có <span
+class="math display">a_x\hat{i} \times b_x\hat{i} = a_x b_x(\hat{i}
+\times \hat{i}) = 0,</span> bởi vì hai vectơ đơn vị <span
+class="math inline">\hat{i}</span> và <span
+class="math inline">\hat{i}</span> song song và do đó có tích có hướng
+bằng không. Tương tự, chúng ta có <span class="math display">a_x\hat{i}
+\times b_y\hat{j} = a_x b_y(\hat{i} \times \hat{j}) = a_x
+b_y\hat{k}.</span> Trong bước cuối cùng, chúng ta đã dùng Phương trình
+3.3.5 để tính độ lớn của <span class="math inline">\hat{i} \times
+\hat{j}</span> bằng đơn vị (1). (Các vectơ <span
+class="math inline">\hat{i}</span> và <span
+class="math inline">\hat{j}</span> này mỗi vectơ đều có độ lớn bằng đơn
+vị, và góc giữa chúng là <span class="math inline">90^\circ</span>.)
+Ngoài ra, chúng ta đã dùng quy tắc bàn tay phải để xác định hướng của
+<span class="math inline">\hat{i} \times \hat{j}</span> là theo chiều
+dương của trục <span class="math inline">z</span> (do đó theo hướng của
+<span class="math inline">\hat{k}</span>).</p>
+<h5 id="trang-78">[Trang 78]</h5>
+<p>Tiếp tục khai triển Phương trình 3.3.7, bạn có thể chỉ ra rằng <span
+class="math display">\begin{equation}
+\tag{3.3.8}
+\vec{a} \times \vec{b} = (a_y b_z - b_y a_z)\hat{i} + (a_z b_x - b_z
+a_x)\hat{j} + (a_x b_y - b_x a_y)\hat{k}.
+\end{equation}</span> Một định thức (Phụ lục E) hoặc một máy tính có
+tính năng vectơ cũng có thể được sử dụng.</p>
+<p>Để kiểm tra xem một hệ tọa độ <span class="math inline">xyz</span>
+bất kỳ có phải là hệ tọa độ bàn tay phải hay không, hãy sử dụng quy tắc
+bàn tay phải cho tích có hướng <span class="math inline">\hat{i} \times
+\hat{j} = \hat{k}</span> với hệ tọa độ đó. Nếu các ngón tay của bạn quét
+từ <span class="math inline">\hat{i}</span> (chiều dương của trục <span
+class="math inline">x</span>) sang <span
+class="math inline">\hat{j}</span> (chiều dương của trục <span
+class="math inline">y</span>) với ngón tay cái choãi ra chỉ theo chiều
+dương của trục <span class="math inline">z</span> (chứ không phải chiều
+âm), thì hệ tọa độ đó là hệ bàn tay phải.</p>
+<h4 class="unnumbered" id="điểm-kiểm-tra-3.3.2">Điểm kiểm tra 3.3.2</h4>
+<p>Các vectơ <span class="math inline">\vec{C}</span> và <span
+class="math inline">\vec{D}</span> lần lượt có độ lớn là 3 đơn vị và 4
+đơn vị. Góc giữa các hướng của <span class="math inline">\vec{C}</span>
+và <span class="math inline">\vec{D}</span> là bao nhiêu nếu độ lớn của
+tích vectơ <span class="math inline">\vec{C} \times \vec{D}</span> là
+(a) 0 và (b) 12 đơn vị?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.3.2.png" loading="lazy" />
+<figcaption>Hình 3.3.2: Minh họa quy tắc bàn tay phải cho các tích
+vectơ. (a) Quét vectơ <span class="math inline">\vec{a}</span> sang
+vectơ <span class="math inline">\vec{b}</span> bằng các ngón tay của bàn
+tay phải của bạn. Ngón tay cái choãi ra chỉ hướng của vectơ <span
+class="math inline">\vec{c} = \vec{a} \times \vec{b}</span>. (b) Chỉ ra
+rằng <span class="math inline">\vec{b} \times \vec{a}</span> là ngược
+chiều so với <span class="math inline">\vec{a} \times
+\vec{b}</span>.</figcaption>
+</figure>
+<h5 id="trang-79">[Trang 79]</h5>
+<h3 class="unnumbered"
+id="ví-dụ-mẫu-3.3.1-góc-giữa-hai-vectơ-bằng-tích-vô-hướng">Ví dụ mẫu
+3.3.1: Góc giữa hai vectơ bằng tích vô hướng</h3>
+<p>Góc <span class="math inline">\phi</span> giữa <span
+class="math inline">\vec{a} = 3.0\hat{i} - 4.0\hat{j}</span> và <span
+class="math inline">\vec{b} = -2.0\hat{i} + 3.0\hat{k}</span> là bao
+nhiêu? (Cảnh báo: Mặc dù nhiều bước sau đây có thể bỏ qua khi dùng máy
+tính có tính năng vectơ, bạn sẽ hiểu rõ hơn về tích vô hướng nếu, ít
+nhất ở đây, bạn thực hiện các bước này.)</p>
+<h4 class="unnumbered" id="ý-tưởng-cốt-lõi-5">Ý tưởng cốt lõi</h4>
+<p>Góc giữa các hướng của hai vectơ nằm trong định nghĩa tích vô hướng
+của chúng (Phương trình 3.3.1): <span
+class="math display">\begin{equation}
+\tag{3.3.9}
+\vec{a} \cdot \vec{b} = ab\cos\phi.
+\end{equation}</span></p>
+<p><strong>Tính toán:</strong> Trong Phương trình 3.3.9, <span
+class="math inline">a</span> là độ lớn của <span
+class="math inline">\vec{a}</span>, hay <span
+class="math display">\begin{equation}
+\tag{3.3.10}
+a = \sqrt{3.0^2 + (-4.0)^2} = 5.00,
+\end{equation}</span> và <span class="math inline">b</span> là độ lớn
+của <span class="math inline">\vec{b}</span>, hay <span
+class="math display">\begin{equation}
+\tag{3.3.11}
+b = \sqrt{(-2.0)^2 + 3.0^2} = 3.61.
+\end{equation}</span></p>
+<p>Chúng ta có thể tính riêng vế trái của Phương trình 3.3.9 bằng cách
+viết các vectơ dưới dạng biểu diễn vectơ đơn vị và dùng quy tắc phân
+phối: <span class="math display">\begin{align*}
+\vec{a} \cdot \vec{b} &amp;= (3.0\hat{i} - 4.0\hat{j}) \cdot
+(-2.0\hat{i} + 3.0\hat{k}) \\
+&amp;= (3.0\hat{i}) \cdot (-2.0\hat{i}) + (3.0\hat{i}) \cdot
+(3.0\hat{k}) + (-4.0\hat{j}) \cdot (-2.0\hat{i}) + (-4.0\hat{j}) \cdot
+(3.0\hat{k}).
+\end{align*}</span> Tiếp theo, chúng ta áp dụng Phương trình 3.3.1 cho
+từng số hạng trong biểu thức cuối cùng này. Góc giữa các vectơ đơn vị
+trong số hạng đầu tiên (<span class="math inline">\hat{i}</span> và
+<span class="math inline">\hat{i}</span>) là <span
+class="math inline">0^\circ</span>, và trong các số hạng khác là <span
+class="math inline">90^\circ</span>. Sau đó chúng ta có <span
+class="math display">\begin{align*}
+\vec{a} \cdot \vec{b} &amp;= -(6.0)(1) + (9.0)(0) + (8.0)(0) - (12)(0)
+\\
+&amp;= -6.0.
+\end{align*}</span> Thay kết quả này và kết quả của các Phương trình
+3.3.10 và 3.3.11 vào Phương trình 3.3.9 cho <span
+class="math display">-6.0 = (5.00)(3.61)\cos\phi,</span> do đó <span
+class="math display">\phi = \cos^{-1}\frac{-6.0}{(5.00)(3.61)} =
+109^\circ \approx 110^\circ.   \text{(Đáp số)}</span></p>
+<h3 class="unnumbered"
+id="ví-dụ-mẫu-3.3.2-tích-có-hướng-quy-tắc-bàn-tay-phải">Ví dụ mẫu 3.3.2:
+Tích có hướng, quy tắc bàn tay phải</h3>
+<p>Trong Hình 3.3.3, vectơ <span class="math inline">\vec{a}</span> nằm
+trong mặt phẳng <span class="math inline">xy</span>, có độ lớn 18 đơn
+vị, và có hướng <span class="math inline">250^\circ</span> so với chiều
+dương của trục <span class="math inline">x</span>. Ngoài ra, vectơ <span
+class="math inline">\vec{b}</span> có độ lớn 12 đơn vị và hướng theo
+chiều dương của trục <span class="math inline">z</span>. Tích vectơ
+<span class="math inline">\vec{c} = \vec{a} \times \vec{b}</span> là
+gì?</p>
+<h4 class="unnumbered" id="ý-tưởng-cốt-lõi-6">Ý tưởng cốt lõi</h4>
+<p>Khi chúng ta có hai vectơ ở dạng độ lớn–góc, chúng ta tìm độ lớn của
+tích có hướng của chúng bằng Phương trình 3.3.5 và hướng của tích có
+hướng bằng quy tắc bàn tay phải trong Hình 3.3.2.</p>
+<p><strong>Tính toán:</strong> Đối với độ lớn, chúng ta viết <span
+class="math display">c = ab\sin\phi = (18)(12)(\sin 90^\circ) =
+216.   \text{(Đáp số)}</span> Để xác định hướng trong Hình 3.3.3, hãy
+tưởng tượng đặt các ngón tay của bàn tay phải của bạn vòng quanh một
+đường thẳng vuông góc với mặt phẳng của <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> (đường thẳng mà trên đó <span
+class="math inline">\vec{c}</span> được chỉ ra) sao cho các ngón tay của
+bạn quét từ <span class="math inline">\vec{a}</span> sang <span
+class="math inline">\vec{b}</span>. Khi đó ngón tay cái choãi ra của bạn
+sẽ chỉ hướng của <span class="math inline">\vec{c}</span>. Do đó, như
+được thể hiện trong hình vẽ, <span class="math inline">\vec{c}</span>
+nằm trong mặt phẳng <span class="math inline">xy</span>. Vì hướng của nó
+vuông góc với hướng của <span class="math inline">\vec{a}</span> (một
+tích có hướng luôn cho ra một vectơ vuông góc), nó tạo một góc <span
+class="math display">250^\circ - 90^\circ = 160^\circ   \text{(Đáp
+số)}</span> so với chiều dương của trục <span
+class="math inline">x</span>.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.3.3.png" loading="lazy" />
+<figcaption>Hình 3.3.3: Vectơ <span class="math inline">\vec{c}</span>
+(trong mặt phẳng <span class="math inline">xy</span>) là tích vectơ
+(hoặc tích có hướng) của các vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Đây là vectơ kết quả, vuông góc với cả <span
+class="math inline">a</span> và <span class="math inline">b</span>; Quét
+<span class="math inline">a</span> vào <span
+class="math inline">b</span>.</p>
+<h3 class="unnumbered"
+id="ví-dụ-mẫu-3.3.3-tích-có-hướng-dạng-biểu-diễn-vectơ-đơn-vị">Ví dụ mẫu
+3.3.3: Tích có hướng, dạng biểu diễn vectơ đơn vị</h3>
+<p>Nếu <span class="math inline">\vec{a} = 3\hat{i} - 4\hat{j}</span> và
+<span class="math inline">\vec{b} = -2\hat{i} + 3\hat{k}</span>, thì
+<span class="math inline">\vec{c} = \vec{a} \times \vec{b}</span> là
+gì?</p>
+<h4 class="unnumbered" id="ý-tưởng-cốt-lõi-7">Ý tưởng cốt lõi</h4>
+<p>Khi hai vectơ ở dạng biểu diễn vectơ đơn vị, chúng ta có thể tìm tích
+có hướng của chúng bằng cách dùng quy tắc phân phối.</p>
+<p><strong>Tính toán:</strong> Ở đây chúng ta viết <span
+class="math display">\begin{align*}
+\vec{c} &amp;= (3\hat{i} - 4\hat{j}) \times (-2\hat{i} + 3\hat{k}) \\
+&amp;= 3\hat{i} \times (-2\hat{i}) + 3\hat{i} \times 3\hat{k} +
+(-4\hat{j}) \times (-2\hat{i}) + (-4\hat{j}) \times 3\hat{k}.
+\end{align*}</span></p>
+<h5 id="trang-80">[Trang 80]</h5>
+<p>Tiếp theo, chúng ta tính từng số hạng bằng Phương trình 3.3.5, xác
+định hướng bằng quy tắc bàn tay phải. Đối với số hạng đầu tiên ở đây,
+góc <span class="math inline">\phi</span> giữa hai vectơ được nhân có
+hướng là 0. Đối với các số hạng khác, <span
+class="math inline">\phi</span> là <span
+class="math inline">90^\circ</span>. Chúng ta tìm được <span
+class="math display">\begin{align*}
+\vec{c} &amp;= -6(0) + 9(-\hat{j}) + 8(-\hat{k}) - 12\hat{i} \\
+&amp;= -12\hat{i} - 9\hat{j} - 8\hat{k}.   \text{(Đáp số)}
+\end{align*}</span> Vectơ <span class="math inline">\vec{c}</span> này
+vuông góc với cả <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>, một thực tế mà bạn có thể kiểm tra
+bằng cách chỉ ra rằng <span class="math inline">\vec{c} \cdot \vec{a} =
+0</span> và <span class="math inline">\vec{c} \cdot \vec{b} = 0</span>;
+nghĩa là không có thành phần nào của <span
+class="math inline">\vec{c}</span> dọc theo hướng của <span
+class="math inline">\vec{a}</span> hoặc <span
+class="math inline">\vec{b}</span>.</p>
+<p>Nói chung: Tích có hướng cho ra một vectơ vuông góc, hai vectơ vuông
+góc có tích vô hướng bằng không, và hai vectơ dọc theo cùng một trục có
+tích có hướng bằng không.</p>
+<p><em>Các ví dụ bổ sung, video và bài luyện tập có tại
+WileyPLUS.</em></p>
+<h2 class="unnumbered" id="ôn-tập-tóm-tắt">Ôn tập &amp; Tóm tắt</h2>
+<p><strong>Đại lượng vô hướng và vectơ</strong> Các đại lượng vô hướng,
+chẳng hạn như nhiệt độ, chỉ có độ lớn. Chúng được xác định bởi một con
+số kèm đơn vị (<span class="math inline">10^\circ\text{C}</span>) và
+tuân theo các quy tắc số học và đại số thông thường. Các vectơ, chẳng
+hạn như độ dịch chuyển, có cả độ lớn và hướng (<span
+class="math inline">5\text{ m}</span>, hướng bắc) và tuân theo các quy
+tắc của đại số vectơ.</p>
+<p><strong>Cộng vectơ bằng phương pháp hình học</strong> Hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> có thể được cộng về mặt hình học bằng
+cách vẽ chúng theo cùng một tỉ lệ và đặt chúng theo cách ngọn-nối-gốc.
+Vectơ nối gốc của vectơ thứ nhất với ngọn của vectơ thứ hai là vectơ
+tổng <span class="math inline">\vec{s}</span>. Để trừ <span
+class="math inline">\vec{b}</span> khỏi <span
+class="math inline">\vec{a}</span>, hãy đảo ngược hướng của <span
+class="math inline">\vec{b}</span> để được <span
+class="math inline">-\vec{b}</span>; sau đó cộng <span
+class="math inline">-\vec{b}</span> vào <span
+class="math inline">\vec{a}</span>. Phép cộng vectơ có tính chất giao
+hoán <span class="math display">\begin{equation}
+\tag{3.1.2}
+\vec{a} + \vec{b} = \vec{b} + \vec{a}
+\end{equation}</span> và tuân theo quy tắc kết hợp <span
+class="math display">\begin{equation}
+\tag{3.1.3}
+(\vec{a} + \vec{b}) + \vec{c} = \vec{a} + (\vec{b} + \vec{c}).
+\end{equation}</span></p>
+<p><strong>Các thành phần của một vectơ</strong> Các thành phần (vô
+hướng) <span class="math inline">a_x</span> và <span
+class="math inline">a_y</span> của bất kỳ vectơ hai chiều <span
+class="math inline">\vec{a}</span> nào dọc theo các trục tọa độ được tìm
+bằng cách hạ các đường vuông góc từ các đầu mút của <span
+class="math inline">\vec{a}</span> xuống các trục tọa độ. Các thành phần
+này được cho bởi <span class="math display">\begin{equation}
+\tag{3.1.5}
+a_x = a\cos\theta   \text{và}   a_y = a\sin\theta,
+\end{equation}</span> trong đó <span class="math inline">\theta</span>
+là góc giữa chiều dương của trục <span class="math inline">x</span> và
+hướng của <span class="math inline">\vec{a}</span>. Dấu đại số của một
+thành phần cho biết chiều của nó dọc theo trục tương ứng. Cho trước các
+thành phần của nó, chúng ta có thể tìm độ lớn và định hướng (hướng) của
+vectơ <span class="math inline">\vec{a}</span> bằng cách dùng <span
+class="math display">\begin{equation}
+\tag{3.1.6}
+a = \sqrt{a_x^2 + a_y^2}   \text{và}   \tan\theta = \frac{a_y}{a_x}.
+\end{equation}</span></p>
+<p><strong>Dạng biểu diễn vectơ đơn vị</strong> Các vectơ đơn vị <span
+class="math inline">\hat{i}</span>, <span
+class="math inline">\hat{j}</span>, và <span
+class="math inline">\hat{k}</span> có độ lớn bằng đơn vị và lần lượt
+hướng theo các chiều dương của các trục <span
+class="math inline">x</span>, <span class="math inline">y</span>, và
+<span class="math inline">z</span> trong một hệ tọa độ bàn tay phải (như
+được định nghĩa bởi các tích vectơ của các vectơ đơn vị). Chúng ta có
+thể viết một vectơ <span class="math inline">\vec{a}</span> theo các
+vectơ đơn vị dưới dạng <span class="math display">\begin{equation}
+\tag{3.2.1}
+\vec{a} = a_x\hat{i} + a_y\hat{j} + a_z\hat{k},
+\end{equation}</span> trong đó <span
+class="math inline">a_x\hat{i}</span>, <span
+class="math inline">a_y\hat{j}</span>, và <span
+class="math inline">a_z\hat{k}</span> là các <strong>thành phần
+vectơ</strong> của <span class="math inline">\vec{a}</span> còn <span
+class="math inline">a_x</span>, <span class="math inline">a_y</span>, và
+<span class="math inline">a_z</span> là các <strong>thành phần vô
+hướng</strong> của nó.</p>
+<p><strong>Cộng các vectơ ở dạng thành phần</strong> Để cộng các vectơ ở
+dạng thành phần, chúng ta dùng các quy tắc <span
+class="math display">r_x = a_x + b_x   r_y = a_y + b_y   r_z = a_z +
+b_z.   \text{(3.2.4 đến 3.2.6)}</span> Ở đây <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> là các vectơ cần cộng, và <span
+class="math inline">\vec{r}</span> là vectơ tổng. Lưu ý rằng chúng ta
+cộng các thành phần theo từng trục một. Sau đó chúng ta có thể biểu diễn
+tổng dưới dạng biểu diễn vectơ đơn vị hoặc dạng độ lớn–góc.</p>
+<p><strong>Tích của một đại lượng vô hướng và một vectơ</strong> Tích
+của một đại lượng vô hướng <span class="math inline">s</span> và một
+vectơ <span class="math inline">\vec{v}</span> là một vectơ mới có độ
+lớn là <span class="math inline">sv</span> và có hướng cùng hướng với
+<span class="math inline">\vec{v}</span> nếu <span
+class="math inline">s</span> dương, và ngược hướng với <span
+class="math inline">\vec{v}</span> nếu <span
+class="math inline">s</span> âm. (Dấu âm làm đảo chiều vectơ.) Để chia
+<span class="math inline">\vec{v}</span> cho <span
+class="math inline">s</span>, hãy nhân <span
+class="math inline">\vec{v}</span> với <span
+class="math inline">1/s</span>.</p>
+<p><strong>Tích vô hướng</strong> Tích <strong>vô hướng</strong> (hoặc
+<strong>tích chấm</strong>) của hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> được viết là <span
+class="math inline">\vec{a} \cdot \vec{b}</span> và là đại lượng vô
+hướng được cho bởi <span class="math display">\begin{equation}
+\tag{3.3.1}
+\vec{a} \cdot \vec{b} = ab\cos\phi,
+\end{equation}</span> trong đó <span class="math inline">\phi</span> là
+góc giữa các hướng của <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>. Một tích vô hướng là tích giữa độ
+lớn của một vectơ và thành phần vô hướng của vectơ thứ hai dọc theo
+hướng của vectơ thứ nhất. Lưu ý rằng <span class="math inline">\vec{a}
+\cdot \vec{b} = \vec{b} \cdot \vec{a}</span>, có nghĩa là tích vô hướng
+tuân theo quy tắc giao hoán.</p>
+<p>Dưới dạng biểu diễn vectơ đơn vị, <span
+class="math display">\begin{equation}
+\tag{3.3.3}
+\vec{a} \cdot \vec{b} = (a_x\hat{i} + a_y\hat{j} + a_z\hat{k}) \cdot
+(b_x\hat{i} + b_y\hat{j} + b_z\hat{k}),
+\end{equation}</span> biểu thức có thể được khai triển theo quy tắc phân
+phối.</p>
+<p><strong>Tích vectơ</strong> Tích <strong>vectơ</strong> (hoặc
+<strong>tích có hướng</strong>) của hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> được viết là <span
+class="math inline">\vec{a} \times \vec{b}</span> và là một vectơ <span
+class="math inline">\vec{c}</span> có độ lớn <span
+class="math inline">c</span> được cho bởi <span
+class="math display">\begin{equation}
+\tag{3.3.5}
+c = ab\sin\phi,
+\end{equation}</span> trong đó <span class="math inline">\phi</span> là
+góc nhỏ hơn trong hai góc giữa các hướng của <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>. Hướng của <span
+class="math inline">\vec{c}</span> vuông góc với mặt phẳng xác định bởi
+<span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> và được xác định bởi quy tắc bàn tay
+phải, như chỉ ra trong Hình 3.3.2. Lưu ý rằng <span
+class="math inline">\vec{a} \times \vec{b} = -(\vec{b} \times
+\vec{a})</span>, có nghĩa là tích vectơ không tuân theo quy tắc giao
+hoán.</p>
+<p>Dưới dạng biểu diễn vectơ đơn vị, <span
+class="math display">\begin{equation}
+\tag{3.3.7}
+\vec{a} \times \vec{b} = (a_x\hat{i} + a_y\hat{j} + a_z\hat{k}) \times
+(b_x\hat{i} + b_y\hat{j} + b_z\hat{k}),
+\end{equation}</span> chúng ta có thể khai triển theo quy tắc phân
+phối.</p>
+<h5 id="trang-81">[Trang 81]</h5>
+<h2 class="unnumbered" id="câu-hỏi">Câu hỏi</h2>
+<p><strong>1</strong> Tổng các độ lớn của hai vectơ có bao giờ bằng độ
+lớn của tổng chính hai vectơ đó không? Nếu không, tại sao không? Nếu có,
+khi nào?</p>
+<p><strong>2</strong> Hai vectơ thể hiện trong Hình 3.1 nằm trong một
+mặt phẳng <span class="math inline">xy</span>. Dấu của các thành phần
+<span class="math inline">x</span> và <span class="math inline">y</span>
+lần lượt là gì đối với (a) <span class="math inline">\vec{d}_1 +
+\vec{d}_2</span>, (b) <span class="math inline">\vec{d}_1 -
+\vec{d}_2</span>, và (c) <span class="math inline">\vec{d}_2 -
+\vec{d}_1</span>?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.1.png" loading="lazy" />
+<figcaption>Hình 3.1: Câu hỏi 2.</figcaption>
+</figure>
+<p><strong>3</strong> Là thành viên của đội “Gators”, đội đánh gôn của
+Đại học Florida phải chơi trên một khu lỗ gôn (putting green) có một hố
+cá sấu. Hình 3.2 cho thấy góc nhìn từ trên cao của một thử thách đánh
+bóng vào lỗ của đội; một hệ tọa độ <span class="math inline">xy</span>
+được đặt lên trên mặt phẳng. Các thành viên trong đội phải gạt bóng từ
+gốc tọa độ vào lỗ nằm ở tọa độ <span class="math inline">xy</span> là
+<span class="math inline">(8\text{ m}, 12\text{ m})</span>, nhưng họ chỉ
+được gạt bóng bằng một hoặc nhiều độ dịch chuyển sau đây, một hoặc nhiều
+lần: <span class="math display">\vec{d}_1 = (8\text{ m})\hat{i} +
+(6\text{ m})\hat{j},   \vec{d}_2 = (6\text{ m})\hat{j},   \vec{d}_3 =
+(8\text{ m})\hat{i}.</span> Hố cá sấu nằm ở tọa độ <span
+class="math inline">(8\text{ m}, 6\text{ m})</span>. Nếu một thành viên
+gạt bóng vào trong hoặc qua hố cá sấu, người đó sẽ tự động bị chuyển
+sang trường Đại học Bang Florida (Florida State University), đối thủ
+truyền kiếp. Thành viên đó nên sử dụng chuỗi các độ dịch chuyển nào để
+tránh hố cá sấu và không bị chuyển trường?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.2.png" loading="lazy" />
+<figcaption>Hình 3.2: Câu hỏi 3.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Lỗ; Hố cá sấu.</p>
+<p><strong>4</strong> Phương trình 3.1.2 chỉ ra rằng phép cộng hai vectơ
+<span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> có tính giao hoán. Điều đó có nghĩa
+là phép trừ cũng có tính giao hoán, sao cho <span
+class="math inline">\vec{a} - \vec{b} = \vec{b} - \vec{a}</span>
+không?</p>
+<p><strong>5</strong> Cách sắp xếp các trục nào trong Hình 3.3 có thể
+được gắn nhãn là “hệ tọa độ bàn tay phải”? Như thường lệ, nhãn của mỗi
+trục biểu thị chiều dương của trục đó.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.3.png" loading="lazy" />
+<figcaption>Hình 3.3: Câu hỏi 5.</figcaption>
+</figure>
+<p><strong>6</strong> Hãy mô tả hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> sao cho:</p>
+<ol>
+<li><p><span class="math inline">\vec{a} + \vec{b} = \vec{c}</span> và
+<span class="math inline">a + b = c</span>;</p></li>
+<li><p><span class="math inline">\vec{a} + \vec{b} = \vec{a} -
+\vec{b}</span>;</p></li>
+<li><p><span class="math inline">\vec{a} + \vec{b} = \vec{c}</span> và
+<span class="math inline">a^2 + b^2 = c^2</span>.</p></li>
+</ol>
+<p><strong>7</strong> Nếu <span class="math inline">\vec{d} = \vec{a} +
+\vec{b} + (-\vec{c})</span>, thì các đẳng thức sau có đúng không: (a)
+<span class="math inline">\vec{a} + (-\vec{d}) = \vec{c} +
+(-\vec{b})</span>, (b) <span class="math inline">\vec{a} = (-\vec{b}) +
+\vec{d} + \vec{c}</span>, và (c) <span class="math inline">\vec{c} +
+(-\vec{d}) = \vec{a} + \vec{b}</span>?</p>
+<p><strong>8</strong> Nếu <span class="math inline">\vec{a} \cdot
+\vec{b} = \vec{a} \cdot \vec{c}</span>, thì <span
+class="math inline">\vec{b}</span> có nhất thiết phải bằng <span
+class="math inline">\vec{c}</span> không?</p>
+<p><strong>9</strong> Nếu <span class="math inline">\vec{F} = q(\vec{v}
+\times \vec{B})</span> và <span class="math inline">\vec{v}</span> vuông
+góc với <span class="math inline">\vec{B}</span>, thì hướng của <span
+class="math inline">\vec{B}</span> trong ba tình huống thể hiện ở Hình
+3.4 là gì khi hằng số <span class="math inline">q</span> là (a) dương và
+(b) âm?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.4.png" loading="lazy" />
+<figcaption>Hình 3.4: Câu hỏi 9.</figcaption>
+</figure>
+<p><strong>10</strong> Hình 3.5 thể hiện vectơ <span
+class="math inline">\vec{A}</span> và bốn vectơ khác có cùng độ lớn
+nhưng khác nhau về hướng. (a) Những vectơ nào trong số bốn vectơ kia có
+cùng tích vô hướng với <span class="math inline">\vec{A}</span>? (b)
+Những vectơ nào có tích vô hướng âm với <span
+class="math inline">\vec{A}</span>?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.5.png" loading="lazy" />
+<figcaption>Hình 3.5: Câu hỏi 10.</figcaption>
+</figure>
+<p><strong>11</strong> Trong một trò chơi diễn ra bên trong một mê cung
+ba chiều, bạn phải di chuyển quân cờ của mình từ điểm xuất phát ở tọa độ
+<span class="math inline">xyz</span> <span class="math inline">(0, 0,
+0)</span> đến đích ở tọa độ <span class="math inline">(-2\text{ cm},
+4\text{ cm}, -4\text{ cm})</span>. Quân cờ chỉ có thể thực hiện các độ
+dịch chuyển (tính bằng xentimét) cho dưới đây. Nếu trên đường đi quân cờ
+rơi vào tọa độ <span class="math inline">(-5\text{ cm}, -1\text{ cm},
+-1\text{ cm})</span> hoặc <span class="math inline">(5\text{ cm},
+2\text{ cm}, -1\text{ cm})</span>, bạn sẽ thua cuộc. Những độ dịch
+chuyển nào và theo thứ tự nào sẽ đưa quân cờ của bạn về đích? <span
+class="math display">\vec{p} = -7\hat{i} + 2\hat{j} -
+3\hat{k},   \vec{r} = 2\hat{i} - 3\hat{j} + 2\hat{k},</span> <span
+class="math display">\vec{q} = 2\hat{i} - \hat{j} + 4\hat{k},   \vec{s}
+= 3\hat{i} + 5\hat{j} - 3\hat{k}.</span></p>
+<p><strong>12</strong> Các thành phần <span class="math inline">x</span>
+và <span class="math inline">y</span> của bốn vectơ <span
+class="math inline">\vec{a}</span>, <span
+class="math inline">\vec{b}</span>, <span
+class="math inline">\vec{c}</span>, và <span
+class="math inline">\vec{d}</span> được cho dưới đây. Đối với những
+vectơ nào máy tính cầm tay của bạn sẽ cho góc <span
+class="math inline">\theta</span> chính xác khi bạn dùng nó để tìm <span
+class="math inline">\theta</span> bằng Phương trình 3.1.6? Hãy trả lời
+trước bằng cách quan sát Hình 3.1.11, sau đó kiểm tra lại các câu trả
+lời bằng máy tính cầm tay của bạn. <span class="math display">a_x =
+3   a_y = 3   c_x = -3   c_y = -3</span> <span class="math display">b_x
+= -3   b_y = 3   d_x = 3   d_y = -3.</span></p>
+<p><strong>13</strong> Biểu thức nào sau đây là biểu thức vectơ đúng (có
+ý nghĩa)? Có điều gì sai với những biểu thức không đúng?</p>
+<ol>
+<li><p><span class="math inline">\vec{A} \cdot (\vec{B} \cdot
+\vec{C})</span></p></li>
+<li><p><span class="math inline">\vec{A} \times (\vec{B} \cdot
+\vec{C})</span></p></li>
+<li><p><span class="math inline">\vec{A} \cdot (\vec{B} \times
+\vec{C})</span></p></li>
+<li><p><span class="math inline">\vec{A} \times (\vec{B} \times
+\vec{C})</span></p></li>
+<li><p><span class="math inline">\vec{A} + (\vec{B} \cdot
+\vec{C})</span></p></li>
+<li><p><span class="math inline">\vec{A} + (\vec{B} \times
+\vec{C})</span></p></li>
+<li><p><span class="math inline">5 + \vec{A}</span></p></li>
+<li><p><span class="math inline">5 + (\vec{B} \cdot
+\vec{C})</span></p></li>
+<li><p><span class="math inline">5 + (\vec{B} \times
+\vec{C})</span></p></li>
+<li><p><span class="math inline">(\vec{A} \cdot \vec{B}) + (\vec{B}
+\times \vec{C})</span></p></li>
+</ol>
+<h5 id="trang-82">[Trang 82]</h5>
+<h2 class="unnumbered" id="bài-tập">Bài tập</h2>
+<blockquote class="callout-quote">
+<table style="width:96%;">
+<colgroup>
+<col style="width: 55%" />
+<col style="width: 41%" />
+</colgroup>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>[GO]</strong> Có bài hướng dẫn
+trực tuyến trong WileyPLUS</td>
+<td style="text-align: left;"><strong>[CALC]</strong> Đòi hỏi sử dụng
+phép tính vi tích phân</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[SSM]</strong> Có lời giải trong
+Student Solutions Manual</td>
+<td style="text-align: left;"><strong>[BIO]</strong> Ứng dụng y sinh
+học</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[E]</strong> Dễ
+<strong>[M]</strong> Trung bình <strong>[H]</strong> Khó</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>[FCP]</strong> Thêm thông tin
+trong <em>The Flying Circus of Physics</em> và tại
+flyingcircusofphysics.com</td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
+</blockquote>
+<h3 class="unnumbered"
+id="mô-đun-3.1-vectơ-và-các-thành-phần-của-vectơ">Mô-đun 3.1 Vectơ và
+các thành phần của vectơ</h3>
+<p><strong>1</strong> <strong>[E]</strong> <strong>[SSM]</strong> (a)
+Thành phần <span class="math inline">x</span> và (b) thành phần <span
+class="math inline">y</span> của một vectơ <span
+class="math inline">\vec{a}</span> trong mặt phẳng <span
+class="math inline">xy</span> là bao nhiêu nếu hướng của nó ngược chiều
+kim đồng hồ một góc <span class="math inline">250^\circ</span> so với
+chiều dương của trục <span class="math inline">x</span> và độ lớn của nó
+là <span class="math inline">7.3\text{ m}</span>?</p>
+<p><strong>2</strong> <strong>[E]</strong> Một vectơ độ dịch chuyển
+<span class="math inline">\vec{r}</span> trong mặt phẳng <span
+class="math inline">xy</span> dài <span class="math inline">15\text{
+m}</span> và có hướng hợp một góc <span class="math inline">\theta =
+30^\circ</span> trong Hình 3.6. Hãy xác định (a) thành phần <span
+class="math inline">x</span> và (b) thành phần <span
+class="math inline">y</span> của vectơ.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.6.png" loading="lazy" />
+<figcaption>Hình 3.6: Bài tập 2.</figcaption>
+</figure>
+<p><strong>3</strong> <strong>[E]</strong> <strong>[SSM]</strong> Thành
+phần <span class="math inline">x</span> của vectơ <span
+class="math inline">\vec{A}</span> là <span
+class="math inline">-25.0\text{ m}</span> và thành phần <span
+class="math inline">y</span> là <span class="math inline">+40.0\text{
+m}</span>. (a) Độ lớn của <span class="math inline">\vec{A}</span> là
+bao nhiêu? (b) Góc giữa hướng của <span
+class="math inline">\vec{A}</span> và chiều dương của trục <span
+class="math inline">x</span> là bao nhiêu?</p>
+<p><strong>4</strong> <strong>[E]</strong> Hãy biểu diễn các góc sau đây
+theo radian: (a) <span class="math inline">20.0^\circ</span>, (b) <span
+class="math inline">50.0^\circ</span>, (c) <span
+class="math inline">100^\circ</span>. Hãy đổi các góc sau đây sang độ:
+(d) <span class="math inline">0.330\text{ rad}</span>, (e) <span
+class="math inline">2.10\text{ rad}</span>, (f) <span
+class="math inline">7.70\text{ rad}</span>.</p>
+<p><strong>5</strong> <strong>[E]</strong> Một con tàu khởi hành để đi
+đến một điểm cách <span class="math inline">120\text{ km}</span> thẳng
+về hướng bắc. Một cơn bão bất ngờ thổi con tàu đến một điểm cách <span
+class="math inline">100\text{ km}</span> thẳng về hướng đông so với điểm
+xuất phát ban đầu. (a) Con tàu bây giờ phải đi bao xa và (b) theo hướng
+nào để đến được đích ban đầu?</p>
+<p><strong>6</strong> <strong>[E]</strong> Trong Hình 3.7, một cỗ máy
+nặng được kéo lên bằng cách trượt nó một quãng đường <span
+class="math inline">d = 12.5\text{ m}</span> dọc theo một tấm ván đặt
+nghiêng một góc <span class="math inline">\theta = 20.0^\circ</span> so
+với phương ngang. Cỗ máy dịch chuyển được bao xa (a) theo phương thẳng
+đứng và (b) theo phương ngang?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.7.png" loading="lazy" />
+<figcaption>Hình 3.7: Bài tập 6.</figcaption>
+</figure>
+<p><strong>7</strong> <strong>[E]</strong> Xét hai độ dịch chuyển, một
+độ dịch chuyển có độ lớn <span class="math inline">3\text{ m}</span> và
+độ dịch chuyển kia có độ lớn <span class="math inline">4\text{
+m}</span>. Hãy chỉ ra cách kết hợp các vectơ độ dịch chuyển để được một
+độ dịch chuyển tổng hợp có độ lớn (a) <span class="math inline">7\text{
+m}</span>, (b) <span class="math inline">1\text{ m}</span>, và (c) <span
+class="math inline">5\text{ m}</span>.</p>
+<h3 class="unnumbered"
+id="mô-đun-3.2-vectơ-đơn-vị-cộng-các-vectơ-bằng-các-thành-phần">Mô-đun
+3.2 Vectơ đơn vị, cộng các vectơ bằng các thành phần</h3>
+<p><strong>8</strong> <strong>[E]</strong> Một người đi bộ theo quy luật
+sau: <span class="math inline">3.1\text{ km}</span> về hướng bắc, sau đó
+<span class="math inline">2.4\text{ km}</span> về hướng tây, và cuối
+cùng <span class="math inline">5.2\text{ km}</span> về hướng nam. (a)
+Hãy vẽ sơ đồ vectơ biểu diễn chuyển động này. (b) Một con chim bay theo
+đường thẳng từ cùng điểm xuất phát đến cùng điểm kết thúc sẽ bay bao xa
+và (c) theo hướng nào?</p>
+<p><strong>9</strong> <strong>[E]</strong> Hai vectơ được cho bởi <span
+class="math display">\vec{a} = (4.0\text{ m})\hat{i} - (3.0\text{
+m})\hat{j} + (1.0\text{ m})\hat{k}</span> và <span
+class="math display">\vec{b} = (-1.0\text{ m})\hat{i} + (1.0\text{
+m})\hat{j} + (4.0\text{ m})\hat{k}.</span> Dưới dạng biểu diễn vectơ đơn
+vị, hãy tìm (a) <span class="math inline">\vec{a} + \vec{b}</span>, (b)
+<span class="math inline">\vec{a} - \vec{b}</span>, và (c) một vectơ thứ
+ba <span class="math inline">\vec{c}</span> sao cho <span
+class="math inline">\vec{a} - \vec{b} + \vec{c} = 0</span>.</p>
+<p><strong>10</strong> <strong>[E]</strong> Hãy tìm các thành phần (a)
+<span class="math inline">x</span>, (b) <span
+class="math inline">y</span>, và (c) <span class="math inline">z</span>
+của tổng <span class="math inline">\vec{r}</span> của các độ dịch chuyển
+<span class="math inline">\vec{c}</span> và <span
+class="math inline">\vec{d}</span> có các thành phần tính bằng mét là
+<span class="math display">c_x = 7.4,   c_y = -3.8,   c_z = -6.1;   d_x
+= 4.4,   d_y = -2.0,   d_z = 3.3.</span></p>
+<p><strong>11</strong> <strong>[E]</strong> <strong>[SSM]</strong> (a)
+Dưới dạng biểu diễn vectơ đơn vị, tổng <span class="math inline">\vec{a}
++ \vec{b}</span> bằng bao nhiêu nếu <span class="math inline">\vec{a} =
+(4.0\text{ m})\hat{i} + (3.0\text{ m})\hat{k}</span> và <span
+class="math inline">\vec{b} = (-13.0\text{ m})\hat{i} + (7.0\text{
+m})\hat{k}</span>? (b) Độ lớn và (c) hướng của <span
+class="math inline">\vec{a} + \vec{b}</span> là bao nhiêu?</p>
+<p><strong>12</strong> <strong>[E]</strong> Một chiếc ô tô chạy về hướng
+đông một quãng đường <span class="math inline">50\text{ km}</span>, sau
+đó đi về hướng bắc <span class="math inline">30\text{ km}</span>, rồi đi
+theo hướng lệch <span class="math inline">30^\circ</span> về phía đông
+so với hướng bắc một đoạn <span class="math inline">25\text{ km}</span>.
+Hãy vẽ sơ đồ vectơ và xác định (a) độ lớn và (b) góc của độ dịch chuyển
+toàn phần của ô tô so với điểm xuất phát.</p>
+<p><strong>13</strong> <strong>[E]</strong> Một người muốn đến một điểm
+cách vị trí hiện tại của mình <span class="math inline">3.40\text{
+km}</span> theo hướng lệch <span class="math inline">35.0^\circ</span>
+về phía bắc so với hướng đông. Tuy nhiên, người đó phải đi dọc theo các
+con đường chỉ chạy theo hướng bắc–nam hoặc đông–tây. Quãng đường tối
+thiểu mà người đó có thể đi để đến được đích là bao nhiêu?</p>
+<p><strong>14</strong> <strong>[E]</strong> Bạn phải thực hiện bốn lần
+di chuyển thẳng trên một sàn sa mạc bằng phẳng, xuất phát từ gốc tọa độ
+của một hệ tọa độ <span class="math inline">xy</span> và kết thúc tại
+tọa độ <span class="math inline">xy</span> <span
+class="math inline">(-140\text{ m}, 30\text{ m})</span>. Thành phần
+<span class="math inline">x</span> và thành phần <span
+class="math inline">y</span> của các lần di chuyển lần lượt là (tính
+bằng mét): (<span class="math inline">20</span> và <span
+class="math inline">60</span>), sau đó là (<span
+class="math inline">b_x</span> và <span class="math inline">-70</span>),
+tiếp theo là (<span class="math inline">-20</span> và <span
+class="math inline">c_y</span>), rồi đến (<span
+class="math inline">-60</span> và <span class="math inline">-70</span>).
+(a) Thành phần <span class="math inline">b_x</span> và (b) thành phần
+<span class="math inline">c_y</span> là bao nhiêu? (c) Độ lớn và (d) góc
+(so với chiều dương của trục <span class="math inline">x</span>) của độ
+dịch chuyển toàn phần là bao nhiêu?</p>
+<p><strong>15</strong> <strong>[E]</strong> <strong>[SSM]</strong> Hai
+vectơ <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> trong Hình 3.8 có độ lớn bằng nhau là
+<span class="math inline">10.0\text{ m}</span> và các góc là <span
+class="math inline">\theta_1 = 30^\circ</span> và <span
+class="math inline">\theta_2 = 105^\circ</span>. Hãy tìm các thành phần
+(a) <span class="math inline">x</span> và (b) <span
+class="math inline">y</span> của vectơ tổng <span
+class="math inline">\vec{r}</span> của chúng, (c) độ lớn của <span
+class="math inline">\vec{r}</span>, và (d) góc mà <span
+class="math inline">\vec{r}</span> tạo với chiều dương của trục <span
+class="math inline">x</span>.</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.8.png" loading="lazy" />
+<figcaption>Hình 3.8: Bài tập 15.</figcaption>
+</figure>
+<p><strong>16</strong> <strong>[E]</strong> Đối với các vectơ độ dịch
+chuyển <span class="math inline">\vec{a} = (3.0\text{ m})\hat{i} +
+(4.0\text{ m})\hat{j}</span> và <span class="math inline">\vec{b} =
+(5.0\text{ m})\hat{i} + (-2.0\text{ m})\hat{j}</span>, hãy viết <span
+class="math inline">\vec{a} + \vec{b}</span> dưới (a) dạng biểu diễn
+vectơ đơn vị, và dưới dạng (b) độ lớn và (c) một góc (so với <span
+class="math inline">\hat{i}</span>). Bây giờ hãy viết <span
+class="math inline">\vec{b} - \vec{a}</span> dưới (d) dạng biểu diễn
+vectơ đơn vị, và dưới dạng (e) độ lớn và (f) một góc.</p>
+<p><strong>17</strong> <strong>[E]</strong> <strong>[GO]</strong> Ba
+vectơ <span class="math inline">\vec{a}</span>, <span
+class="math inline">\vec{b}</span>, và <span
+class="math inline">\vec{c}</span> mỗi vectơ có độ lớn <span
+class="math inline">50\text{ m}</span> và cùng nằm trong mặt phẳng <span
+class="math inline">xy</span>. Hướng của chúng so với chiều dương của
+trục <span class="math inline">x</span> lần lượt là <span
+class="math inline">30^\circ</span>, <span
+class="math inline">195^\circ</span>, và <span
+class="math inline">315^\circ</span>. (a) Độ lớn và (b) góc của vectơ
+<span class="math inline">\vec{a} + \vec{b} + \vec{c}</span> là bao
+nhiêu, và (c) độ lớn và (d) góc của <span class="math inline">\vec{a} -
+\vec{b} + \vec{c}</span> là bao nhiêu? (e) Độ lớn và (f) góc của một
+vectơ thứ tư <span class="math inline">\vec{d}</span> là bao nhiêu sao
+cho <span class="math inline">(\vec{a} + \vec{b}) - (\vec{c} + \vec{d})
+= 0</span>?</p>
+<p><strong>18</strong> <strong>[E]</strong> Trong phép cộng <span
+class="math inline">\vec{A} + \vec{B} = \vec{C}</span>, vectơ <span
+class="math inline">\vec{A}</span> có độ lớn <span
+class="math inline">12.0\text{ m}</span> và hợp một góc <span
+class="math inline">40.0^\circ</span> ngược chiều kim đồng hồ so với
+chiều <span class="math inline">+x</span>, còn vectơ <span
+class="math inline">\vec{C}</span> có độ lớn <span
+class="math inline">15.0\text{ m}</span> và hợp một góc <span
+class="math inline">20.0^\circ</span> ngược chiều kim đồng hồ so với
+chiều <span class="math inline">-x</span>. (a) Độ lớn và (b) góc (so với
+<span class="math inline">+x</span>) của <span
+class="math inline">\vec{B}</span> là bao nhiêu?</p>
+<p><strong>19</strong> <strong>[E]</strong> Trong một trò chơi cờ vua
+trên cỏ, nơi các quân cờ được di chuyển giữa tâm của các ô vuông có cạnh
+dài <span class="math inline">1.00\text{ m}</span>, một quân mã được di
+chuyển theo cách sau: (1) hai ô về phía trước, một ô sang phải; (2) hai
+ô sang trái, một ô về phía trước; (3) hai ô về phía trước, một ô sang
+trái. (a) Độ lớn và (b) góc (so với hướng “tiến về phía trước”) của độ
+dịch chuyển toàn phần của quân mã sau chuỗi ba lần di chuyển là bao
+nhiêu?</p>
+<h5 id="trang-83">[Trang 83]</h5>
+<p><strong>20</strong> <strong>[M]</strong> <strong>[FCP]</strong> Một
+nhà thám hiểm bị kẹt trong một trận bão tuyết mịt mù (trong đó tuyết rơi
+dày đến mức không thể phân biệt được mặt đất với bầu trời) khi đang quay
+trở lại trại căn cứ. Lẽ ra người đó phải đi thẳng về hướng bắc một đoạn
+<span class="math inline">5.6\text{ km}</span>, nhưng khi tuyết tan, anh
+phát hiện ra rằng mình thực tế đã đi được <span
+class="math inline">7.8\text{ km}</span> theo hướng lệch <span
+class="math inline">50^\circ</span> về phía bắc so với hướng đông. (a)
+Anh bây giờ phải đi bao xa và (b) theo hướng nào để về tới trại căn
+cứ?</p>
+<p><strong>21</strong> <strong>[M]</strong> <strong>[GO]</strong> Một
+con kiến, bị quay cuồng bởi ánh Mặt Trời vào một buổi chiều oi bức ở
+Texas, phóng nhanh qua lại trên một mặt phẳng <span
+class="math inline">xy</span> được vạch trên mặt đất. Các thành phần
+<span class="math inline">x</span> và <span class="math inline">y</span>
+của bốn lần phóng liên tiếp lần lượt là (tất cả tính bằng xentimét):
+(<span class="math inline">30.0</span>, <span
+class="math inline">40.0</span>), (<span class="math inline">b_x</span>,
+<span class="math inline">-70.0</span>), (<span
+class="math inline">-20.0</span>, <span class="math inline">c_y</span>),
+(<span class="math inline">-80.0</span>, <span
+class="math inline">-70.0</span>). Độ dịch chuyển toàn phần của bốn lần
+phóng có các thành phần <span class="math inline">xy</span> là (<span
+class="math inline">-140</span>, <span
+class="math inline">-20.0</span>). (a) <span
+class="math inline">b_x</span> và (b) <span
+class="math inline">c_y</span> bằng bao nhiêu? (c) Độ lớn và (d) góc (so
+với chiều dương của trục <span class="math inline">x</span>) của độ dịch
+chuyển toàn phần là bao nhiêu?</p>
+<p><strong>22</strong> <strong>[M]</strong> (a) Tổng của bốn vectơ sau
+đây dưới dạng biểu diễn vectơ đơn vị là gì? Đối với vectơ tổng đó, hãy
+tìm (b) độ lớn, (c) góc theo độ, và (d) góc theo radian: <span
+class="math display">\begin{align*}
+\vec{E} &amp;: 6.00\text{ m} \text{ ở góc } +0.900\text{ rad} &amp;
+\vec{F} &amp;: 5.00\text{ m} \text{ ở góc } -75.0^\circ \\
+\vec{G} &amp;: 4.00\text{ m} \text{ ở góc } +1.20\text{ rad} &amp;
+\vec{H} &amp;: 6.00\text{ m} \text{ ở góc } -21.0^\circ
+\end{align*}</span></p>
+<p><strong>23</strong> <strong>[M]</strong> Nếu <span
+class="math inline">\vec{B}</span> được cộng vào <span
+class="math inline">\vec{C} = 3.0\hat{i} + 4.0\hat{j}</span>, kết quả là
+một vectơ theo chiều dương của trục <span class="math inline">y</span>,
+có độ lớn bằng độ lớn của <span class="math inline">\vec{C}</span>. Độ
+lớn của <span class="math inline">\vec{B}</span> là bao nhiêu?</p>
+<p><strong>24</strong> <strong>[M]</strong> <strong>[GO]</strong> Vectơ
+<span class="math inline">\vec{A}</span>, hướng dọc theo một trục <span
+class="math inline">x</span>, được cộng vào vectơ <span
+class="math inline">\vec{B}</span> có độ lớn <span
+class="math inline">7.0\text{ m}</span>. Tổng là một vectơ thứ ba hướng
+dọc theo trục <span class="math inline">y</span>, có độ lớn gấp <span
+class="math inline">3.0</span> lần độ lớn của <span
+class="math inline">\vec{A}</span>. Độ lớn của <span
+class="math inline">\vec{A}</span> là bao nhiêu?</p>
+<p><strong>25</strong> <strong>[M]</strong> <strong>[GO]</strong> Ốc đảo
+B cách ốc đảo A một khoảng <span class="math inline">25\text{ km}</span>
+thẳng về hướng đông. Xuất phát từ ốc đảo A, một con lạc đà đi <span
+class="math inline">24\text{ km}</span> theo hướng lệch <span
+class="math inline">15^\circ</span> về phía nam so với hướng đông rồi đi
+<span class="math inline">8.0\text{ km}</span> thẳng về hướng bắc. Con
+lạc đà sau đó cách ốc đảo B bao xa?</p>
+<p><strong>26</strong> <strong>[M]</strong> Tổng của bốn vectơ sau đây
+là gì dưới (a) dạng biểu diễn vectơ đơn vị, và dưới dạng (b) độ lớn và
+(c) góc? <span class="math display">\begin{align*}
+\vec{A} &amp;= (2.00\text{ m})\hat{i} + (3.00\text{ m})\hat{j} &amp;
+\vec{B} &amp;: 4.00\text{ m}, \text{ ở góc } +65.0^\circ \\
+\vec{C} &amp;= (-4.00\text{ m})\hat{i} + (-6.00\text{ m})\hat{j} &amp;
+\vec{D} &amp;: 5.00\text{ m}, \text{ ở góc } -235^\circ
+\end{align*}</span></p>
+<p><strong>27</strong> <strong>[M]</strong> <strong>[GO]</strong> Nếu
+<span class="math inline">\vec{d}_1 + \vec{d}_2 = 5\vec{d}_3</span>,
+<span class="math inline">\vec{d}_1 - \vec{d}_2 = 3\vec{d}_3</span>, và
+<span class="math inline">\vec{d}_3 = 2\hat{i} + 4\hat{j}</span>, thì
+dưới dạng biểu diễn vectơ đơn vị, (a) <span
+class="math inline">\vec{d}_1</span> và (b) <span
+class="math inline">\vec{d}_2</span> bằng bao nhiêu?</p>
+<p><strong>28</strong> <strong>[M]</strong> Hai con bọ cánh cứng bò trên
+một bãi cát phẳng, cùng xuất phát từ một điểm. Con bọ 1 bò <span
+class="math inline">0.50\text{ m}</span> thẳng về hướng đông, sau đó bò
+<span class="math inline">0.80\text{ m}</span> theo hướng lệch <span
+class="math inline">30^\circ</span> về phía bắc so với hướng đông. Con
+bọ 2 cũng thực hiện hai lần bò; lần thứ nhất bò <span
+class="math inline">1.6\text{ m}</span> theo hướng lệch <span
+class="math inline">40^\circ</span> về phía đông so với hướng bắc. (a)
+Độ lớn và (b) hướng của lần bò thứ hai của nó phải là bao nhiêu để nó
+đến đúng vị trí mới của con bọ 1?</p>
+<p><strong>29</strong> <strong>[M]</strong> <strong>[FCP]</strong> <strong>[GO]</strong>
+Loài kiến vườn điển hình thường tạo ra một mạng lưới các vệt hóa học để
+định hướng. Mở rộng ra phía ngoài từ tổ, một lối đi phân nhánh lặp đi
+lặp lại nhiều lần, với góc giữa các nhánh là <span
+class="math inline">60^\circ</span>. Nếu một con kiến đang đi lang thang
+tình cờ gặp một vệt đường đi, nó có thể biết đường quay về tổ tại bất kỳ
+điểm phân nhánh nào: Nếu đang di chuyển ra xa tổ, nó có hai sự lựa chọn
+đường đi đòi hỏi một góc rẽ nhỏ theo hướng di chuyển của nó, hoặc <span
+class="math inline">30^\circ</span> sang trái hoặc <span
+class="math inline">30^\circ</span> sang phải. Nếu nó đang di chuyển về
+phía tổ, nó chỉ có duy nhất một lựa chọn như vậy. Hình 3.9 cho thấy một
+vệt kiến đi điển hình, với các đoạn thẳng được gán chữ cái có độ dài
+<span class="math inline">2.0\text{ cm}</span> và sự phân nhánh đối xứng
+góc <span class="math inline">60^\circ</span>. Đường đi v song song với
+trục <span class="math inline">y</span>. (a) Độ lớn và (b) góc (so với
+chiều dương của trục tọa độ <span class="math inline">x</span> được đặt
+lên) của độ dịch chuyển của con kiến tính từ tổ (hãy tìm vị trí tổ trên
+hình) là bao nhiêu nếu con kiến bước vào đường đi tại điểm A? (c) Độ lớn
+và (d) góc là bao nhiêu nếu nó bước vào tại điểm B?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.9.png" loading="lazy" />
+<figcaption>Hình 3.9: Bài tập 29.</figcaption>
+</figure>
+<p><strong>30</strong> <strong>[M]</strong> <strong>[GO]</strong> Dưới
+đây là hai vectơ: <span class="math display">\vec{a} = (4.0\text{
+m})\hat{i} - (3.0\text{ m})\hat{j}   \text{và}   \vec{b} = (6.0\text{
+m})\hat{i} + (8.0\text{ m})\hat{j}.</span> (a) Độ lớn và (b) góc (so với
+<span class="math inline">\hat{i}</span>) của <span
+class="math inline">\vec{a}</span> là bao nhiêu? (c) Độ lớn và (d) góc
+của <span class="math inline">\vec{b}</span> là bao nhiêu? (e) Độ lớn và
+(f) góc của <span class="math inline">\vec{a} + \vec{b}</span> là bao
+nhiêu; (g) độ lớn và (h) góc của <span class="math inline">\vec{b} -
+\vec{a}</span> là bao nhiêu; và (i) độ lớn và (j) góc của <span
+class="math inline">\vec{a} - \vec{b}</span> là bao nhiêu? (k) Góc giữa
+các hướng của <span class="math inline">\vec{b} - \vec{a}</span> và
+<span class="math inline">\vec{a} - \vec{b}</span> là bao nhiêu?</p>
+<p><strong>31</strong> <strong>[M]</strong> Trong Hình 3.10, một vectơ
+<span class="math inline">\vec{a}</span> có độ lớn <span
+class="math inline">17.0\text{ m}</span> hướng theo góc <span
+class="math inline">\theta = 56.0^\circ</span> ngược chiều kim đồng hồ
+so với trục <span class="math inline">+x</span>. Các thành phần (a)
+<span class="math inline">a_x</span> và (b) <span
+class="math inline">a_y</span> của vectơ là bao nhiêu? Một hệ tọa độ thứ
+hai nghiêng một góc <span class="math inline">\theta&#39; =
+18.0^\circ</span> so với hệ tọa độ thứ nhất. Các thành phần (c) <span
+class="math inline">a&#39;_x</span> và (d) <span
+class="math inline">a&#39;_y</span> trong hệ tọa độ có dấu phẩy này là
+bao nhiêu?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.10.png" loading="lazy" />
+<figcaption>Hình 3.10: Bài tập 31.</figcaption>
+</figure>
+<p><strong>32</strong> <strong>[H]</strong> Trong Hình 3.11, một hình
+lập phương cạnh có độ dài <span class="math inline">a</span> đặt với một
+đỉnh nằm ở gốc tọa độ của một hệ tọa độ <span
+class="math inline">xyz</span>. Đường chéo không gian là đường nối từ
+một đỉnh tới một đỉnh khác đi qua tâm của hình lập phương. Dưới dạng
+biểu diễn vectơ đơn vị, đường chéo không gian xuất phát từ đỉnh có tọa
+độ (a) <span class="math inline">(0, 0, 0)</span>, (b) <span
+class="math inline">(a, 0, 0)</span>, (c) <span class="math inline">(0,
+a, 0)</span>, và (d) <span class="math inline">(a, a, 0)</span> là gì?
+(e) Hãy xác định các góc mà các đường chéo không gian tạo</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.11.png" loading="lazy" />
+<figcaption>Hình 3.11: Bài tập 32.</figcaption>
+</figure>
+<h5 id="trang-84">[Trang 84]</h5>
+<p>với các cạnh kề nhau. (f) Hãy xác định độ dài của các đường chéo
+không gian theo <span class="math inline">a</span>.</p>
+<h3 class="unnumbered" id="mô-đun-3.3-nhân-các-vectơ">Mô-đun 3.3 Nhân
+các vectơ</h3>
+<p><strong>33</strong> <strong>[E]</strong> Đối với các vectơ trong Hình
+3.12, với <span class="math inline">a = 4</span>, <span
+class="math inline">b = 3</span>, và <span class="math inline">c =
+5</span>, (a) độ lớn và (b) hướng của <span class="math inline">\vec{a}
+\times \vec{b}</span>, (c) độ lớn và (d) hướng của <span
+class="math inline">\vec{a} \times \vec{c}</span>, và (e) độ lớn và (f)
+hướng của <span class="math inline">\vec{b} \times \vec{c}</span> là gì?
+(Trục <span class="math inline">z</span> không được vẽ trên hình.)</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.12.png" loading="lazy" />
+<figcaption>Hình 3.12: Bài tập 33 và 54.</figcaption>
+</figure>
+<p><strong>34</strong> <strong>[E]</strong> Hai vectơ được cho dưới dạng
+<span class="math inline">\vec{a} = 3.0\hat{i} + 5.0\hat{j}</span> và
+<span class="math inline">\vec{b} = 2.0\hat{i} + 4.0\hat{j}</span>. Hãy
+tìm (a) <span class="math inline">\vec{a} \times \vec{b}</span>, (b)
+<span class="math inline">\vec{a} \cdot \vec{b}</span>, (c) <span
+class="math inline">(\vec{a} + \vec{b}) \cdot \vec{b}</span>, và (d)
+thành phần của <span class="math inline">\vec{a}</span> dọc theo hướng
+của <span class="math inline">\vec{b}</span>. (<em>Gợi ý:</em> Đối với
+(d), hãy xét Phương trình 3.3.1 và Hình 3.3.1.)</p>
+<p><strong>35</strong> <strong>[E]</strong> Hai vectơ <span
+class="math inline">\vec{r}</span> và <span
+class="math inline">\vec{s}</span> nằm trong mặt phẳng <span
+class="math inline">xy</span>. Độ lớn của chúng lần lượt là <span
+class="math inline">4.50</span> và <span class="math inline">7.30</span>
+đơn vị, và hướng của chúng lần lượt là <span
+class="math inline">320^\circ</span> và <span
+class="math inline">85.0^\circ</span>, đo ngược chiều kim đồng hồ so với
+chiều dương của trục <span class="math inline">x</span>. Giá trị của (a)
+<span class="math inline">\vec{r} \cdot \vec{s}</span> và (b) <span
+class="math inline">\vec{r} \times \vec{s}</span> là bao nhiêu?</p>
+<p><strong>36</strong> <strong>[E]</strong> Nếu <span
+class="math inline">\vec{d}_1 = 3\hat{i} - 2\hat{j} + 4\hat{k}</span> và
+<span class="math inline">\vec{d}_2 = -5\hat{i} + 2\hat{j} -
+\hat{k}</span>, thì <span class="math inline">(\vec{d}_1 + \vec{d}_2)
+\cdot (\vec{d}_1 + 4\vec{d}_2)</span> bằng bao nhiêu?</p>
+<p><strong>37</strong> <strong>[E]</strong> Cho ba vectơ <span
+class="math inline">\vec{a} = 3.0\hat{i} + 3.0\hat{j} -
+2.0\hat{k}</span>, <span class="math inline">\vec{b} = -1.0\hat{i} -
+4.0\hat{j} + 2.0\hat{k}</span>, và <span class="math inline">\vec{c} =
+2.0\hat{i} + 2.0\hat{j} + 1.0\hat{k}</span>. Hãy tìm (a) <span
+class="math inline">\vec{a} \cdot (\vec{b} \times \vec{c})</span>, (b)
+<span class="math inline">\vec{a} \cdot (\vec{b} + \vec{c})</span>, và
+(c) <span class="math inline">\vec{a} \times (\vec{b} +
+\vec{c})</span>.</p>
+<p><strong>38</strong> <strong>[M]</strong> <strong>[GO]</strong> Đối
+với ba vectơ sau đây, giá trị của <span class="math inline">3\vec{C}
+\cdot (2\vec{A} \times \vec{B})</span> là bao nhiêu? <span
+class="math display">\vec{A} = 2.00\hat{i} + 3.00\hat{j} -
+4.00\hat{k}</span> <span class="math display">\vec{B} = -3.00\hat{i} +
+4.00\hat{j} + 2.00\hat{k}   \vec{C} = 7.00\hat{i} -
+8.00\hat{j}</span></p>
+<p><strong>39</strong> <strong>[M]</strong> Vectơ <span
+class="math inline">\vec{A}</span> có độ lớn <span
+class="math inline">6.00</span> đơn vị, vectơ <span
+class="math inline">\vec{B}</span> có độ lớn <span
+class="math inline">7.00</span> đơn vị, và <span
+class="math inline">\vec{A} \cdot \vec{B}</span> có giá trị là <span
+class="math inline">14.0</span>. Góc giữa các hướng của <span
+class="math inline">\vec{A}</span> và <span
+class="math inline">\vec{B}</span> là bao nhiêu?</p>
+<p><strong>40</strong> <strong>[M]</strong> <strong>[GO]</strong> Độ
+dịch chuyển <span class="math inline">\vec{d}_1</span> nằm trong mặt
+phẳng <span class="math inline">yz</span>, hợp một góc <span
+class="math inline">63.0^\circ</span> so với chiều dương của trục <span
+class="math inline">y</span>, có thành phần <span
+class="math inline">z</span> dương, và có độ lớn <span
+class="math inline">4.50\text{ m}</span>. Độ dịch chuyển <span
+class="math inline">\vec{d}_2</span> nằm trong mặt phẳng <span
+class="math inline">xz</span>, hợp một góc <span
+class="math inline">30.0^\circ</span> so với chiều dương của trục <span
+class="math inline">x</span>, có thành phần <span
+class="math inline">z</span> dương, và có độ lớn <span
+class="math inline">1.40\text{ m}</span>. Giá trị của (a) <span
+class="math inline">\vec{d}_1 \cdot \vec{d}_2</span>, (b) <span
+class="math inline">\vec{d}_1 \times \vec{d}_2</span>, và (c) góc giữa
+<span class="math inline">\vec{d}_1</span> và <span
+class="math inline">\vec{d}_2</span> là bao nhiêu?</p>
+<p><strong>41</strong> <strong>[M]</strong> <strong>[SSM]</strong> Hãy
+sử dụng định nghĩa tích vô hướng, <span class="math inline">\vec{a}
+\cdot \vec{b} = ab\cos\theta</span>, và thực tế là <span
+class="math inline">\vec{a} \cdot \vec{b} = a_x b_x + a_y b_y + a_z
+b_z</span> để tính góc giữa hai vectơ được cho bởi <span
+class="math inline">\vec{a} = 3.0\hat{i} + 3.0\hat{j} +
+3.0\hat{k}</span> và <span class="math inline">\vec{b} = 2.0\hat{i} +
+1.0\hat{j} + 3.0\hat{k}</span>.</p>
+<p><strong>42</strong> <strong>[M]</strong> Trong một cuộc gặp gỡ giữa
+các nghệ sĩ kịch câm, nghệ sĩ 1 thực hiện một độ dịch chuyển <span
+class="math inline">\vec{d}_1 = (4.0\text{ m})\hat{i} + (5.0\text{
+m})\hat{j}</span> và nghệ sĩ 2 thực hiện một độ dịch chuyển <span
+class="math inline">\vec{d}_2 = (-3.0\text{ m})\hat{i} + (4.0\text{
+m})\hat{j}</span>. Hãy tính (a) <span class="math inline">\vec{d}_1
+\times \vec{d}_2</span>, (b) <span class="math inline">\vec{d}_1 \cdot
+\vec{d}_2</span>, (c) <span class="math inline">(\vec{d}_1 + \vec{d}_2)
+\cdot \vec{d}_2</span>, và (d) thành phần của <span
+class="math inline">\vec{d}_1</span> dọc theo hướng của <span
+class="math inline">\vec{d}_2</span>. (<em>Gợi ý:</em> Đối với (d), xem
+Phương trình 3.3.1 và Hình 3.3.1.)</p>
+<p><strong>43</strong> <strong>[M]</strong> <strong>[SSM]</strong> Ba
+vectơ trong Hình 3.13 có các độ lớn <span class="math inline">a =
+3.00\text{ m}</span>, <span class="math inline">b = 4.00\text{
+m}</span>, và <span class="math inline">c = 10.0\text{ m}</span> cùng
+góc <span class="math inline">\theta = 30.0^\circ</span>. (a) Thành phần
+<span class="math inline">x</span> và (b) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{a}</span> là bao nhiêu; (c) thành phần <span
+class="math inline">x</span> và (d) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{b}</span> là bao nhiêu; và (e) thành phần <span
+class="math inline">x</span> và (f) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{c}</span> là bao nhiêu? Nếu <span
+class="math inline">\vec{c} = p\vec{a} + q\vec{b}</span>, thì giá trị
+của (g) <span class="math inline">p</span> và (h) <span
+class="math inline">q</span> là bao nhiêu?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.13.png" loading="lazy" />
+<figcaption>Hình 3.13: Bài tập 43.</figcaption>
+</figure>
+<p><strong>44</strong> <strong>[M]</strong> <strong>[GO]</strong> Trong
+tích <span class="math inline">\vec{F} = q\vec{v} \times \vec{B}</span>,
+lấy <span class="math inline">q = 2</span>, <span
+class="math display">\vec{v} = 2.0\hat{i} + 4.0\hat{j} +
+6.0\hat{k}   \text{và}   \vec{F} = 4.0\hat{i} - 20\hat{j} +
+12\hat{k}.</span> Khi đó <span class="math inline">\vec{B}</span> dưới
+dạng biểu diễn vectơ đơn vị là gì nếu <span class="math inline">B_x =
+B_y</span>?</p>
+<h2 class="unnumbered" id="bài-tập-bổ-sung">Bài tập bổ sung</h2>
+<p><strong>45</strong> Các vectơ <span
+class="math inline">\vec{A}</span> và <span
+class="math inline">\vec{B}</span> nằm trong một mặt phẳng <span
+class="math inline">xy</span>. <span class="math inline">\vec{A}</span>
+có độ lớn <span class="math inline">8.00</span> và góc <span
+class="math inline">130^\circ</span>; <span
+class="math inline">\vec{B}</span> có các thành phần <span
+class="math inline">B_x = -7.72</span> và <span class="math inline">B_y
+= -9.20</span>. (a) Giá trị của <span class="math inline">5\vec{A} \cdot
+\vec{B}</span> là bao nhiêu? Biểu thức của <span
+class="math inline">4\vec{A} \times 3\vec{B}</span> là gì dưới (b) dạng
+biểu diễn vectơ đơn vị và (c) dạng độ lớn–góc trong tọa độ cầu (xem Hình
+3.14)? (d) Góc giữa các hướng của <span
+class="math inline">\vec{A}</span> và <span class="math inline">4\vec{A}
+\times 3\vec{B}</span> là bao nhiêu? (<em>Gợi ý:</em> Hãy suy nghĩ một
+chút trước khi bạn bắt tay vào tính toán.) Biểu thức của <span
+class="math inline">\vec{A} + 3.00\hat{k}</span> là gì dưới (e) dạng
+biểu diễn vectơ đơn vị và (f) dạng độ lớn–góc trong tọa độ cầu?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.14.png" loading="lazy" />
+<figcaption>Hình 3.14: Bài tập 45.</figcaption>
+</figure>
+<p><strong>46</strong> <strong>[GO]</strong> Vectơ <span
+class="math inline">\vec{a}</span> có độ lớn <span
+class="math inline">5.0\text{ m}</span> và hướng về phía đông. Vectơ
+<span class="math inline">\vec{b}</span> có độ lớn <span
+class="math inline">4.0\text{ m}</span> và hướng lệch <span
+class="math inline">35^\circ</span> về phía tây so với hướng bắc. (a) Độ
+lớn và (b) hướng của <span class="math inline">\vec{a} + \vec{b}</span>
+là gì? (c) Độ lớn và (d) hướng của <span class="math inline">\vec{a} -
+\vec{b}</span> là gì? (e) Hãy vẽ sơ đồ vectơ cho mỗi phép kết hợp.</p>
+<p><strong>47</strong> Các vectơ <span
+class="math inline">\vec{A}</span> và <span
+class="math inline">\vec{B}</span> nằm trong một mặt phẳng <span
+class="math inline">xy</span>. <span class="math inline">\vec{A}</span>
+có độ lớn <span class="math inline">8.00</span> và góc <span
+class="math inline">130^\circ</span>; <span
+class="math inline">\vec{B}</span> có các thành phần <span
+class="math inline">B_x = -7.72</span> và <span class="math inline">B_y
+= -9.20</span>. Góc giữa chiều âm của trục <span
+class="math inline">y</span> và (a) hướng của <span
+class="math inline">\vec{A}</span>, (b) hướng của tích <span
+class="math inline">\vec{A} \times \vec{B}</span>, và (c) hướng của
+<span class="math inline">\vec{A} \times (\vec{B} + 3.00\hat{k})</span>
+là bao nhiêu?</p>
+<p><strong>48</strong> <strong>[GO]</strong> Hai vectơ <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> có các thành phần tính bằng mét là
+<span class="math inline">a_x = 3.2</span>, <span
+class="math inline">a_y = 1.6</span>, <span class="math inline">b_x =
+0.50</span>, <span class="math inline">b_y = 4.5</span>. (a) Hãy tìm góc
+giữa các hướng của <span class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>. Có hai vectơ trong mặt phẳng <span
+class="math inline">xy</span> vuông góc với <span
+class="math inline">\vec{a}</span> và có độ lớn <span
+class="math inline">5.0\text{ m}</span>. Một vectơ, <span
+class="math inline">\vec{c}</span>, có thành phần <span
+class="math inline">x</span> dương và vectơ kia, <span
+class="math inline">\vec{d}</span>, có thành phần <span
+class="math inline">x</span> âm. (b) Thành phần <span
+class="math inline">x</span> và (c) thành phần <span
+class="math inline">y</span> của vectơ <span
+class="math inline">\vec{c}</span> là bao nhiêu, và (d) thành phần <span
+class="math inline">x</span> và (e) thành phần <span
+class="math inline">y</span> của vectơ <span
+class="math inline">\vec{d}</span> là bao nhiêu?</p>
+<p><strong>49</strong> <strong>[SSM]</strong> Một chiếc thuyền buồm khởi
+hành từ phía Hoa Kỳ của hồ Erie để đến một điểm ở phía Canada cách <span
+class="math inline">90.0\text{ km}</span> thẳng về hướng bắc. Tuy nhiên,
+người thủy thủ rốt cuộc lại trôi dạt tới điểm cách điểm xuất phát <span
+class="math inline">50.0\text{ km}</span> thẳng về hướng đông. (a) Người
+thủy thủ bây giờ phải đi bao xa và (b) theo hướng nào để đến được đích
+ban đầu?</p>
+<p><strong>50</strong> Vectơ <span class="math inline">\vec{d}_1</span>
+theo chiều âm của một trục <span class="math inline">y</span>, và vectơ
+<span class="math inline">\vec{d}_2</span> theo chiều dương của một trục
+<span class="math inline">x</span>. Hướng của (a) <span
+class="math inline">\vec{d}_2 / 4</span> và (b) <span
+class="math inline">\vec{d}_1 / (-4)</span> là gì? Độ lớn của các tích
+(c) <span class="math inline">\vec{d}_1 \cdot \vec{d}_2</span> và (d)
+<span class="math inline">\vec{d}_1 \cdot (\vec{d}_2 / 4)</span> là bao
+nhiêu? Hướng của vectơ kết quả từ (e) <span
+class="math inline">\vec{d}_1 \times \vec{d}_2</span> và (f) <span
+class="math inline">\vec{d}_2 \times \vec{d}_1</span> là gì? Độ lớn của
+tích vectơ trong (g) phần (e) và (h) phần (f) là bao nhiêu? (i) Độ lớn
+và (j) hướng của <span class="math inline">\vec{d}_1 \times (\vec{d}_2 /
+4)</span> là gì?</p>
+<h5 id="trang-85">[Trang 85]</h5>
+<p><strong>51</strong> Các đứt gãy đá là các vết nứt vỡ mà dọc theo đó
+các mặt đá đối diện đã trượt qua nhau. Trong Hình 3.15, các điểm A và B
+từng trùng nhau trước khi khối đá ở phía trước trượt xuống về bên phải.
+Độ dịch chuyển toàn phần <span class="math inline">\vec{AB}</span> nằm
+dọc theo mặt phẳng đứt gãy. Thành phần nằm ngang của <span
+class="math inline">\vec{AB}</span> là độ trượt ngang (strike-slip) AC.
+Thành phần của <span class="math inline">\vec{AB}</span> hướng dọc xuống
+mặt phẳng đứt gãy là độ trượt dốc (dip-slip) AD. (a) Độ lớn của độ dịch
+chuyển toàn phần <span class="math inline">\vec{AB}</span> là bao nhiêu
+nếu độ trượt ngang là <span class="math inline">22.0\text{ m}</span> và
+độ trượt dốc là <span class="math inline">17.0\text{ m}</span>? (b) Nếu
+mặt phẳng đứt gãy nghiêng một góc <span class="math inline">\phi =
+52.0^\circ</span> so với phương ngang, thì thành phần thẳng đứng của
+<span class="math inline">\vec{AB}</span> là bao nhiêu?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.15.png" loading="lazy" />
+<figcaption>Hình 3.15: Bài tập 51.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Độ trượt ngang; Mặt phẳng đứt gãy.</p>
+<p><strong>52</strong> Cho ba độ dịch chuyển sau đây, mỗi độ dịch chuyển
+đo bằng mét: <span class="math inline">\vec{d}_1 = 4.0\hat{i} +
+5.0\hat{j} - 6.0\hat{k}</span>, <span class="math inline">\vec{d}_2 =
+-1.0\hat{i} + 2.0\hat{j} + 3.0\hat{k}</span>, và <span
+class="math inline">\vec{d}_3 = 4.0\hat{i} + 3.0\hat{j} +
+2.0\hat{k}</span>. (a) <span class="math inline">\vec{r} = \vec{d}_1 -
+\vec{d}_2 + \vec{d}_3</span> là gì? (b) Góc giữa <span
+class="math inline">\vec{r}</span> và chiều dương của trục <span
+class="math inline">z</span> là bao nhiêu? (c) Thành phần của <span
+class="math inline">\vec{d}_1</span> dọc theo hướng của <span
+class="math inline">\vec{d}_2</span> là bao nhiêu? (d) Thành phần của
+<span class="math inline">\vec{d}_1</span> vuông góc với hướng của <span
+class="math inline">\vec{d}_2</span> và nằm trong mặt phẳng của <span
+class="math inline">\vec{d}_1</span> và <span
+class="math inline">\vec{d}_2</span> là bao nhiêu? (<em>Gợi ý:</em> Đối
+với (c), xét Phương trình 3.3.1 và Hình 3.3.1; đối với (d), xét Phương
+trình 3.3.5.)</p>
+<p><strong>53</strong> <strong>[SSM]</strong> Một vectơ <span
+class="math inline">\vec{a}</span> có độ lớn <span
+class="math inline">10</span> đơn vị và một vectơ khác <span
+class="math inline">\vec{b}</span> có độ lớn <span
+class="math inline">6.0</span> đơn vị lệch nhau về hướng một góc <span
+class="math inline">60^\circ</span>. Hãy tìm (a) tích vô hướng của hai
+vectơ và (b) độ lớn của tích có hướng <span class="math inline">\vec{a}
+\times \vec{b}</span>.</p>
+<p><strong>54</strong> Đối với các vectơ trong Hình 3.12, với <span
+class="math inline">a = 4</span>, <span class="math inline">b =
+3</span>, và <span class="math inline">c = 5</span>, hãy tính (a) <span
+class="math inline">\vec{a} \cdot \vec{b}</span>, (b) <span
+class="math inline">\vec{a} \cdot \vec{c}</span>, và (c) <span
+class="math inline">\vec{b} \cdot \vec{c}</span>.</p>
+<p><strong>55</strong> Một chất điểm trải qua ba độ dịch chuyển liên
+tiếp trong một mặt phẳng, như sau: <span
+class="math inline">\vec{d}_1</span>, <span
+class="math inline">4.00\text{ m}</span> theo hướng tây nam; sau đó là
+<span class="math inline">\vec{d}_2</span>, <span
+class="math inline">5.00\text{ m}</span> theo hướng đông; và cuối cùng
+là <span class="math inline">\vec{d}_3</span>, <span
+class="math inline">6.00\text{ m}</span> theo hướng lệch <span
+class="math inline">60.0^\circ</span> về phía bắc so với hướng đông. Hãy
+chọn một hệ tọa độ với trục <span class="math inline">y</span> chỉ hướng
+bắc và trục <span class="math inline">x</span> chỉ hướng đông. (a) Thành
+phần <span class="math inline">x</span> và (b) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{d}_1</span> là gì? (c) Thành phần <span
+class="math inline">x</span> và (d) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{d}_2</span> là gì? (e) Thành phần <span
+class="math inline">x</span> và (f) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{d}_3</span> là gì? Tiếp theo, xét độ dịch
+chuyển toàn phần của chất điểm qua ba độ dịch chuyển liên tiếp đó. (g)
+Thành phần <span class="math inline">x</span>, (h) thành phần <span
+class="math inline">y</span>, (i) độ lớn, và (j) hướng của độ dịch
+chuyển toàn phần là gì? Nếu chất điểm quay trở lại trực tiếp điểm xuất
+phát, nó phải di chuyển (k) bao xa và (l) theo hướng nào?</p>
+<p><strong>56</strong> Hãy tìm tổng của bốn vectơ sau đây dưới dạng (a)
+biểu diễn vectơ đơn vị, và dưới dạng (b) độ lớn và (c) góc hợp với chiều
+dương của trục <span class="math inline">+x</span>. <span
+class="math display">\begin{align*}
+\vec{P} &amp;: 10.0\text{ m}, \text{ ở } 25.0^\circ \text{ ngược chiều
+kim đồng hồ so với } +x \\
+\vec{Q} &amp;: 12.0\text{ m}, \text{ ở } 10.0^\circ \text{ ngược chiều
+kim đồng hồ so với } +y \\
+\vec{R} &amp;: 8.00\text{ m}, \text{ ở } 20.0^\circ \text{ cùng chiều
+kim đồng hồ so với } -y \\
+\vec{S} &amp;: 9.00\text{ m}, \text{ ở } 40.0^\circ \text{ ngược chiều
+kim đồng hồ so với } -y
+\end{align*}</span></p>
+<p><strong>57</strong> <strong>[SSM]</strong> Nếu <span
+class="math inline">\vec{B}</span> được cộng vào <span
+class="math inline">\vec{A}</span>, kết quả là <span
+class="math inline">6.0\hat{i} + 1.0\hat{j}</span>. Nếu <span
+class="math inline">\vec{B}</span> được trừ khỏi <span
+class="math inline">\vec{A}</span>, kết quả là <span
+class="math inline">-4.0\hat{i} + 7.0\hat{j}</span>. Độ lớn của <span
+class="math inline">\vec{A}</span> là bao nhiêu?</p>
+<p><strong>58</strong> Một vectơ <span
+class="math inline">\vec{d}</span> có độ lớn <span
+class="math inline">2.5\text{ m}</span> và chỉ về hướng bắc. (a) Độ lớn
+và (b) hướng của <span class="math inline">4.0\vec{d}</span> là gì? (c)
+Độ lớn và (d) hướng của <span class="math inline">-3.0\vec{d}</span> là
+gì?</p>
+<p><strong>59</strong> Vectơ <span class="math inline">\vec{A}</span> có
+độ lớn <span class="math inline">12.0\text{ m}</span> và hợp một góc
+<span class="math inline">60.0^\circ</span> ngược chiều kim đồng hồ so
+với chiều dương của trục <span class="math inline">x</span> của một hệ
+tọa độ <span class="math inline">xy</span>. Ngoài ra, <span
+class="math inline">\vec{B} = (12.0\text{ m})\hat{i} + (8.00\text{
+m})\hat{j}</span> trong cùng hệ tọa độ đó. Bây giờ chúng ta quay hệ tọa
+độ ngược chiều kim đồng hồ quanh gốc tọa độ một góc <span
+class="math inline">20.0^\circ</span> để tạo thành hệ <span
+class="math inline">x&#39;y&#39;</span>. Trong hệ tọa độ mới này, (a)
+<span class="math inline">\vec{A}</span> và (b) <span
+class="math inline">\vec{B}</span> bằng bao nhiêu, cả hai đều viết dưới
+dạng biểu diễn vectơ đơn vị?</p>
+<p><strong>60</strong> Nếu <span class="math inline">\vec{b} =
+2\vec{c}</span>, <span class="math inline">\vec{a} + \vec{b} =
+4\vec{c}</span>, và <span class="math inline">\vec{c} = 3\hat{i} +
+4\hat{j}</span>, thì (a) <span class="math inline">\vec{a}</span> và (b)
+<span class="math inline">\vec{b}</span> là gì?</p>
+<p><strong>61</strong> (a) Dưới dạng biểu diễn vectơ đơn vị, <span
+class="math inline">\vec{r} = \vec{a} - \vec{b} + \vec{c}</span> bằng
+bao nhiêu nếu <span class="math inline">\vec{a} = 5.0\hat{i} +
+4.0\hat{j} - 6.0\hat{k}</span>, <span class="math inline">\vec{b} =
+-2.0\hat{i} + 2.0\hat{j} + 3.0\hat{k}</span>, và <span
+class="math inline">\vec{c} = 4.0\hat{i} + 3.0\hat{j} +
+2.0\hat{k}</span>? (b) Hãy tính góc giữa <span
+class="math inline">\vec{r}</span> và chiều dương của trục <span
+class="math inline">z</span>. (c) Thành phần của <span
+class="math inline">\vec{a}</span> dọc theo hướng của <span
+class="math inline">\vec{b}</span> là bao nhiêu? (d) Thành phần của
+<span class="math inline">\vec{a}</span> vuông góc với hướng của <span
+class="math inline">\vec{b}</span> nhưng nằm trong mặt phẳng của <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span> là bao nhiêu? (<em>Gợi ý:</em> Đối
+với (c), xem Phương trình 3.3.1 và Hình 3.3.1; đối với (d), xem Phương
+trình 3.3.5.)</p>
+<p><strong>62</strong> Một người chơi gôn mất ba cú gạt bóng để đưa bóng
+vào lỗ. Cú gạt thứ nhất làm bóng dịch chuyển <span
+class="math inline">3.66\text{ m}</span> về hướng bắc, cú gạt thứ hai
+làm bóng dịch chuyển <span class="math inline">1.83\text{ m}</span> về
+hướng đông nam, và cú gạt thứ ba làm bóng dịch chuyển <span
+class="math inline">0.91\text{ m}</span> về hướng tây nam. (a) Độ lớn và
+(b) hướng của độ dịch chuyển cần thiết để đưa bóng vào lỗ ngay từ cú gạt
+đầu tiên là bao nhiêu?</p>
+<p><strong>63</strong> Cho ba vectơ sau đây tính bằng mét: <span
+class="math display">\vec{d}_1 = -3.0\hat{i} + 3.0\hat{j} +
+2.0\hat{k}</span> <span class="math display">\vec{d}_2 = -2.0\hat{i} -
+4.0\hat{j} + 2.0\hat{k}</span> <span class="math display">\vec{d}_3 =
+2.0\hat{i} + 3.0\hat{j} + 1.0\hat{k}.</span> Kết quả của (a) <span
+class="math inline">\vec{d}_1 \cdot (\vec{d}_2 + \vec{d}_3)</span>, (b)
+<span class="math inline">\vec{d}_1 \cdot (\vec{d}_2 \times
+\vec{d}_3)</span>, và (c) <span class="math inline">\vec{d}_1 \times
+(\vec{d}_2 + \vec{d}_3)</span> là gì?</p>
+<p><strong>64</strong> <strong>[SSM]</strong> Một căn phòng có kích
+thước <span class="math inline">3.00\text{ m}</span> (chiều cao) <span
+class="math inline">\times 3.70\text{ m} \times 4.30\text{ m}</span>.
+Một con ruồi xuất phát từ một góc bay vòng quanh và cuối cùng đậu ở góc
+đối diện theo đường chéo không gian. (a) Độ lớn của độ dịch chuyển của
+nó là bao nhiêu? (b) Chiều dài đường bay của nó có thể nhỏ hơn độ lớn
+này không? (c) Lớn hơn? (d) Bằng? (e) Hãy chọn một hệ tọa độ phù hợp và
+biểu diễn các thành phần của vectơ độ dịch chuyển trong hệ tọa độ đó
+dưới dạng biểu diễn vectơ đơn vị. (f) Nếu con ruồi bò, chiều dài quãng
+đường ngắn nhất là bao nhiêu? (<em>Gợi ý:</em> Câu hỏi này có thể được
+trả lời mà không cần dùng phép tính vi tích phân. Căn phòng giống như
+một chiếc hộp. Hãy mở các bức tường của nó để trải phẳng chúng ra một
+mặt phẳng.)</p>
+<p><strong>65</strong> Một người biểu tình mang theo tấm biểu ngữ phản
+đối, xuất phát từ gốc tọa độ của một hệ tọa độ <span
+class="math inline">xyz</span>, với mặt phẳng <span
+class="math inline">xy</span> nằm ngang. Người đó di chuyển <span
+class="math inline">40\text{ m}</span> theo chiều âm của trục <span
+class="math inline">x</span>, sau đó đi <span
+class="math inline">20\text{ m}</span> dọc theo đường vuông góc rẽ sang
+bên trái của mình, và rồi leo lên <span class="math inline">25\text{
+m}</span> trên một tháp nước. (a) Dưới dạng biểu diễn vectơ đơn vị, độ
+dịch chuyển của tấm biểu ngữ từ điểm xuất phát đến điểm kết thúc là gì?
+(b) Tấm biểu ngữ sau đó rơi xuống chân tháp nước. Độ lớn của độ dịch
+chuyển của tấm biểu ngữ từ điểm xuất phát đến điểm kết thúc mới này là
+bao nhiêu?</p>
+<p><strong>66</strong> Xét vectơ <span
+class="math inline">\vec{a}</span> theo chiều dương của trục <span
+class="math inline">x</span>, vectơ <span
+class="math inline">\vec{b}</span> theo chiều dương của trục <span
+class="math inline">y</span>, và một đại lượng vô hướng <span
+class="math inline">d</span>. Hướng của <span
+class="math inline">\vec{b}/d</span> là gì nếu <span
+class="math inline">d</span> mang giá trị (a) dương và (b) âm? Độ lớn
+của (c) <span class="math inline">\vec{a} \cdot \vec{b}</span> và (d)
+<span class="math inline">\vec{a} \cdot \vec{b}/d</span> là bao nhiêu?
+Hướng của vectơ kết quả từ</p>
+<h5 id="trang-86">[Trang 86]</h5>
+<p>(e) <span class="math inline">\vec{a} \times \vec{b}</span> và (f)
+<span class="math inline">\vec{b} \times \vec{a}</span> là hướng nào?
+(g) Độ lớn của tích vectơ ở câu (e) là bao nhiêu? (h) Độ lớn của tích
+vectơ ở câu (f) là bao nhiêu? (i) Độ lớn và (j) hướng của <span
+class="math inline">\vec{a} \times \vec{b}/d</span> là gì nếu <span
+class="math inline">d</span> là số dương?</p>
+<p><strong>67</strong> Giả sử <span class="math inline">\hat{i}</span>
+hướng về phía đông, <span class="math inline">\hat{j}</span> hướng về
+phía bắc, và <span class="math inline">\hat{k}</span> hướng thẳng lên
+trên. Giá trị của các tích sau bằng bao nhiêu: (a) <span
+class="math inline">\hat{i} \cdot \hat{k}</span>, (b) <span
+class="math inline">(-\hat{k}) \cdot (-\hat{j})</span>, và (c) <span
+class="math inline">\hat{j} \cdot (-\hat{j})</span>? Hướng (chẳng hạn
+như hướng đông hay hướng xuống) của các tích sau là gì: (d) <span
+class="math inline">\hat{k} \times \hat{j}</span>, (e) <span
+class="math inline">(-\hat{i}) \times (-\hat{j})</span>, và (f) <span
+class="math inline">(-\hat{k}) \times (-\hat{j})</span>?</p>
+<p><strong>68</strong> Một ngân hàng ở trung tâm thành phố Boston bị
+cướp (xem bản đồ trong Hình 3.16). Để trốn tránh cảnh sát, bọn cướp tẩu
+thoát bằng trực thăng, thực hiện ba chuyến bay liên tiếp được mô tả bởi
+các độ dịch chuyển sau: <span class="math inline">32\text{ km}</span>,
+lệch <span class="math inline">45^\circ</span> về phía nam so với hướng
+đông; <span class="math inline">53\text{ km}</span>, lệch <span
+class="math inline">26^\circ</span> về phía bắc so với hướng tây; <span
+class="math inline">26\text{ km}</span>, lệch <span
+class="math inline">18^\circ</span> về phía đông so với hướng nam. Khi
+kết thúc chuyến bay thứ ba, chúng bị bắt giữ. Bọn cướp bị bắt ở thị trấn
+nào?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.16.png" loading="lazy" />
+<figcaption>Hình 3.16: Bài tập 68.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> BOSTON và vùng phụ cận; Wellesley; Waltham;
+Brookline; Newton; Arlington; Lexington; Woburn; Medford; Lynn; Salem;
+Quincy; BOSTON; Vịnh Massachusetts; Ngân hàng; Walpole; Framingham;
+Weymouth; Dedham; Winthrop.</p>
+<p><strong>69</strong> Một bánh xe có bán kính <span
+class="math inline">45.0\text{ cm}</span> lăn không trượt dọc theo một
+mặt sàn nằm ngang (Hình 3.17). Tại thời điểm <span
+class="math inline">t_1</span>, điểm P được đánh dấu trên vành bánh xe
+nằm ở điểm tiếp xúc giữa bánh xe và mặt sàn. Tại thời điểm sau đó <span
+class="math inline">t_2</span>, bánh xe đã lăn được một nửa vòng. (a) Độ
+lớn và (b) góc (so với mặt sàn) của độ dịch chuyển của điểm P là bao
+nhiêu?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.17.png" loading="lazy" />
+<figcaption>Hình 3.17: Bài tập 69.</figcaption>
+</figure>
+<p><strong>70</strong> Một người phụ nữ đi bộ <span
+class="math inline">250\text{ m}</span> theo hướng lệch <span
+class="math inline">30^\circ</span> về phía đông so với hướng bắc, sau
+đó đi <span class="math inline">175\text{ m}</span> về đúng hướng đông.
+Hãy tìm (a) độ lớn và (b) góc của độ dịch chuyển cuối cùng của cô ấy so
+với điểm xuất phát. (c) Hãy tìm quãng đường cô ấy đã đi bộ. (d) Quãng
+đường đó hay độ lớn của độ dịch chuyển là lớn hơn?</p>
+<p><strong>71</strong> Một vectơ <span
+class="math inline">\vec{d}</span> có độ lớn <span
+class="math inline">3.0\text{ m}</span> và hướng về phía nam. (a) Độ lớn
+và (b) hướng của vectơ <span class="math inline">5.0\vec{d}</span> là
+gì? (c) Độ lớn và (d) hướng của vectơ <span
+class="math inline">-2.0\vec{d}</span> là gì?</p>
+<p><strong>72</strong> Một con kiến lửa, khi đi tìm tương ớt trong khu
+dã ngoại, thực hiện ba độ dịch chuyển trên mặt đất bằng phẳng: <span
+class="math inline">\vec{d}_1</span> dài <span
+class="math inline">0.40\text{ m}</span> theo hướng tây nam (nghĩa là
+lệch <span class="math inline">45^\circ</span> so với hướng chính nam và
+so với hướng chính tây), <span class="math inline">\vec{d}_2</span> dài
+<span class="math inline">0.50\text{ m}</span> về đúng hướng đông, <span
+class="math inline">\vec{d}_3</span> dài <span
+class="math inline">0.60\text{ m}</span> lệch <span
+class="math inline">60^\circ</span> về phía bắc so với hướng đông. Quy
+ước chiều dương của trục <span class="math inline">x</span> là hướng
+đông và chiều dương của trục <span class="math inline">y</span> là hướng
+bắc. (a) Thành phần <span class="math inline">x</span> và (b) thành phần
+<span class="math inline">y</span> của <span
+class="math inline">\vec{d}_1</span> là gì? Tiếp theo, (c) thành phần
+<span class="math inline">x</span> và (d) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{d}_2</span> là gì? Ngoài ra, (e) thành phần
+<span class="math inline">x</span> và (f) thành phần <span
+class="math inline">y</span> của <span
+class="math inline">\vec{d}_3</span> là gì? (g) Thành phần <span
+class="math inline">x</span>, (h) thành phần <span
+class="math inline">y</span>, (i) độ lớn, và (j) hướng của độ dịch
+chuyển toàn phần của con kiến là gì? Nếu con kiến quay trở lại trực tiếp
+điểm xuất phát, nó phải di chuyển (k) bao xa và (l) theo hướng nào?</p>
+<p><strong>73</strong> Cho hai vectơ <span class="math inline">\vec{a} =
+3.0\hat{i} + 5.0\hat{j}</span> và <span class="math inline">\vec{b} =
+2.0\hat{i} + 4.0\hat{j}</span>. Hãy tìm (a) <span
+class="math inline">\vec{a} \times \vec{b}</span>, (b) <span
+class="math inline">\vec{a} \cdot \vec{b}</span>, (c) <span
+class="math inline">(\vec{a} + \vec{b}) \cdot \vec{b}</span>, và (d)
+thành phần của <span class="math inline">\vec{a}</span> dọc theo hướng
+của <span class="math inline">\vec{b}</span>.</p>
+<p><strong>74</strong> Vectơ <span class="math inline">\vec{a}</span>
+nằm trong mặt phẳng <span class="math inline">yz</span>, lệch <span
+class="math inline">63.0^\circ</span> so với chiều dương của trục <span
+class="math inline">y</span>, có thành phần <span
+class="math inline">z</span> dương, và có độ lớn <span
+class="math inline">3.20</span> đơn vị. Vectơ <span
+class="math inline">\vec{b}</span> nằm trong mặt phẳng <span
+class="math inline">xz</span>, lệch <span
+class="math inline">48.0^\circ</span> so với chiều dương của trục <span
+class="math inline">x</span>, có thành phần <span
+class="math inline">z</span> dương, và có độ lớn <span
+class="math inline">1.40</span> đơn vị. Hãy tìm (a) <span
+class="math inline">\vec{a} \cdot \vec{b}</span>, (b) <span
+class="math inline">\vec{a} \times \vec{b}</span>, và (c) góc giữa <span
+class="math inline">\vec{a}</span> và <span
+class="math inline">\vec{b}</span>.</p>
+<p><strong>75</strong> Hãy tìm kết quả của (a) “hướng bắc nhân có hướng
+với hướng tây”, (b) “hướng xuống nhân vô hướng với hướng nam”, (c)
+“hướng đông nhân có hướng với hướng lên”, (d) “hướng tây nhân vô hướng
+với hướng tây”, và (e) “hướng nam nhân có hướng với hướng nam”. Giả sử
+mỗi “vectơ” có độ lớn bằng đơn vị (<span
+class="math inline">1</span>).</p>
+<p><strong>76</strong> Một vectơ <span
+class="math inline">\vec{B}</span>, có độ lớn <span
+class="math inline">8.0\text{ m}</span>, được cộng vào vectơ <span
+class="math inline">\vec{A}</span> nằm dọc theo một trục <span
+class="math inline">x</span>. Tổng của hai vectơ này là một vectơ thứ ba
+nằm dọc theo trục <span class="math inline">y</span> và có độ lớn gấp
+hai lần độ lớn của <span class="math inline">\vec{A}</span>. Độ lớn của
+<span class="math inline">\vec{A}</span> là bao nhiêu?</p>
+<p><strong>77</strong> Một người đàn ông đi dạo, xuất phát từ gốc tọa độ
+của một hệ tọa độ <span class="math inline">xyz</span>, với mặt phẳng
+<span class="math inline">xy</span> nằm ngang và trục <span
+class="math inline">x</span> hướng về phía đông. Mang theo một đồng xu
+cũ vô giá trị, người đó đi bộ <span class="math inline">1300\text{
+m}</span> về phía đông, <span class="math inline">2200\text{ m}</span>
+về phía bắc, và sau đó thả đồng xu rơi từ một vách đá cao <span
+class="math inline">410\text{ m}</span>. (a) Dưới dạng biểu diễn vectơ
+đơn vị, độ dịch chuyển của đồng xu từ điểm bắt đầu đến điểm tiếp đất là
+gì? (b) Khi người đàn ông quay trở về gốc tọa độ, độ lớn của độ dịch
+chuyển của ông trong chuyến đi trở về là bao nhiêu?</p>
+<p><strong>78</strong> Độ lớn của <span class="math inline">\vec{a}
+\times (\vec{b} \times \vec{a})</span> là bao nhiêu nếu <span
+class="math inline">a = 3.90</span>, <span class="math inline">b =
+2.70</span>, và góc giữa hai vectơ là <span
+class="math inline">63.0^\circ</span>?</p>
+<p><strong>79</strong> <em>Mê cung hàng rào cây.</em> Một mê cung hàng
+rào cây là một mê cung được tạo thành bởi các hàng cây bụi cao. Sau khi
+vào mê cung, bạn tìm đường tới điểm trung tâm rồi tìm đường ra lối
+thoát. Hình 3.18a cho thấy lối vào của một mê cung như vậy và hai lựa
+chọn đầu tiên ta thực hiện tại các ngã rẽ gặp phải khi di chuyển từ điểm
+i đến điểm c. Chúng ta trải qua ba độ dịch chuyển như được chỉ ra trong
+góc nhìn từ trên xuống ở Hình 3.18b: <span class="math inline">d_1 =
+6.00\text{ m}</span> tại <span class="math inline">\theta_1 =
+40^\circ</span>, <span class="math inline">d_2 = 8.00\text{ m}</span>
+tại <span class="math inline">\theta_2 = 30^\circ</span>, và <span
+class="math inline">d_3 = 5.00\text{ m}</span> tại <span
+class="math inline">\theta_3 = 0^\circ</span>, trong đó đoạn cuối cùng
+song song với trục <span class="math inline">x</span> được áp đặt lên
+hình. Khi chúng ta đến điểm c, (a) độ lớn và (b) góc của độ dịch chuyển
+toàn phần <span class="math inline">\vec{d}</span> của chúng ta từ điểm
+i là bao nhiêu?</p>
+<h5 id="trang-87">[Trang 87]</h5>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.18.png" loading="lazy" />
+<figcaption>Hình 3.18: Bài tập 79.</figcaption>
+</figure>
+<p><strong>80</strong> <em>Tích vô hướng, tích có hướng.</em> Cho hai
+vectơ: <span class="math display">\begin{align*}
+\vec{a} &amp;= a_x\hat{i} + a_y\hat{j} \\
+\vec{b} &amp;= b_x\hat{i} + b_y\hat{j}.
+\end{align*}</span> Tỉ số <span class="math inline">b_y/b_x</span> là
+bao nhiêu nếu (a) <span class="math inline">\vec{a} \cdot \vec{b} =
+0</span> và (b) <span class="math inline">\vec{a} \times \vec{b} =
+0</span>?</p>
+<p><strong>81</strong> <em>Môn thể thao định hướng.</em> Trong một lớp
+học định hướng địa hình, bạn có mục tiêu di chuyển càng xa trại căn cứ
+(khoảng cách theo đường thẳng) càng tốt bằng cách thực hiện ba bước di
+chuyển theo đường thẳng. Bạn có thể sử dụng các độ dịch chuyển sau theo
+thứ tự bất kỳ: (a) <span class="math inline">\vec{a}</span>, <span
+class="math inline">2.0\text{ km}</span> về đúng hướng đông (trực tiếp
+về phía đông); (b) <span class="math inline">\vec{b}</span>, <span
+class="math inline">2.0\text{ km}</span> lệch <span
+class="math inline">30^\circ</span> về phía bắc so với hướng đông (ở góc
+<span class="math inline">30^\circ</span> về phía bắc từ hướng chính
+đông); (c) <span class="math inline">\vec{c}</span>, <span
+class="math inline">1.0\text{ km}</span> về đúng hướng tây. Ngoài ra,
+bạn có thể thay <span class="math inline">\vec{b}</span> bằng <span
+class="math inline">-\vec{b}</span> hoặc thay <span
+class="math inline">\vec{c}</span> bằng <span
+class="math inline">-\vec{c}</span>. Khoảng cách lớn nhất mà bạn có thể
+cách xa trại căn cứ ở cuối độ dịch chuyển thứ ba (bất kể theo hướng nào)
+là bao nhiêu?</p>
+<p><strong>82</strong> <em>Chuyến leo núi Lafayette.</em> Hình 3.19 cho
+thấy một con đường mòn dài <span class="math inline">5.8\text{
+km}</span>, dẫn từ điểm đầu đường mòn (độ cao <span
+class="math inline">1770\text{ ft}</span>) lên tới đỉnh núi Lafayette
+(độ cao <span class="math inline">5250\text{ ft}</span>) ở New
+Hampshire. Sara đi bộ theo con đường mòn. (a) Độ lớn <span
+class="math inline">L</span> và (b) góc nâng <span
+class="math inline">\theta</span> (so với phương ngang) của độ dịch
+chuyển của Sara trong chuyến đi bộ là bao nhiêu? (Đo thành phần trong
+mặt phẳng của bản đồ bằng cách đặt mép một tờ giấy bên cạnh đoạn thẳng
+trên bản đồ, đánh dấu chiều dài <span class="math inline">d</span> của
+đoạn thẳng, và sau đó sử dụng thước tỉ lệ trên bản đồ.)</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.19.png" loading="lazy" />
+<figcaption>Hình 3.19: Bài tập 82.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Khe núi Franconia; Núi Lincoln; Núi
+Lafayette; Đường mòn Bridle Path cũ.</p>
+<p><strong>83</strong> <em>Khung leo trèo, tích vô hướng, vectơ đơn
+vị.</em> Một hệ tọa độ được thiết lập dọc theo các thanh gióng của một
+khung leo trèo 3D lớn (Hình 3.20). Bạn bắt đầu tại gốc tọa độ và sau đó
+di chuyển theo các chỉ dẫn sau đây. Hướng của mỗi lần di chuyển được chỉ
+rõ nhưng khoảng cách (tính bằng mét) bạn di chuyển theo hướng đó phải
+được xác định bằng cách tính tích vô hướng của các vectơ đã cho <span
+class="math inline">\vec{A}</span> và <span
+class="math inline">\vec{B}</span>. Ví dụ, lần di chuyển đầu tiên là
+<span class="math inline">21\text{ m}</span> theo hướng <span
+class="math inline">-x</span>. Độ lớn <span
+class="math inline">d_{\text{net}}</span> của độ dịch chuyển cuối cùng
+của bạn từ gốc tọa độ là bao nhiêu?</p>
+<ol>
+<li><p><span class="math inline">-x</span>, <span
+class="math inline">\vec{A} = 3.0\hat{i}</span>, <span
+class="math inline">\vec{B} = 7.0\hat{i}</span></p></li>
+<li><p><span class="math inline">-z</span>, <span
+class="math inline">\vec{A} = 2.0\hat{k}</span>, <span
+class="math inline">\vec{B} = 3.0\hat{j}</span></p></li>
+<li><p><span class="math inline">+y</span>, <span
+class="math inline">\vec{A} = 5.0\hat{j}</span>, <span
+class="math inline">\vec{B} = 3.0\hat{j}</span></p></li>
+<li><p><span class="math inline">+x</span>, <span
+class="math inline">\vec{A} = 7.0\hat{k}</span>, <span
+class="math inline">\vec{B} = 2.0\hat{k}</span></p></li>
+<li><p><span class="math inline">-z</span>, <span
+class="math inline">\vec{A} = 3.0\hat{i}</span>, <span
+class="math inline">\vec{B} = 2.0\hat{i}</span></p></li>
+<li><p><span class="math inline">-y</span>, <span
+class="math inline">\vec{A} = 3.0\hat{i}</span>, <span
+class="math inline">\vec{B} = 7.0\hat{j}</span></p></li>
+</ol>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.20.png" loading="lazy" />
+<figcaption>Hình 3.20: Các bài tập 83–86.</figcaption>
+</figure>
+<p><strong>84</strong> <em>Khung leo trèo, tích có hướng, vectơ đơn
+vị.</em> Một hệ tọa độ được thiết lập dọc theo các thanh gióng của một
+khung leo trèo 3D lớn (Hình 3.20). Bạn bắt đầu tại gốc tọa độ và sau đó
+di chuyển theo các bước sau đây. Đối với mỗi bước, khoảng cách (tính
+bằng mét) và hướng mà bạn di chuyển được cho bởi tích có hướng <span
+class="math inline">\vec{A} \times \vec{B}</span> của các vectơ đã cho
+<span class="math inline">\vec{A}</span> và <span
+class="math inline">\vec{B}</span>. Ví dụ, bước di chuyển đầu tiên là
+<span class="math inline">18\text{ m}</span> theo hướng <span
+class="math inline">+z</span>. Độ lớn <span
+class="math inline">d_{\text{net}}</span> của độ dịch chuyển cuối cùng
+của bạn từ gốc tọa độ là bao nhiêu?</p>
+<ol>
+<li><p><span class="math inline">\vec{A} = 3.0\hat{i}</span>, <span
+class="math inline">\vec{B} = 6.0\hat{j}</span></p></li>
+<li><p><span class="math inline">\vec{A} = -4.0\hat{i}</span>, <span
+class="math inline">\vec{B} = 3.0\hat{k}</span></p></li>
+<li><p><span class="math inline">\vec{A} = 2.0\hat{j}</span>, <span
+class="math inline">\vec{B} = 4.0\hat{k}</span></p></li>
+<li><p><span class="math inline">\vec{A} = 3.0\hat{j}</span>, <span
+class="math inline">\vec{B} = -8.0\hat{j}</span></p></li>
+<li><p><span class="math inline">\vec{A} = 4.0\hat{k}</span>, <span
+class="math inline">\vec{B} = -2.0\hat{i}</span></p></li>
+<li><p><span class="math inline">\vec{A} = 2.0\hat{i}</span>, <span
+class="math inline">\vec{B} = -4.0\hat{j}</span></p></li>
+</ol>
+<h5 id="trang-88">[Trang 88]</h5>
+<p><strong>85</strong> <em>Khung leo trèo, tích vô hướng, độ
+lớn–góc.</em> Một hệ tọa độ được thiết lập dọc theo các thanh gióng của
+một khung leo trèo 3D lớn (Hình 3.20). Bạn bắt đầu tại gốc tọa độ và sau
+đó di chuyển theo các chỉ dẫn sau đây. Hướng của mỗi lần di chuyển được
+chỉ rõ nhưng khoảng cách (tính bằng mét) bạn di chuyển theo hướng đó
+phải được xác định bằng cách tính tích vô hướng của các vectơ <span
+class="math inline">\vec{A}</span> và <span
+class="math inline">\vec{B}</span> với các độ lớn và góc hợp nhau <span
+class="math inline">\theta</span> đã cho. Ví dụ, lần di chuyển đầu tiên
+là <span class="math inline">6.0\text{ m}</span> theo hướng <span
+class="math inline">+x</span>. Độ lớn <span
+class="math inline">d_{\text{net}}</span> của độ dịch chuyển cuối cùng
+của bạn từ gốc tọa độ là bao nhiêu?</p>
+<ol>
+<li><p><span class="math inline">+x</span>, <span class="math inline">A
+= 3.0</span>, <span class="math inline">B = 4.0</span>, <span
+class="math inline">\theta = 60^\circ</span></p></li>
+<li><p><span class="math inline">+y</span>, <span class="math inline">A
+= 4.0</span>, <span class="math inline">B = 5.0</span>, <span
+class="math inline">\theta = 90^\circ</span></p></li>
+<li><p><span class="math inline">-z</span>, <span class="math inline">A
+= 6.0</span>, <span class="math inline">B = 5.0</span>, <span
+class="math inline">\theta = 120^\circ</span></p></li>
+<li><p><span class="math inline">-x</span>, <span class="math inline">A
+= 5.0</span>, <span class="math inline">B = 4.0</span>, <span
+class="math inline">\theta = 0^\circ</span></p></li>
+<li><p><span class="math inline">-y</span>, <span class="math inline">A
+= 4.0</span>, <span class="math inline">B = 7.0</span>, <span
+class="math inline">\theta = 60^\circ</span></p></li>
+<li><p><span class="math inline">+z</span>, <span class="math inline">A
+= 4.0</span>, <span class="math inline">B = 10</span>, <span
+class="math inline">\theta = 60^\circ</span></p></li>
+</ol>
+<p><strong>86</strong> <em>Khung leo trèo, tích có hướng, độ
+lớn–góc.</em> Một hệ tọa độ được thiết lập dọc theo các thanh gióng của
+một khung leo trèo 3D lớn (Hình 3.20). Bạn bắt đầu tại gốc tọa độ và sau
+đó di chuyển theo các chỉ dẫn sau đây. Hướng của mỗi lần di chuyển được
+chỉ rõ nhưng khoảng cách (tính bằng mét) bạn di chuyển theo hướng đó
+phải được xác định bằng cách tính tích có hướng <span
+class="math inline">\vec{A} \times \vec{B}</span> của các vectơ <span
+class="math inline">\vec{A}</span> và <span
+class="math inline">\vec{B}</span> với các độ lớn và góc hợp nhau <span
+class="math inline">\theta</span> đã cho. Ví dụ, lần di chuyển đầu tiên
+là <span class="math inline">12\text{ m}</span> theo hướng <span
+class="math inline">+y</span>. Độ lớn <span
+class="math inline">d_{\text{net}}</span> của độ dịch chuyển cuối cùng
+của bạn từ gốc tọa độ là bao nhiêu?</p>
+<ol>
+<li><p><span class="math inline">+y</span>, <span class="math inline">A
+= 3.0</span>, <span class="math inline">B = 4.0</span>, <span
+class="math inline">\theta = 90^\circ</span></p></li>
+<li><p><span class="math inline">-z</span>, <span class="math inline">A
+= 3.0</span>, <span class="math inline">B = 2.0</span>, <span
+class="math inline">\theta = 30^\circ</span></p></li>
+<li><p><span class="math inline">-y</span>, <span class="math inline">A
+= 6.0</span>, <span class="math inline">B = 8.0</span>, <span
+class="math inline">\theta = 0^\circ</span></p></li>
+<li><p><span class="math inline">+x</span>, <span class="math inline">A
+= 4.0</span>, <span class="math inline">B = 5.0</span>, <span
+class="math inline">\theta = 150^\circ</span></p></li>
+<li><p><span class="math inline">-y</span>, <span class="math inline">A
+= 7.0</span>, <span class="math inline">B = 2.0</span>, <span
+class="math inline">\theta = 30^\circ</span></p></li>
+<li><p><span class="math inline">-x</span>, <span class="math inline">A
+= 4.0</span>, <span class="math inline">B = 3.0</span>, <span
+class="math inline">\theta = 90^\circ</span></p></li>
+</ol>
+<p><strong>87</strong> <em>Cuộc đua xe đường trường.</em> Hình 3.21 cho
+một bản đồ chưa hoàn chỉnh của một cuộc đua đường trường. Từ điểm xuất
+phát (tại gốc tọa độ), bạn phải sử dụng các con đường sẵn có để trải qua
+các độ dịch chuyển sau: (1) <span class="math inline">\vec{a}</span> tới
+trạm kiểm soát Able, độ lớn <span class="math inline">36\text{
+km}</span>, về đúng hướng đông; (2) <span
+class="math inline">\vec{b}</span> tới trạm kiểm soát Baker, về đúng
+hướng bắc; (3) <span class="math inline">\vec{c}</span> tới trạm kiểm
+soát Charlie, độ lớn <span class="math inline">25\text{ km}</span>, tại
+góc được chỉ ra trên hình. Độ lớn của độ dịch chuyển toàn phần <span
+class="math inline">\vec{d}</span> của bạn từ điểm xuất phát là <span
+class="math inline">62.0\text{ km}</span>. Độ lớn <span
+class="math inline">b</span> của <span
+class="math inline">\vec{b}</span> là bao nhiêu?</p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.21.png" loading="lazy" />
+<figcaption>Hình 3.21: Bài tập 87.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Khoảng cách (km).</p>
+<p><strong>88</strong> <em>Đánh gôn mini bằng vectơ.</em> Hình 3.22 thể
+hiện một lưới tọa độ được bố trí trên một sân gôn mini (putt-putt). Bạn
+phải phát bóng tại điểm phát (<em>Tee</em>) ở góc dưới bên trái và qua
+ba cú gạt bóng, đưa quả bóng lăn vào lỗ gôn (<em>Cup</em>). Tuy nhiên,
+bạn chỉ có thể sử dụng các độ dịch chuyển sau đây (mỗi độ dịch chuyển
+tính bằng mét), mà không được lặp lại độ dịch chuyển nào. Những độ dịch
+chuyển nào sẽ đưa bóng vào lỗ mà quả bóng không bị lăn ra ngoài mép
+lưới? <span class="math display">\begin{align*}
+\text{A: } &amp; 6.0\hat{i} + 2.0\hat{j} &amp;
+\text{B: } &amp; -2.0\hat{i} - 1.0\hat{j} &amp;
+\text{C: } &amp; 4.0\hat{i} + 5.0\hat{j} &amp;
+\text{D: } &amp; 4.0\hat{i} \\
+\text{E: } &amp; 2.0\hat{i} + 6.0\hat{j} &amp;
+\text{F: } &amp; 2.0\hat{i} - 3.5\hat{j} &amp;
+\text{G: } &amp; 1.0\text{ m}, \text{ ở } 90^\circ \text{ so với } +x
+\end{align*}</span></p>
+<figure data-latex-placement="htbp">
+<img src="/Physics_read/assets/figures/Figure_3.22.png" loading="lazy" />
+<figcaption>Hình 3.22: Bài tập 88.</figcaption>
+</figure>
+<p><em>Chú giải hình:</em> Điểm phát bóng (Tee); Lỗ gôn (Cup).</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>Nội dung này sẽ không được sử dụng cho đến các chương
+sau (Chương 7 đối với tích vô hướng và Chương 11 đối với tích có hướng),
+và vì vậy giảng viên của bạn có thể muốn hoãn lại.<a href="#fnref1"
+class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>

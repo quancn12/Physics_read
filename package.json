@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "astro": "^4.16.18",
+    "katex": "^0.19.1",
     "minisearch": "^7.1.1",
     "pdfjs-dist": "^4.10.38"
   },
