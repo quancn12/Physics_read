@@ -66,6 +66,23 @@ def unwrap_fbox_parbox(t):
             i += 1
     return "".join(out)
 
+def fix_all_items(t):
+    # Standardize itemize bullets so labels are not dropped by pandoc
+    t = re.sub(r'\\item\[(?:\$\\bullet\$|\\textbullet)\]', r'\\item ', t)
+    
+    def repl_item_bracket(m):
+        label = m.group(1).strip()
+        # Clean nested bold if present
+        m_bold = re.match(r'^\\textbf\{([^}]+)\}$', label)
+        if m_bold:
+            label = m_bold.group(1)
+        if label in ('--', '-', '•', ''):
+            return r'\item '
+        return f'\\item \\textbf{{{label}}}~'
+    
+    t = re.sub(r'\\item\[([^\]]+)\]', repl_item_bracket, t)
+    return t
+
 def clean_latex(t):
     # Fix quad
     t = re.sub(r'\\quad', ' ', t)
@@ -73,6 +90,8 @@ def clean_latex(t):
     t = re.sub(r'\\chapter\*\{([^}]+)\\\\\[[^\]]*\]([^}]+)\}', r'\\chapter*{\1 — \2}', t)
     # Fix hinh
     t = re.sub(r'\\hinh\{([^}]+)\}\{((?:[^{}]|\{[^{}]*\})*)\}', repl_hinh, t)
+    # Fix items
+    t = fix_all_items(t)
     # Unwrap boxes
     t = unwrap_fbox_parbox(t)
     # Page markers
@@ -182,5 +201,13 @@ for ch_str, slug in [("ch21", "phu-luc"), ("ch22", "dap-an")]:
 
 with open(os.path.join(OUT_DIR, "toc_manifest.json"), 'w', encoding='utf-8') as fp:
     json.dump(toc_manifest, fp, ensure_ascii=False, indent=2)
+
+# Format answers into answers_by_chapter.json
+dap_an_path = os.path.join(OUT_DIR, "dap-an.html")
+ans_json_path = os.path.join(OUT_DIR, "answers_by_chapter.json")
+if os.path.exists(dap_an_path):
+    print("Formatting answers by chapter...")
+    from format_answers import parse_and_format_answers
+    parse_and_format_answers(dap_an_path, ans_json_path)
 
 print("Export completed successfully!")

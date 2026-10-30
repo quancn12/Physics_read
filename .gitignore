@@ -17,6 +17,8 @@ Thumbs.db
 scratch/
 mockups/
 dist_screenshots/
+__pycache__/
+*.pyc
 
 # Ignore non-repo loose files in root
 *.docx*
